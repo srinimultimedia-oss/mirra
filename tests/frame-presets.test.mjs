@@ -1,0 +1,6 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';
+import {FRAME_PRESETS,frameSize} from '../public/frame-presets.mjs';
+import {Board} from '../src/model.mjs';
+test('every frame preset creates persistent dimensions with atomic undo and redo',()=>{for(const preset of FRAME_PRESETS){const b=new Board(),id=b.add('frame',30,40,{...frameSize(preset.w,preset.h),text:preset.label});assert.equal(b.doc.items[0].w,preset.w);assert.equal(b.doc.items[0].h,preset.h);const saved=b.serialize();assert.deepEqual(Board.parse(saved).doc,b.doc);b.undo();assert.equal(b.doc.items.length,0);b.redo();assert.equal(b.doc.items[0].id,id);assert.equal(b.serialize(),saved);}});
+test('custom frame size accepts whole boundary values and returns an independent value',()=>{assert.deepEqual(frameSize(1,100000),{w:1,h:100000});const size=frameSize(640,360);size.w=100;assert.equal(FRAME_PRESETS[0].w,640);assert.ok(Object.isFrozen(FRAME_PRESETS[0]));});
+test('invalid dimensions cannot create or change a board',()=>{const b=new Board(),before=b.serialize();for(const value of [0,-1,1.5,100001,Infinity,NaN,'640',null,undefined]){assert.throws(()=>b.add('frame',0,0,frameSize(value,100)),/whole numbers/);assert.throws(()=>frameSize(100,value),/whole numbers/);}assert.equal(b.serialize(),before);assert.equal(b.past.length,0);});

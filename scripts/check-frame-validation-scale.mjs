@@ -1,0 +1,10 @@
+import {spawnSync} from 'node:child_process';
+import assert from 'node:assert/strict';
+const code=`import {validateDocument} from './src/model.mjs';
+const n=10000,items=Array.from({length:n},(_,i)=>({id:'f'+i,type:'frame',x:0,y:0,w:n-i+1,h:n-i+1,text:'',fill:'#ffffff',...(i?{parentId:'f'+(i-1)}:{})}));
+const doc={version:1,name:'Deep frame scale',items};
+const started=performance.now();const validated=validateDocument(doc);if(validated.items.length!==n||validated.items[n-1].parentId!=='f'+(n-2))throw Error('Deep hierarchy changed');
+items[0].parentId='f'+(n-1);let rejected=false;try{validateDocument(doc);}catch(error){if(!/Cyclic/.test(error.message))throw error;rejected=true;}if(!rejected)throw Error('Deep cycle accepted');
+console.log(JSON.stringify({count:n,elapsedMs:performance.now()-started}));`;
+const result=spawnSync(process.execPath,['--input-type=module','-e',code],{cwd:new URL('..',import.meta.url),encoding:'utf8',timeout:5000,maxBuffer:10000});
+assert.ifError(result.error);assert.equal(result.status,0,result.stderr);const metrics=JSON.parse(result.stdout);assert.equal(metrics.count,10000);assert.ok(metrics.elapsedMs<5000);console.log('FRAME_VALIDATION_SCALE_PASS '+JSON.stringify(metrics));

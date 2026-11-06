@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-05",
+  "scope": "Focus ring and selection-state browser pass; not a full WCAG audit",
+  "focus": {
+    "color": "#4055df",
+    "width": "3px",
+    "observedOffset": "2px",
+    "againstSurface": 5.861108141383731,
+    "againstBackground": 5.464732039206343,
+    "minimum": 3
+  },
+  "visibleBoardControlsWithoutNames": [],
+  "evidence": [
+    "keyboard-tool-focus.png"
+  ],
+  "remaining": [
+    "complete contrast matrix",
+    "screen reader testing",
+    "complete dialog and keyboard flows",
+    "mobile accessibility matrix"
+  ]
+}

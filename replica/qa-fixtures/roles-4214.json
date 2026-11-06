@@ -1,0 +1,11 @@
+{
+  "synthetic": true,
+  "boardId": "08661f89-b765-473b-91d1-c96f725e9e3b",
+  "urls": {
+    "owner": "http://127.0.0.1:4214/public/index.html?qa-role=owner#cloud/08661f89-b765-473b-91d1-c96f725e9e3b",
+    "editor": "http://127.0.0.1:4214/public/index.html?qa-role=editor#cloud/08661f89-b765-473b-91d1-c96f725e9e3b",
+    "commenter": "http://127.0.0.1:4214/public/index.html?qa-role=commenter#cloud/08661f89-b765-473b-91d1-c96f725e9e3b",
+    "viewer": "http://127.0.0.1:4214/public/index.html?qa-role=viewer#cloud/08661f89-b765-473b-91d1-c96f725e9e3b",
+    "outsider": "http://127.0.0.1:4214/public/index.html?qa-role=outsider#cloud/08661f89-b765-473b-91d1-c96f725e9e3b"
+  }
+}

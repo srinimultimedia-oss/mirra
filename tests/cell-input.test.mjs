@@ -1,0 +1,8 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import vm from 'node:vm';
+const source=readFileSync(new URL('../public/table-editor.mjs',import.meta.url),'utf8'),start=source.indexOf('function parseCell('),end=source.indexOf('\nexport class TableEditor',start);assert.ok(start>=0&&end>start);const parseCell=vm.runInNewContext(source.slice(start,end)+';parseCell');
+test('incomplete native numeric input cannot be interpreted as clearing an existing value',()=>{assert.throws(()=>parseCell({type:'number'},'',{badInput:true}),/complete|valid/i);});
+test('incomplete date input cannot be interpreted as an intentional empty date',()=>{assert.throws(()=>parseCell({type:'date'},'',{badInput:true}),/complete|valid/i);});
+test('intentional empty cells remain clearable and finite scientific values remain valid',()=>{assert.equal(parseCell({type:'number'},'',{badInput:false}),null);assert.equal(parseCell({type:'date'},'',{badInput:false}),null);assert.equal(parseCell({type:'number'},'2.5e2',{badInput:false}),250);assert.equal(parseCell({type:'number'},'0',{badInput:false}),0);assert.throws(()=>parseCell({type:'number'},'Infinity'),/finite/);});
+test('checkbox text and other typed input retain their existing semantics',()=>{assert.equal(parseCell({type:'checkbox'},true),true);assert.equal(parseCell({type:'checkbox'},false),false);assert.equal(parseCell({type:'text'},'café 🚀'),'café 🚀');});
+
+test('invalid checkbox builder values cannot silently clear an existing check',()=>{assert.throws(()=>parseCell({type:'checkbox'},'not-a-boolean'),/true or false/i);assert.equal(parseCell({type:'checkbox'},' TRUE '),true);assert.equal(parseCell({type:'checkbox'},' false '),false);});

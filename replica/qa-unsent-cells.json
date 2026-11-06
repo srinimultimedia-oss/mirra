@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "recordId": "9b5d92b7-2624-40f3-99f1-697e77ec8600",
+      "fieldId": "title",
+      "type": "text",
+      "raw": "Draft A must survive",
+      "badInput": false,
+      "before": {
+        "present": true,
+        "value": "Remote saved table textchanged"
+      },
+      "fieldName": "Work item",
+      "recordName": "Remote saved table textchanged",
+      "error": "This cell changed in another client. Your draft is preserved below."
+    }
+  ]
+}

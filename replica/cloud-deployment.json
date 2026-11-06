@@ -1,0 +1,11 @@
+{
+  "project_id": "appgprj_6aeafbd1e47881918ff5a68d3fbaec08",
+  "commit_sha": "56443c928b86238d87e0f97d8932c07fc1e2a40e",
+  "version_id": "appgprj_6aeafbd1e47881918ff5a68d3fbaec08~appgver_ca9e48c33ec88191a1516c68f4ab19ea",
+  "deployment_id": "appgdep_6aecf44d38748191a6d247547c09655e",
+  "status": "succeeded",
+  "url": "https://mirra-visual-workspace-srini.rightzebu4.chatgpt.site",
+  "audience": "owner-private",
+  "hosted_schema_verified": "2026-11-06 production DB presence columns confirm attention_id attention_from attention_at after migration0006, with viewport and following_client_id retained; previous tables remain present",
+  "hosted_browser_verification": "pending: QA092 tab218 again reached OpenAI Performing security verification after following Continue with ChatGPT despite reported sign-in"
+}

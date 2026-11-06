@@ -1,0 +1,68 @@
+[
+  {
+    "Name": ".agents",
+    "IsDirectory": true,
+    "Length": null,
+    "Hash": null
+  },
+  {
+    "Name": ".unlazy",
+    "IsDirectory": true,
+    "Length": null,
+    "Hash": null
+  },
+  {
+    "Name": "cloud",
+    "IsDirectory": true,
+    "Length": null,
+    "Hash": null
+  },
+  {
+    "Name": "public",
+    "IsDirectory": true,
+    "Length": null,
+    "Hash": null
+  },
+  {
+    "Name": "replica",
+    "IsDirectory": true,
+    "Length": null,
+    "Hash": null
+  },
+  {
+    "Name": "scripts",
+    "IsDirectory": true,
+    "Length": null,
+    "Hash": null
+  },
+  {
+    "Name": "src",
+    "IsDirectory": true,
+    "Length": null,
+    "Hash": null
+  },
+  {
+    "Name": "tests",
+    "IsDirectory": true,
+    "Length": null,
+    "Hash": null
+  },
+  {
+    "Name": "GATES.md",
+    "IsDirectory": false,
+    "Length": 102050,
+    "Hash": "F00635A03BE7090B685070AE174C57EF6996253E4AC4F3E66E579D32F5F89FD0"
+  },
+  {
+    "Name": "package.json",
+    "IsDirectory": false,
+    "Length": 208,
+    "Hash": "07537AEFEEDEA5BEB61CB8D13F735C5C53663C5AB54B1C66CFF42BE343C31D33"
+  },
+  {
+    "Name": "README.md",
+    "IsDirectory": false,
+    "Length": 4562,
+    "Hash": "1D60582E02E26ECB5FB962014976C9210BB220F92A7B98063902A18ED1EBFCF1"
+  }
+]

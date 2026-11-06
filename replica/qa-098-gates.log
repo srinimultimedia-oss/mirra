@@ -1,0 +1,13 @@
+APPROVAL REQUIRED GATES:G137
+    CHECK: node --test tests/notes-to-records.test.mjs tests/table-actions.test.mjs
+    EXPECT: fail 0
+    CWD: C:\Srini\Mirra
+    SHELL: C:\Windows\system32\cmd.exe
+    PATH: C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell;C:\Users\srini\.codex\tmp\arg0-windows\codex-arg0OPVRan;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot\bin;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA...
+    APPROVED: C:\Users\srini\.unlazy\approved\37b3305418571749f240c2af33901129d6a6f9fb1df5a6d85f1d8ba908e8c26e.json
+  RUN  GATES:G137 shell=C:\Windows\system32\cmd.exe cwd=C:\Srini\Mirra PATH=C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell;C:\Users\srini\.codex\tmp\arg0-windows\codex-arg0OPVRan;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot\bin;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA...
+  PASS GATES:G137: Adding selected notes or cards to a table reads its current text-field schema and latest selected content, preserves source objects, commits a single undoable cloud patch, and rejects missing text fields, permissions, locks and invalid batches without partial changes.
+       exit=0; EXPECT=matched; output=sha256=43bafde50dc7a37806f45298be60c0f0c36c47fa58edf2582467c8d4fa858c9b; bytes=975
+GATES.md: 138 gates
+UNMET: 8 (met: 130)
+  GATES:G72, GATES:G1, GATES:G2, GATES:G4, GATES:G5, GATES:G6, GATES:G13, GATES:G16

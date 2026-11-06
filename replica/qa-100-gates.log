@@ -1,0 +1,13 @@
+APPROVAL REQUIRED GATES:G141
+    CHECK: node --test tests/table-bulk-fields.test.mjs tests/table-filters.test.mjs
+    EXPECT: fail 0
+    CWD: C:\Srini\Mirra
+    SHELL: C:\Windows\system32\cmd.exe
+    PATH: C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell;C:\Users\srini\.codex\tmp\arg0-windows\codex-arg0OPVRan;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot\bin;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA...
+    APPROVED: C:\Users\srini\.unlazy\approved\cae1b7aa2aae2aa7953a9e1083e9de0ef520cc802a08f6bfe34f2c6176569cf1.json
+  RUN  GATES:G141 shell=C:\Windows\system32\cmd.exe cwd=C:\Srini\Mirra PATH=C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell;C:\Users\srini\.codex\tmp\arg0-windows\codex-arg0OPVRan;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot\bin;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA...
+  PASS GATES:G141: The rendered bulk field action applies valid typed values only to selected current rows in one undoable patch, retains unrelated edits, rejects invalid values and changed schemas atomically, and rechecks permissions and locks.
+       exit=0; EXPECT=matched; output=sha256=469c7007e6b18ef9ed194dd447e2f4905612066946f3da86bb8da3e24a4b16fb; bytes=1060
+GATES.md: 142 gates
+UNMET: 8 (met: 134)
+  GATES:G72, GATES:G1, GATES:G2, GATES:G4, GATES:G5, GATES:G6, GATES:G13, GATES:G16

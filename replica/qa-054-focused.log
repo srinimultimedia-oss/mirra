@@ -1,0 +1,45 @@
+(node:48208) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ text background updates persist through the API and reject invalid boolean values (29.2471ms)
+✔ missing identity and cross-origin writes are rejected (2.0568ms)
+✔ private boards are isolated and member roles are enforced on reads and writes (3.814ms)
+✔ two editors merge independent fields and idempotent retries do not duplicate a revision (5.0842ms)
+✔ same-field conflicts return current snapshot without overwriting either client input (3.7298ms)
+✔ invalid operations do not mutate durable state and event stream emits a snapshot (5.1014ms)
+✔ commenters can create reply edit and resolve threads without canvas-edit permission (6.0544ms)
+✔ viewers cannot post comments and cross-board thread anchors are rejected (2.7016ms)
+✔ simultaneous stale-revision writes retry the guarded transaction without losing independent changes (3.4806ms)
+✔ cursor ownership prevents spoofing another member and request limits preserve board data (3.4824ms)
+✔ authorized snapshots identify the requesting account for device draft isolation (2.8953ms)
+✔ expected-account mismatch blocks reads and mutations before board state changes (2.6919ms)
+✔ creation retries return the same board and retain subsequent edits (3.0894ms)
+✔ concurrent creation retries produce one receipt and no orphan board (2.834ms)
+✔ creation receipts reject changed payload and are scoped to the account (4.9108ms)
+✔ failed creation transaction rolls back both board and receipt (4.3339ms)
+✔ invalid creation operation ids are rejected before creating a board (5.9191ms)
+✔ concurrent reused creation id with different content commits one payload and rejects the other (3.7199ms)
+✔ stale comment edits preserve the first save and return a conflict (3.4613ms)
+✔ simultaneous comment edits commit one payload and reject the competing draft (3.4917ms)
+✔ an exact comment edit retry succeeds while blind and removed edits are rejected (3.7617ms)
+✔ reload retains raw properties and comparison baseline without changing the object (5.321ms)
+✔ recovered overlap rejects and reviewed rebase preserves newer unrelated values (0.9089ms)
+✔ account board object and text-recovery namespaces remain isolated (0.3457ms)
+✔ deleted-object properties remain enumerable and exportable without recreation (0.3977ms)
+✔ malformed inner recovery preserves exact bytes and new memory edits remain exportable (0.2814ms)
+✔ quota failures retain latest cached edits and failed clear leaves recovery available (0.6205ms)
+✔ incomplete numeric marker survives reload and cannot silently become zero (0.9102ms)
+✔ rebase rejects changed type locked or missing objects and changed account scope (0.2316ms)
+✔ successful clear removes only its recovery and snapshots exclude unrelated object data (0.4594ms)
+✔ older property recovery without background remains readable and its bytes stay intact (0.3799ms)
+✔ text remains transparent until Fill is used, including white, and Undo restores absence (3.2067ms)
+✔ inspector Fill and border color enable background; explicit disable retains stored color (1.3005ms)
+✔ automatic background activation cannot overwrite a remote visibility decision (0.4907ms)
+✔ background state is validated and survives cloud patches without altering other object types (0.9094ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 232.3663
