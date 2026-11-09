@@ -4,6 +4,14 @@ OWNS: src/**, public/**, tests/**, scripts/**, replica/**, cloud/**, package.jso
 
 Scope: Rebuild every identified Miro web-app feature, with a continuing inventory, independent implementation, and requirement-level verification. Full scope remains open until signed-in discovery and implementation evidence establish parity.
 
+- [x] G150: Every Checkmarx SCA finding is mapped by result ID/CVE to current resolved dependencies; fixable vulnerable ranges are eliminated and any upstream-unpatched finding has explicit verified remediation evidence rather than a blanket clean claim.
+  EVIDENCE: 2026-11-09 scripts/checkmarx-security-check.mjs passes against installed packages and lockfile: 99 SCA findings mapped, 90 updated, 4 removed, 2 uri-js findings replaced by fast-uri, 2 picomatch findings locally patched with timed exploit regressions, 1 braces advisory withdrawn upstream requiring Checkmarx triage. All paths and result IDs retained in replica/checkmarx-remediation.json; npm audit reports zero vulnerabilities. Local patch and font/OG runtime packaging documented with licenses; no fresh Checkmarx certification claimed.
+
+- [x] G151: The reported Python/JavaScript input loops have explicit validated bounds, QA responses send CSP/HSTS consistently, and negative regression tests prove input rejection without breaking valid large boards or preview artifacts.
+  EVIDENCE: 2026-11-09 bounded Python theme bytes/counts/patterns and fixed-range loops pass 3 Python tests; bounded frame traversal rejects oversized input and 100000-item cycles. Existing 10000-frame validation and 30000-frame containment/descendant checks pass. Real preview success/404 tests enforce CSP/HSTS; Worker and static asset policy share headers. Production preview5175 served board HTML200 and unauthenticated API401 with CSP/HSTS. Browser240 rendered dashboard/editor/export dialog with no warning/error logs.
+
+- [x] G152: Clean installation, application/security tests, TypeScript, production build and private deployment pass; remediation evidence covers all103 report entries with fresh Checkmarx certification clearly distinguished from local verification.
+  EVIDENCE: 2026-11-09 clean install, valid npm dependency tree, 536 Node tests, 3 Python tests, TypeScript and production build pass. Private production deployment appgdep_6af176cc9a68819184275cb6497834e4 succeeded from tested source fe8cc94a52fc6ca513c848e3a36a8cb1de46ac67. Full 103-finding ledger records local evidence; Checkmarx CLI/credentials unavailable, so security triage and a new scan remain required before certification. Existing broader feature-parity gates are unchanged.
 - [x] G148: Installed cloud dependencies and lockfile resolve the five user-requested exact versions with compatible React/Next companions and no invalid dependency tree.
   CHECK: node scripts/check-requested-dependencies.mjs
   EXPECT: REQUESTED_DEPENDENCIES_PASS
@@ -609,35 +617,3 @@ Scope: Rebuild every identified Miro web-app feature, with a continuing inventor
   CHECK: node --test tests/inspector-recovery.test.mjs tests/inspector.test.mjs
   EXPECT: fail 0
   EVIDENCE: automatic-evidence=v1; definition-sha256=7632a064a00c4bee6d2f6b6a89d94875c6c4aa246711ab4f673bd183c4145b4c; exit=0; EXPECT=matched; output-sha256=fda881639ac3306a5f3af65c8db9553e1ec56ab67df0bd73b3909eb7b8fd430e; output-bytes=1710; shell=C:\Windows\system32\cmd.exe; cwd=C:\Srini\Mirra; path=2835c4462a72/39 entries
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

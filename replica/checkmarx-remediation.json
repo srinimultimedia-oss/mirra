@@ -1,0 +1,2230 @@
+{
+  "scanId": "af78dd42-5d58-45b2-91aa-8b9b7ebfc843",
+  "sourceReportSha256": "2be924a82e4d13ea26d3e26a6fa8dacfbf8d5a109d3fc0d05b09daedfc2cc294",
+  "generatedAt": "2026-11-09T07:32:54.653Z",
+  "checkmarxRescanPerformed": false,
+  "certifiedCompliant": false,
+  "validation": {
+    "nodeTests": 536,
+    "pythonTests": 3,
+    "npmAudit": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "typescript": "passed",
+    "productionBuild": "passed"
+  },
+  "sca": [
+    {
+      "package": "react-server-dom-webpack",
+      "scannedVersion": "19.2.6",
+      "id": "uYzgiy13qSNOtZ0nMEB2g8cPW9GT3ajfvSGd08hPax0=",
+      "cve": "CVE-2026-44907",
+      "severity": "High",
+      "recommended": "19.2.8",
+      "references": [
+        "https://github.com/advisories/GHSA-wx67-qw84-cm4g"
+      ],
+      "current": [
+        {
+          "path": "node_modules/react-server-dom-webpack",
+          "name": "react-server-dom-webpack",
+          "version": "19.3.1"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "sharp",
+      "scannedVersion": "0.35.4",
+      "id": "ZIRUSI3tClTDocfhCrvrCpz1FhGYq2c85yVmphz8ixM=",
+      "cve": "CVE-2026-114111",
+      "severity": "High",
+      "recommended": "0.35.5",
+      "references": [
+        "https://github.com/advisories/GHSA-wq5f-xc86-pv6w"
+      ],
+      "current": [
+        {
+          "path": "node_modules/sharp",
+          "name": "sharp",
+          "version": "0.35.5"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "sharp",
+      "scannedVersion": "0.35.4",
+      "id": "Iw34Nf19GEdpM3Zr2xtN+z8yb5+WGAbZNnLDyDk2Erg=",
+      "cve": "Cx9723c087-1490",
+      "severity": "High",
+      "recommended": "0.35.5",
+      "references": [
+        "https://github.com/advisories/GHSA-wq5f-xc86-pv6w"
+      ],
+      "current": [
+        {
+          "path": "node_modules/sharp",
+          "name": "sharp",
+          "version": "0.35.5"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "source-map-js",
+      "scannedVersion": "1.2.1",
+      "id": "j1STTIvcGE/6IdraVFDPtECBn47fIaDp17/PSaMEmVQ=",
+      "cve": "CVE-2026-93749",
+      "severity": "High",
+      "recommended": "1.2.2",
+      "references": [
+        "https://github.com/advisories/GHSA-68fv-2mgg-jv7q",
+        "https://github.com/7rulnik/source-map-js/issues/76",
+        "https://github.com/7rulnik/source-map-js/pull/79",
+        "https://github.com/7rulnik/source-map-js/commit/cf7658058ceeaa8619d5ae0ec90be6905209d016",
+        "https://github.com/7rulnik/source-map-js/releases/tag/v1.2.2"
+      ],
+      "current": [
+        {
+          "path": "node_modules/source-map-js",
+          "name": "source-map-js",
+          "version": "1.2.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "GQ6Khu8VszUWhDD8jIwKIYdQrv4Fh2hRjWPgc1S01Y0=",
+      "cve": "CVE-2026-9697",
+      "severity": "High",
+      "recommended": "7.28.0",
+      "references": [
+        "https://github.com/advisories/GHSA-vmh5-mc38-953g",
+        "https://github.com/nodejs/undici/security/advisories/GHSA-vmh5-mc38-953g"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "mEcNSAHdcFNmqcx4grfL2/hYI9HSo/Bvq1K9+ITG/Cc=",
+      "cve": "CVE-2026-84961",
+      "severity": "Critical",
+      "recommended": "7.29.1",
+      "references": [
+        "https://github.com/advisories/GHSA-w293-vg96-wgc3",
+        "https://github.com/nodejs/undici/security/advisories/GHSA-w293-vg96-wgc3"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "W0bgyW0s1DgckQZGROtQ6kmKsLT8j0a5xYHa0P1roiY=",
+      "cve": "CVE-2026-109383",
+      "severity": "Critical",
+      "recommended": "7.30.1",
+      "references": [
+        "https://github.com/advisories/GHSA-2m5v-pch6-74hx",
+        "https://github.com/nodejs/undici/security/advisories/GHSA-2m5v-pch6-74hx",
+        "https://cwe.mitre.org/data/definitions/248.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "0O8X3OLCr6pm2147SGm5tuwTDVh7as+P5Brm0cji0D8=",
+      "cve": "CVE-2026-87029",
+      "severity": "High",
+      "recommended": "7.30.1",
+      "references": [
+        "https://github.com/advisories/GHSA-55wc-3pg8-jfw6"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "dTBND0MOBIW3EF/vu1JIPh7ZhR0+1S1SUbdjKqh09ys=",
+      "cve": "CVE-2026-109869",
+      "severity": "High",
+      "recommended": "7.30.1",
+      "references": [
+        "https://github.com/advisories/GHSA-xjj6-f33q-929c",
+        "https://github.com/nodejs/undici/security/advisories/GHSA-xjj6-f33q-929c"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "4ea/j0dz9uQv8EwBu333JwSpEpJtA51qa46hEjM+Dqo=",
+      "cve": "CVE-2026-87018",
+      "severity": "High",
+      "recommended": "7.30.1",
+      "references": [
+        "https://github.com/advisories/GHSA-qrxm-fqhp-jwvm",
+        "https://github.com/nodejs/undici/security/advisories/GHSA-qrxm-fqhp-jwvm"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "11xZ1HU8uYmq/zzgFWM/OIpw23oLMPW1M7Izm6Ok0TI=",
+      "cve": "CVE-2026-85014",
+      "severity": "High",
+      "recommended": "7.29.1",
+      "references": [
+        "https://github.com/advisories/GHSA-rx4f-c7p8-82vq",
+        "https://github.com/nodejs/undici/security/advisories/GHSA-rx4f-c7p8-82vq",
+        "https://github.com/nodejs/undici/commit/662d0ea671fe64139e79533c913fce412765e1d7",
+        "https://github.com/nodejs/undici/releases/tag/v8.10.2"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "cg8wQ4u6XGVq2R/vErqUCK4rUGX6xXq7zad2wkOs4CQ=",
+      "cve": "CVE-2026-19534",
+      "severity": "High",
+      "recommended": "7.29.1",
+      "references": [
+        "https://github.com/advisories/GHSA-rfgv-xxqx-mfg5",
+        "https://github.com/nodejs/undici/security/advisories/GHSA-rfgv-xxqx-mfg5"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "YpDumks3Bya9lTJG7ARO7wX9rfREb3z6bRDIMQjRfbg=",
+      "cve": "CVE-2026-120222",
+      "severity": "Medium",
+      "recommended": "7.30.2",
+      "references": [
+        "https://cwe.mitre.org/data/definitions/178.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "Jga2EqKJ9WOPeEDErrdsmRlz6JLUPa1TqoF2vLITEDE=",
+      "cve": "CVE-2026-109841",
+      "severity": "High",
+      "recommended": "7.30.1",
+      "references": [
+        "https://github.com/advisories/GHSA-f72v-6w45-q472",
+        "https://cwe.mitre.org/data/definitions/770.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "9xmXktO7TMCMpJBPn9AVSRY+fgyTUwHEQQ0q8stevEo=",
+      "cve": "CVE-2026-109924",
+      "severity": "High",
+      "recommended": "7.30.1",
+      "references": [
+        "https://github.com/advisories/GHSA-4qv8-2p9j-2685"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "mILRBbYtwznxBpN/7XfKdSTqHCHScU284f5r2xUvW/8=",
+      "cve": "CVE-2026-84890",
+      "severity": "Medium",
+      "recommended": "7.29.1",
+      "references": [
+        "https://github.com/advisories/GHSA-3xpg-4rpp-hhhm",
+        "https://github.com/nodejs/undici/security/advisories/GHSA-3xpg-4rpp-hhhm",
+        "https://github.com/nodejs/undici/commit/7aac7f12f757844763c8b8f1ab6e305e80d55838",
+        "https://github.com/nodejs/undici/releases/tag/v8.10.2",
+        "https://cwe.mitre.org/data/definitions/400.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "t1qr5SCE7mMtPfMfGyvL0hrbu+11wIEiEDwvVmMpWGg=",
+      "cve": "CVE-2026-109932",
+      "severity": "High",
+      "recommended": "7.30.1",
+      "references": [
+        "https://github.com/advisories/GHSA-9fm3-97px-rjf6"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "571OWza179XO0sIEaGFA+aSJXqiwZPg33j1y05bEEKs=",
+      "cve": "CVE-2026-12151",
+      "severity": "High",
+      "recommended": "7.28.0",
+      "references": [
+        "https://github.com/advisories/GHSA-vxpw-j846-p89q",
+        "https://github.com/nodejs/undici/security/advisories/GHSA-vxpw-j846-p89q",
+        "https://github.com/nodejs/undici/commit/b7f252e7",
+        "https://github.com/nodejs/undici/commit/8cb10f98",
+        "https://github.com/nodejs/undici/commit/32dbf0b3",
+        "https://github.com/nodejs/undici/releases/tag/v6.27.0",
+        "https://github.com/nodejs/undici/releases/tag/v7.28.0",
+        "https://github.com/nodejs/undici/releases/tag/v8.5.0",
+        "https://cna.openjsf.org/security-advisories.html",
+        "https://cwe.mitre.org/data/definitions/200.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "dyT/3f8J7lUIimhUmpLRQV4ykGL/Ob+jrmpTdIjZT94=",
+      "cve": "CVE-2026-84933",
+      "severity": "High",
+      "recommended": "7.29.1",
+      "references": [
+        "https://github.com/advisories/GHSA-2jfj-6hjv-fm6j",
+        "https://github.com/nodejs/undici/security/advisories/GHSA-2jfj-6hjv-fm6j",
+        "https://github.com/nodejs/undici/releases/tag/v8.10.2",
+        "https://github.com/nodejs/undici/commit/cb75bbb34224a968b4ad80cab8b7aba5e0b3b28a"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "oOINVatHfSxhXvntLAByfNq2EAfLvkCQ8qtB/MF0R8A=",
+      "cve": "CVE-2026-120415",
+      "severity": "Medium",
+      "recommended": "7.30.2",
+      "references": [],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "PY3ivzYiMHVUgF5uJpldRer/HbwJq10iG2S5TdQ8m7Y=",
+      "cve": "CVE-2026-13697",
+      "severity": "Critical",
+      "recommended": "7.29.0",
+      "references": [
+        "https://github.com/advisories/GHSA-4cwx-7wf7-3272",
+        "https://github.com/nodejs/undici/security/advisories/GHSA-4cwx-7wf7-3272",
+        "https://cna.openjsf.org/security-advisories.html",
+        "https://cwe.mitre.org/data/definitions/436.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "Y5HXoCBL3JB7mADQ7A+GYJjPOmb3V3/fcdjVR6dWui0=",
+      "cve": "CVE-2026-14643",
+      "severity": "High",
+      "recommended": "7.29.0",
+      "references": [
+        "https://github.com/advisories/GHSA-jr45-8vmc-qm54",
+        "https://github.com/nodejs/undici/security/advisories/GHSA-jr45-8vmc-qm54",
+        "https://cwe.mitre.org/data/definitions/346.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "yPjJPBRqvu91T1A3sffIR95CNxgtY8sd04w1ILYRwiw=",
+      "cve": "CVE-2026-6734",
+      "severity": "High",
+      "recommended": "7.28.0",
+      "references": [
+        "https://github.com/advisories/GHSA-hm92-r4w5-c3mj",
+        "https://github.com/nodejs/undici/security/advisories/GHSA-hm92-r4w5-c3mj",
+        "https://github.com/nodejs/undici/pull/5041",
+        "https://github.com/nodejs/undici/commit/a516f87098aad3c2daedfc24eada6f5a1594ed9e",
+        "https://github.com/nodejs/undici/releases/tag/v8.2.0"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "U9nCslnWC4ISoUoNMjYRy4n442RzpSOf8EVx3AJDL9w=",
+      "cve": "CVE-2026-116630",
+      "severity": "Medium",
+      "recommended": "7.30.2",
+      "references": [],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "VMUP715xMZK9eDnOz1R5aNG4zXOrAwgNA4ZfOOLUQn4=",
+      "cve": "CVE-2026-109829",
+      "severity": "Critical",
+      "recommended": "7.30.1",
+      "references": [
+        "https://github.com/advisories/GHSA-4w7w-5xrc-9h26",
+        "https://github.com/nodejs/undici/security/advisories/GHSA-4w7w-5xrc-9h26",
+        "https://cwe.mitre.org/data/definitions/354.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "p6CHlls6BEzXtv4Nus7PF/eNVev5PquFoVzt6YlIjYs=",
+      "cve": "CVE-2026-120423",
+      "severity": "Medium",
+      "recommended": "7.30.2",
+      "references": [
+        "https://cwe.mitre.org/data/definitions/524.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "UfouBN7p81a+YkGY5IAlU1lqpRm2E/CfbCcfG4hKUCE=",
+      "cve": "CVE-2026-120474",
+      "severity": "Medium",
+      "recommended": "7.30.2",
+      "references": [],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "RYCQHaGFPlKy3p84JlVjKK7qk0Zd8tBE49s4v28dCuM=",
+      "cve": "CVE-2026-9678",
+      "severity": "Medium",
+      "recommended": "7.28.0",
+      "references": [
+        "https://github.com/advisories/GHSA-pr7r-676h-xcf6",
+        "https://cwe.mitre.org/data/definitions/93.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "kUfJWmrOT0i+j5nhJK+Rt0GMyq+0gHJUut9/lwC27Pw=",
+      "cve": "CVE-2026-15157",
+      "severity": "Medium",
+      "recommended": "7.29.0",
+      "references": [
+        "https://github.com/advisories/GHSA-m8rv-5g2x-5cg5",
+        "https://github.com/nodejs/undici/security/advisories/GHSA-m8rv-5g2x-5cg5"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "nmnQaCxRg7gcrvVrX0Jn2q4pS2ewd1WRzBv2WV292T0=",
+      "cve": "CVE-2026-9679",
+      "severity": "Medium",
+      "recommended": "7.28.0",
+      "references": [
+        "https://github.com/advisories/GHSA-p88m-4jfj-68fv",
+        "https://cwe.mitre.org/data/definitions/444.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "iolTTPxvuk+2kHwtBpuUeY5GhrlE1VMlUkLGefYWJg8=",
+      "cve": "CVE-2026-16728",
+      "severity": "Medium",
+      "recommended": "7.29.0",
+      "references": [
+        "https://github.com/advisories/GHSA-8xcm-r25x-g524",
+        "https://github.com/nodejs/undici/security/advisories/GHSA-8xcm-r25x-g524"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "eF1h4tVKb/0r1RQxmTF5C4+zkCTIybN34e4CldidFYk=",
+      "cve": "CVE-2026-18540",
+      "severity": "Low",
+      "recommended": "7.29.1",
+      "references": [
+        "https://github.com/advisories/GHSA-r53p-7pc4-xj5r",
+        "https://github.com/nodejs/undici/security/advisories/GHSA-r53p-7pc4-xj5r",
+        "https://github.com/nodejs/undici/commit/0160a719063fb0a77f4fdf9500b9166b91e14329",
+        "https://github.com/nodejs/undici/releases/tag/v8.10.2",
+        "https://cwe.mitre.org/data/definitions/74.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "MOuRCl4of7YOTMXrlFy5uj7qu0FgBvM8kdqAJq2Yqks=",
+      "cve": "CVE-2026-16729",
+      "severity": "Medium",
+      "recommended": "7.29.0",
+      "references": [
+        "https://github.com/advisories/GHSA-v3r7-h72x-cjcm",
+        "https://cwe.mitre.org/data/definitions/772.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "bhkm4e/I4CAhToXV6CiSQZrGAu5GwxoxYH13WdZTqDc=",
+      "cve": "CVE-2026-18149",
+      "severity": "Medium",
+      "recommended": "7.29.1",
+      "references": [
+        "https://github.com/advisories/GHSA-pmjh-fq2x-6v4x",
+        "https://github.com/nodejs/undici/security/advisories/GHSA-pmjh-fq2x-6v4x",
+        "https://github.com/nodejs/undici/releases/tag/v8.10.2",
+        "https://github.com/nodejs/undici/commit/e905b5b87e6953bcc542af90557b2fee5b7b5974",
+        "https://cwe.mitre.org/data/definitions/20.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "VPz2H0DV+8PSwtrtLNh45/QDdF8VL/saT+fGug+bOFc=",
+      "cve": "CVE-2026-84947",
+      "severity": "Medium",
+      "recommended": "7.29.1",
+      "references": [
+        "https://github.com/advisories/GHSA-2gqq-gqf2-x968",
+        "https://github.com/nodejs/undici/security/advisories/GHSA-2gqq-gqf2-x968",
+        "https://github.com/nodejs/undici/commit/6d583124e7cf60b640097d64144ed633cc450584",
+        "https://github.com/nodejs/undici/releases/tag/v8.10.2",
+        "https://cwe.mitre.org/data/definitions/345.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "vXTNCdqrl21LakEaeU5SUBdTZen6jDcmm742vogkAvM=",
+      "cve": "CVE-2026-85008",
+      "severity": "Medium",
+      "recommended": "7.29.1",
+      "references": [
+        "https://github.com/advisories/GHSA-8436-99hf-9mmv",
+        "https://github.com/nodejs/undici/security/advisories/GHSA-8436-99hf-9mmv",
+        "https://github.com/nodejs/undici/commit/2be07bf97b3022e0324142d31f99f6e019d815e3",
+        "https://github.com/nodejs/undici/releases/tag/v8.10.2",
+        "https://cwe.mitre.org/data/definitions/183.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "+jSCHCwjmhGKiZd6y+5No/GkSOWR3/skBi2+IzWrIWw=",
+      "cve": "CVE-2026-11525",
+      "severity": "Low",
+      "recommended": "7.28.0",
+      "references": [
+        "https://github.com/advisories/GHSA-g8m3-5g58-fq7m",
+        "https://cwe.mitre.org/data/definitions/367.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "undici",
+      "scannedVersion": "7.24.8",
+      "id": "IhmX6rEWw8uDVcfDTx+6xh8ewX4fQ1ugx3sMJRMO7wk=",
+      "cve": "CVE-2026-6733",
+      "severity": "Low",
+      "recommended": "7.28.0",
+      "references": [
+        "https://github.com/advisories/GHSA-35p6-xmwp-9g52",
+        "https://github.com/nodejs/undici/security/advisories/GHSA-35p6-xmwp-9g52",
+        "https://hackerone.com/reports/3582376"
+      ],
+      "current": [
+        {
+          "path": "node_modules/undici",
+          "name": "undici",
+          "version": "7.30.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "zod",
+      "scannedVersion": "3.25.76",
+      "id": "wdu2LMe4WkDam3dc7XgV1ViZMh9rIeEFbdDy43XdRyM=",
+      "cve": "CVE-2023-54404",
+      "severity": "High",
+      "recommended": "4.6.6",
+      "references": [
+        "https://github.com/advisories/GHSA-mrhx-c7xc-m3w5"
+      ],
+      "current": [
+        {
+          "path": "node_modules/zod",
+          "name": "zod",
+          "version": "4.6.7"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "esbuild",
+      "scannedVersion": "0.18.20",
+      "id": "w5KdYISpR1gjSawDT9i+ZS0Vz99xJxyg9WbnzPg5HQ4=",
+      "cve": "Cxa83491f0-29a9",
+      "severity": "High",
+      "recommended": "0.28.1",
+      "references": [
+        "https://github.com/advisories/GHSA-gv7w-rqvm-qjhr",
+        "https://cwe.mitre.org/data/definitions/346.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/esbuild",
+          "name": "esbuild",
+          "version": "0.28.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "esbuild",
+      "scannedVersion": "0.18.20",
+      "id": "VAb77vZRJ8xUWQSgmM+Y9k9qO27RJ/9pMNL0DRoTP/g=",
+      "cve": "Cxbb85e86c-2fac",
+      "severity": "Medium",
+      "recommended": "0.25.0",
+      "references": [
+        "https://github.com/advisories/GHSA-67mh-4wv8-2f99",
+        "https://github.com/evanw/esbuild/releases/tag/v0.25.0",
+        "https://github.com/evanw/esbuild/commit/de85afd65edec9ebc44a11e245fd9e9a2e99760d"
+      ],
+      "current": [
+        {
+          "path": "node_modules/esbuild",
+          "name": "esbuild",
+          "version": "0.28.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "brace-expansion",
+      "scannedVersion": "1.1.14",
+      "id": "+o8yeSidODANzXKIR28TJvSEjC4YL97SUmti7ZYC60Q=",
+      "cve": "CVE-2026-102278",
+      "severity": "High",
+      "recommended": "1.1.20",
+      "references": [
+        "https://github.com/advisories/GHSA-qhr7-859c-m2p7",
+        "https://github.com/juliangruber/brace-expansion/security/advisories/GHSA-qhr7-859c-m2p7",
+        "https://github.com/juliangruber/brace-expansion/commit/935d78f32f335b2ff76578e5c5e877d31ae9888c"
+      ],
+      "current": [
+        {
+          "path": "node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "5.0.12"
+        },
+        {
+          "path": "node_modules/minimatch/node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "1.1.21"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "brace-expansion",
+      "scannedVersion": "1.1.14",
+      "id": "VMKKKCi8gfW7aVcOHFCUIFFFE6VJDOnrE1dH6HJJv9Q=",
+      "cve": "CVE-2026-13149",
+      "severity": "High",
+      "recommended": "1.1.16",
+      "references": [
+        "https://github.com/advisories/GHSA-3jxr-9vmj-r5cp",
+        "https://github.com/juliangruber/brace-expansion/commit/c7e33ec13ac1a684c116720843ce24e208611754"
+      ],
+      "current": [
+        {
+          "path": "node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "5.0.12"
+        },
+        {
+          "path": "node_modules/minimatch/node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "1.1.21"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "brace-expansion",
+      "scannedVersion": "1.1.14",
+      "id": "VFw5tMgDF/NFn4/DxuJd+1KSx0z15hZPKQ/QuH2T6Yg=",
+      "cve": "CVE-2026-14257",
+      "severity": "High",
+      "recommended": "1.1.17",
+      "references": [
+        "https://github.com/advisories/GHSA-mh99-v99m-4gvg",
+        "https://github.com/juliangruber/brace-expansion/commit/a1bd33999ea75262c4749fff3bbb0d1372bd07b5"
+      ],
+      "current": [
+        {
+          "path": "node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "5.0.12"
+        },
+        {
+          "path": "node_modules/minimatch/node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "1.1.21"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "brace-expansion",
+      "scannedVersion": "1.1.14",
+      "id": "eSGaL9vzlEZJwOO5oftrc87oEZbBDQYmFU1DBoSQe9I=",
+      "cve": "CVE-2026-69152",
+      "severity": "High",
+      "recommended": "1.1.18",
+      "references": [
+        "https://github.com/advisories/GHSA-rgw5-rvv9-x895",
+        "https://github.com/juliangruber/brace-expansion/commit/688a99eeaab02627c2b89ba8ba4821fecfa659cf"
+      ],
+      "current": [
+        {
+          "path": "node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "5.0.12"
+        },
+        {
+          "path": "node_modules/minimatch/node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "1.1.21"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "brace-expansion",
+      "scannedVersion": "1.1.14",
+      "id": "VEsikHs95IGyu6Al+0g4j+Om64yUDxIShxe0rk73VCc=",
+      "cve": "CVE-2026-102276",
+      "severity": "High",
+      "recommended": "1.1.19",
+      "references": [
+        "https://github.com/advisories/GHSA-6j4f-fj2g-mc7p",
+        "https://github.com/juliangruber/brace-expansion/security/advisories/GHSA-6j4f-fj2g-mc7p",
+        "https://github.com/juliangruber/brace-expansion/commit/6735c94873ca570bcdd6a0690033bdd3126379d3"
+      ],
+      "current": [
+        {
+          "path": "node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "5.0.12"
+        },
+        {
+          "path": "node_modules/minimatch/node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "1.1.21"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "brace-expansion",
+      "scannedVersion": "1.1.14",
+      "id": "AsBErB3PoDt6MUYGAwYSUGTHv/6CjqgDsXgVWUVgPmw=",
+      "cve": "CVE-2026-102277",
+      "severity": "Medium",
+      "recommended": "1.1.21",
+      "references": [
+        "https://github.com/advisories/GHSA-q2hr-2g5m-vwhr",
+        "https://github.com/juliangruber/brace-expansion/commit/33a5ef17b8d800bbfa8c52b14c39043b6aac1a96"
+      ],
+      "current": [
+        {
+          "path": "node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "5.0.12"
+        },
+        {
+          "path": "node_modules/minimatch/node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "1.1.21"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "esbuild",
+      "scannedVersion": "0.25.12",
+      "id": "hqmc38FnfnKIg4VqdG+KVIBnUZAyCJanNyhsisg921Y=",
+      "cve": "Cxa83491f0-29a9",
+      "severity": "High",
+      "recommended": "0.28.1",
+      "references": [
+        "https://github.com/advisories/GHSA-gv7w-rqvm-qjhr"
+      ],
+      "current": [
+        {
+          "path": "node_modules/esbuild",
+          "name": "esbuild",
+          "version": "0.28.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "esbuild",
+      "scannedVersion": "0.27.3",
+      "id": "VtwcsSNd7O3S4OyAKf4zDzQY8k1RfyoPK1WWGAs3nc0=",
+      "cve": "Cxa83491f0-29a9",
+      "severity": "High",
+      "recommended": "0.28.1",
+      "references": [
+        "https://github.com/advisories/GHSA-gv7w-rqvm-qjhr"
+      ],
+      "current": [
+        {
+          "path": "node_modules/esbuild",
+          "name": "esbuild",
+          "version": "0.28.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "esbuild",
+      "scannedVersion": "0.28.0",
+      "id": "wwrVEwULrv+2AoiA3cwqpVUFqyzxE1XkPEeLrxZ2jpc=",
+      "cve": "Cxa83491f0-29a9",
+      "severity": "High",
+      "recommended": "0.28.1",
+      "references": [
+        "https://github.com/advisories/GHSA-gv7w-rqvm-qjhr"
+      ],
+      "current": [
+        {
+          "path": "node_modules/esbuild",
+          "name": "esbuild",
+          "version": "0.28.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "ws",
+      "scannedVersion": "8.18.0",
+      "id": "LioIBamVWB4BRWutOyybVNTqOeDiekK0HCJwd2o3GwE=",
+      "cve": "CVE-2026-62389",
+      "severity": "High",
+      "recommended": "8.21.1",
+      "references": [
+        "https://github.com/advisories/GHSA-73jw-fp74-p77x",
+        "https://github.com/websockets/ws/issues/2331",
+        "https://github.com/websockets/ws/commit/f197ac65140920bdcecdab74bfc69c2d7858e55d",
+        "https://github.com/websockets/ws/releases/tag/8.21.1",
+        "https://cwe.mitre.org/data/definitions/400.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/ws",
+          "name": "ws",
+          "version": "8.22.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "ws",
+      "scannedVersion": "8.18.0",
+      "id": "8hAmlx6AuPa3DB97/ErI9tELjoGjuZEUChu+Yz01V4I=",
+      "cve": "CVE-2026-48779",
+      "severity": "High",
+      "recommended": "8.21.0",
+      "references": [
+        "https://github.com/advisories/GHSA-96hv-2xvq-fx4p",
+        "https://cwe.mitre.org/data/definitions/908.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/ws",
+          "name": "ws",
+          "version": "8.22.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "ws",
+      "scannedVersion": "8.18.0",
+      "id": "z/HzIwMqa5Ph4xA9K7zmZsuL1hYEy0NI8GE2N+4CBGA=",
+      "cve": "CVE-2026-45736",
+      "severity": "High",
+      "recommended": "8.20.1",
+      "references": [
+        "https://github.com/advisories/GHSA-58qx-3vcg-4xpx",
+        "https://github.com/websockets/ws/commit/c0327ec15a54d701eb6ccefaa8bef328cfc03086",
+        "https://github.com/websockets/ws/releases/tag/8.20.1"
+      ],
+      "current": [
+        {
+          "path": "node_modules/ws",
+          "name": "ws",
+          "version": "8.22.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "brace-expansion",
+      "scannedVersion": "5.0.6",
+      "id": "y3zRqUOezfQVcuAZF7FyFEFydYK6M3Sd8dOmxPjuNro=",
+      "cve": "CVE-2026-102276",
+      "severity": "High",
+      "recommended": "5.0.10",
+      "references": [
+        "https://github.com/advisories/GHSA-6j4f-fj2g-mc7p",
+        "https://github.com/juliangruber/brace-expansion/security/advisories/GHSA-6j4f-fj2g-mc7p",
+        "https://github.com/juliangruber/brace-expansion/commit/6735c94873ca570bcdd6a0690033bdd3126379d3"
+      ],
+      "current": [
+        {
+          "path": "node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "5.0.12"
+        },
+        {
+          "path": "node_modules/minimatch/node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "1.1.21"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "brace-expansion",
+      "scannedVersion": "5.0.6",
+      "id": "cKyf3jKXr+XnocCME9vpVmAA7WTBOZP24J0hujthmf0=",
+      "cve": "CVE-2026-102278",
+      "severity": "High",
+      "recommended": "5.0.11",
+      "references": [
+        "https://github.com/advisories/GHSA-qhr7-859c-m2p7",
+        "https://github.com/juliangruber/brace-expansion/security/advisories/GHSA-qhr7-859c-m2p7",
+        "https://github.com/juliangruber/brace-expansion/commit/935d78f32f335b2ff76578e5c5e877d31ae9888c"
+      ],
+      "current": [
+        {
+          "path": "node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "5.0.12"
+        },
+        {
+          "path": "node_modules/minimatch/node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "1.1.21"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "brace-expansion",
+      "scannedVersion": "5.0.6",
+      "id": "6DyYGX8QJM4Ojgqb7pAfnfEvlxoCZWvdF0qnVnQ8tBM=",
+      "cve": "CVE-2026-13149",
+      "severity": "High",
+      "recommended": "5.0.7",
+      "references": [
+        "https://github.com/advisories/GHSA-3jxr-9vmj-r5cp",
+        "https://github.com/juliangruber/brace-expansion/commit/c7e33ec13ac1a684c116720843ce24e208611754"
+      ],
+      "current": [
+        {
+          "path": "node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "5.0.12"
+        },
+        {
+          "path": "node_modules/minimatch/node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "1.1.21"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "brace-expansion",
+      "scannedVersion": "5.0.6",
+      "id": "AHWcE0cIWDjPQdqze/5vpRs4d73ZhAoU4JWAkTWliO4=",
+      "cve": "CVE-2026-14257",
+      "severity": "High",
+      "recommended": "5.0.8",
+      "references": [
+        "https://github.com/advisories/GHSA-mh99-v99m-4gvg",
+        "https://github.com/juliangruber/brace-expansion/commit/a1bd33999ea75262c4749fff3bbb0d1372bd07b5"
+      ],
+      "current": [
+        {
+          "path": "node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "5.0.12"
+        },
+        {
+          "path": "node_modules/minimatch/node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "1.1.21"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "brace-expansion",
+      "scannedVersion": "5.0.6",
+      "id": "RaK/EW8uMbtzP+0EVXG1mB0M3MNkQ3BziBozZSE6gIc=",
+      "cve": "CVE-2026-69152",
+      "severity": "High",
+      "recommended": "5.0.9",
+      "references": [
+        "https://github.com/advisories/GHSA-rgw5-rvv9-x895",
+        "https://github.com/juliangruber/brace-expansion/commit/688a99eeaab02627c2b89ba8ba4821fecfa659cf"
+      ],
+      "current": [
+        {
+          "path": "node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "5.0.12"
+        },
+        {
+          "path": "node_modules/minimatch/node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "1.1.21"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "brace-expansion",
+      "scannedVersion": "5.0.6",
+      "id": "RDzTFDCtquCOldCQeim2qn9eyj8ktgGLREuJc2zn2w0=",
+      "cve": "CVE-2026-102277",
+      "severity": "Medium",
+      "recommended": "5.0.12",
+      "references": [
+        "https://github.com/advisories/GHSA-q2hr-2g5m-vwhr",
+        "https://github.com/juliangruber/brace-expansion/commit/33a5ef17b8d800bbfa8c52b14c39043b6aac1a96"
+      ],
+      "current": [
+        {
+          "path": "node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "5.0.12"
+        },
+        {
+          "path": "node_modules/minimatch/node_modules/brace-expansion",
+          "name": "brace-expansion",
+          "version": "1.1.21"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "image-size",
+      "scannedVersion": "2.0.2",
+      "id": "uSI47eMBpA/Gc6BPZpPjkozXFWvnfxs8tAoNWjCFpnA=",
+      "cve": "CVE-2025-71329",
+      "severity": "High",
+      "recommended": "2.0.3",
+      "references": [
+        "https://github.com/advisories/GHSA-5p2g-fcmc-qvqq"
+      ],
+      "current": [],
+      "disposition": "removed",
+      "evidence": "Component absent from the resolved installed dependency tree."
+    },
+    {
+      "package": "image-size",
+      "scannedVersion": "2.0.2",
+      "id": "XhTGDkHEi6161npPWLI9Hi+pnGW9UOWYI7i3V97cOl0=",
+      "cve": "CVE-2025-71330",
+      "severity": "High",
+      "recommended": "2.0.3",
+      "references": [
+        "https://github.com/advisories/GHSA-w3rx-r6r6-pgpr"
+      ],
+      "current": [],
+      "disposition": "removed",
+      "evidence": "Component absent from the resolved installed dependency tree."
+    },
+    {
+      "package": "js-yaml",
+      "scannedVersion": "4.1.1",
+      "id": "RNmbJmlYl9kvBT0KN3NtecWUVuWrYRnXyQrBHhCDStk=",
+      "cve": "CVE-2026-59869",
+      "severity": "High",
+      "recommended": "4.3.0",
+      "references": [
+        "https://github.com/advisories/GHSA-52cp-r559-cp3m",
+        "https://github.com/nodeca/js-yaml/security/advisories/GHSA-52cp-r559-cp3m",
+        "https://github.com/nodeca/js-yaml/commit/3105455b81dee69e0fd36e09ac0b2ccfdb54adc1"
+      ],
+      "current": [
+        {
+          "path": "node_modules/js-yaml",
+          "name": "js-yaml",
+          "version": "4.3.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "js-yaml",
+      "scannedVersion": "4.1.1",
+      "id": "+fD0qlzDCeAlRHR62uMvTXZMir8CycxeXqiBZah1a6o=",
+      "cve": "Cx0e1b35ca-f68b",
+      "severity": "High",
+      "recommended": "4.3.1",
+      "references": [
+        "https://github.com/advisories/GHSA-5p4m-2wfm-xmqj"
+      ],
+      "current": [
+        {
+          "path": "node_modules/js-yaml",
+          "name": "js-yaml",
+          "version": "4.3.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "js-yaml",
+      "scannedVersion": "4.1.1",
+      "id": "fGSZtFQu7SVGvmchcEu4SoddvErupwX+6AVO6zS+LYA=",
+      "cve": "CVE-2026-53550",
+      "severity": "Medium",
+      "recommended": "4.2.0",
+      "references": [
+        "https://github.com/advisories/GHSA-h67p-54hq-rp68",
+        "https://cwe.mitre.org/data/definitions/400.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/js-yaml",
+          "name": "js-yaml",
+          "version": "4.3.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "js-yaml",
+      "scannedVersion": "4.1.1",
+      "id": "WN/ltgiQlS1CFjXN/e0s7+Q4lHDIPST1XHA27v5v2YQ=",
+      "cve": "CVE-2026-84375",
+      "severity": "High",
+      "recommended": "4.3.2",
+      "references": [
+        "https://github.com/advisories/GHSA-2883-xcg3-v3hh",
+        "https://github.com/nodeca/js-yaml/security/advisories/GHSA-2883-xcg3-v3hh",
+        "https://github.com/nodeca/js-yaml/pull/797",
+        "https://github.com/nodeca/js-yaml/commit/6a8e05f9a485188ed730ac81e81ae221352ef480"
+      ],
+      "current": [
+        {
+          "path": "node_modules/js-yaml",
+          "name": "js-yaml",
+          "version": "4.3.2"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "next",
+      "scannedVersion": "16.3.4",
+      "id": "YdhO/GdusN/jepgaDGfdlewNuEBxWtGQiFbnbQA0EdU=",
+      "cve": "CVE-2026-94482",
+      "severity": "High",
+      "recommended": "16.4.1",
+      "references": [
+        "https://github.com/advisories/GHSA-p3m5-59mp-jv5r",
+        "https://cwe.mitre.org/data/definitions/918.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/next",
+          "name": "next",
+          "version": "16.5.0-canary.45"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "next",
+      "scannedVersion": "16.3.4",
+      "id": "Bc4E6kNZF9Rf3MTuswyUwg6iMOYhdNHqhig7OlMiRc4=",
+      "cve": "CVE-2026-94483",
+      "severity": "High",
+      "recommended": "16.3.8",
+      "references": [
+        "https://github.com/advisories/GHSA-cjq9-62q9-8jv4",
+        "https://github.com/vercel/next.js/security/advisories/GHSA-cjq9-62q9-8jv4",
+        "https://github.com/vercel/next.js/commit/e002ad68bd676bb0ed0c87bb22e3590304763e0b",
+        "https://github.com/vercel/next.js/releases/tag/v16.3.8",
+        "https://cwe.mitre.org/data/definitions/524.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/next",
+          "name": "next",
+          "version": "16.5.0-canary.45"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "next",
+      "scannedVersion": "16.3.4",
+      "id": "EaUrqqyXAtT8Ggl0kc/ewnMOxYSaxTW2hL/ViZGpPSE=",
+      "cve": "CVE-2026-103004",
+      "severity": "Medium",
+      "recommended": "16.3.8",
+      "references": [
+        "https://github.com/advisories/GHSA-h694-7cp9-m8p3"
+      ],
+      "current": [
+        {
+          "path": "node_modules/next",
+          "name": "next",
+          "version": "16.5.0-canary.45"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "next",
+      "scannedVersion": "16.3.4",
+      "id": "WiekOFQgk90n6QB9I1lTOiBAQF3eF1xepYV7rEJ4BYM=",
+      "cve": "CVE-2026-94484",
+      "severity": "Medium",
+      "recommended": "16.3.8",
+      "references": [
+        "https://github.com/advisories/GHSA-mcj8-r9mp-w47p",
+        "https://github.com/vercel/next.js/pull/218",
+        "https://github.com/vercel/next.js/commit/719e4c67d6e92df60246f95e1d96e2dd60789a52",
+        "https://github.com/vercel/next.js/releases/tag/v16.3.8"
+      ],
+      "current": [
+        {
+          "path": "node_modules/next",
+          "name": "next",
+          "version": "16.5.0-canary.45"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "next",
+      "scannedVersion": "16.3.4",
+      "id": "AWqPfIWYTLUT2LKA1fwU46idsAeA94QMC+x+eghpz/A=",
+      "cve": "CVE-2026-94543",
+      "severity": "Medium",
+      "recommended": "16.3.8",
+      "references": [
+        "https://github.com/advisories/GHSA-4jqv-mc3x-m676"
+      ],
+      "current": [
+        {
+          "path": "node_modules/next",
+          "name": "next",
+          "version": "16.5.0-canary.45"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "next",
+      "scannedVersion": "16.3.4",
+      "id": "V+CsvUgqjGhDNkCbbhHKiDqgp3IM+ScHWoju5E1cGWc=",
+      "cve": "CVE-2026-94544",
+      "severity": "Medium",
+      "recommended": "16.3.8",
+      "references": [
+        "https://github.com/advisories/GHSA-3w37-wq28-93x7",
+        "https://github.com/vercel/next.js/commit/bd9214f9a32854a011bf5fe58e481dffe1bbf598",
+        "https://github.com/vercel/next.js/releases/tag/v16.3.8",
+        "https://cwe.mitre.org/data/definitions/346.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/next",
+          "name": "next",
+          "version": "16.5.0-canary.45"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "next",
+      "scannedVersion": "16.3.4",
+      "id": "GWTiVzvqOPeP4wshFjaC8P7FSDIryE2qHSntA+XblUk=",
+      "cve": "CVE-2026-94485",
+      "severity": "Medium",
+      "recommended": "16.3.8",
+      "references": [
+        "https://github.com/advisories/GHSA-f87g-xv8r-7p7x",
+        "https://github.com/vercel/next.js/issues/213",
+        "https://github.com/vercel/next.js/commit/2d9f50a409312696145b82b3157aadb6b1fef476",
+        "https://github.com/vercel/next.js/releases/tag/v16.3.8"
+      ],
+      "current": [
+        {
+          "path": "node_modules/next",
+          "name": "next",
+          "version": "16.5.0-canary.45"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "next",
+      "scannedVersion": "16.3.4",
+      "id": "NtnS+kvzg8BYJ1e7fxSaYv4/UdMeNvjd2pRpVRvwg4A=",
+      "cve": "CVE-2026-94486",
+      "severity": "Low",
+      "recommended": "16.3.8",
+      "references": [
+        "https://github.com/advisories/GHSA-39w2-rjm5-chcv",
+        "https://github.com/vercel/next.js/issues/213",
+        "https://github.com/vercel/next.js/commit/2d9f50a409312696145b82b3157aadb6b1fef476",
+        "https://github.com/vercel/next.js/releases/tag/v16.3.8",
+        "https://cwe.mitre.org/data/definitions/1395.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/next",
+          "name": "next",
+          "version": "16.5.0-canary.45"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "next",
+      "scannedVersion": "16.3.4",
+      "id": "58Vr5xpvFXCgLwcCl3JUvxIMubh/7yufLkKFcmu4M24=",
+      "cve": "Cx4d0219bd-432f",
+      "severity": "Critical",
+      "recommended": "16.4.1",
+      "references": [
+        "https://github.com/advisories/GHSA-2464-fhr4-w9xw",
+        "https://cwe.mitre.org/data/definitions/116.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/next",
+          "name": "next",
+          "version": "16.5.0-canary.45"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "next",
+      "scannedVersion": "16.3.4",
+      "id": "ukPznkEs97kqMI9awCCMDH6IN1pzH3xiXyeNCozXJYQ=",
+      "cve": "CVE-2026-94545",
+      "severity": "Critical",
+      "recommended": "16.3.6",
+      "references": [
+        "https://github.com/advisories/GHSA-wx4j-mvgx-mqwp",
+        "https://github.com/vercel/next.js/security/advisories/GHSA-vcvr-r3jv-pc5j",
+        "https://thehackernews.com/2026/09/critical-nextjs-imageresponse-flaw-can.html?m=1",
+        "https://github.com/vercel/next.js/commit/868fad38690d72088868f299fa2bef339b26838e",
+        "https://github.com/vercel/next.js/releases/tag/v16.3.6",
+        "https://cwe.mitre.org/data/definitions/502.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/next",
+          "name": "next",
+          "version": "16.5.0-canary.45"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "next",
+      "scannedVersion": "16.3.4",
+      "id": "qG7aIG3I9V7saZc+RrRd84yUslvlnWmmO4zR/djDUn4=",
+      "cve": "Cx61e93c63-e4fb",
+      "severity": "Critical",
+      "recommended": "16.4.2",
+      "references": [
+        "https://github.com/advisories/GHSA-673q-mjm6-r5xr",
+        "https://github.com/vercel/next.js/commit/a4cea6aec5da89d116b8960e113189cf51745d2f",
+        "https://github.com/vercel/next.js/releases/tag/v16.4.1"
+      ],
+      "current": [
+        {
+          "path": "node_modules/next",
+          "name": "next",
+          "version": "16.5.0-canary.45"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "braces",
+      "scannedVersion": "3.0.3",
+      "id": "/YkcAkkfhqsuIVdPbkH50TMdKRAnKW2QF1pMxTXiZ1Q=",
+      "cve": "CVE-2026-93687",
+      "severity": "High",
+      "recommended": "N/A",
+      "references": [
+        "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm",
+        "https://github.com/micromatch/braces/issues/70"
+      ],
+      "current": [
+        {
+          "path": "node_modules/braces",
+          "name": "braces",
+          "version": "3.0.3"
+        }
+      ],
+      "disposition": "withdrawn-upstream-requires-triage",
+      "evidence": "GHSA-vfj7-8cjw-p6xm was withdrawn by GitHub on 2026-10-23 as not practically exploitable. Request Checkmarx security triage; no clean Checkmarx result is claimed."
+    },
+    {
+      "package": "browserslist",
+      "scannedVersion": "4.28.2",
+      "id": "IosN+v43DsF1X8uq1JoWkhwDsYoNM/FyOFeRm/vMhXY=",
+      "cve": "CVE-2026-73088",
+      "severity": "High",
+      "recommended": "4.28.7",
+      "references": [
+        "https://github.com/advisories/GHSA-73wf-gq98-2v4g",
+        "https://github.com/browserslist/browserslist/security/advisories/GHSA-73wf-gq98-2v4g",
+        "https://github.com/browserslist/browserslist/commit/f9914ad9effc865ccc27d816255625890b31ca51",
+        "https://github.com/browserslist/browserslist/releases/tag/4.28.7",
+        "https://cwe.mitre.org/data/definitions/770.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/browserslist",
+          "name": "browserslist",
+          "version": "4.29.5"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "browserslist",
+      "scannedVersion": "4.28.2",
+      "id": "gEVS52VRZzthWcoRzEWVG9o3n73gSZ6ztKzSsl/gc/g=",
+      "cve": "CVE-2026-73089",
+      "severity": "High",
+      "recommended": "4.28.7",
+      "references": [
+        "https://github.com/advisories/GHSA-c83g-rgw3-j3cx",
+        "https://github.com/browserslist/browserslist/security/advisories/GHSA-c83g-rgw3-j3cx",
+        "https://github.com/browserslist/browserslist/commit/f2931a3ff2a3a31abf84ef01a7400b270aad6405",
+        "https://github.com/browserslist/browserslist/releases/tag/4.28.7"
+      ],
+      "current": [
+        {
+          "path": "node_modules/browserslist",
+          "name": "browserslist",
+          "version": "4.29.5"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "vite",
+      "scannedVersion": "8.0.13",
+      "id": "F0ZztGmFTQdC8dPy+jWwzZi9uCL21tpw3sXo7ah4l50=",
+      "cve": "CVE-2026-53571",
+      "severity": "High",
+      "recommended": "8.0.16",
+      "references": [
+        "https://vite.dev/config/server-options#server-fs-deny",
+        "https://github.com/advisories/GHSA-fx2h-pf6j-xcff",
+        "https://cwe.mitre.org/data/definitions/77.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/vite",
+          "name": "vite",
+          "version": "8.3.6"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "vite",
+      "scannedVersion": "8.0.13",
+      "id": "hDdO0OAc35Qiu8Ceu6CWof3mXT/KVdFYcsaiXgvTu64=",
+      "cve": "CVE-2026-112942",
+      "severity": "High",
+      "recommended": "8.1.6",
+      "references": [
+        "https://github.com/advisories/GHSA-587h-7wmj-h5pm",
+        "https://github.com/vitejs/launch-editor/commit/f13cd835d4b8e860b1d4d080ad8a490cc2463679",
+        "https://github.com/vitejs/launch-editor/releases/tag/v2.14.2",
+        "https://cwe.mitre.org/data/definitions/78.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/vite",
+          "name": "vite",
+          "version": "8.3.6"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "vite",
+      "scannedVersion": "8.0.13",
+      "id": "vF8mhtJARM3bnhhhFnv7rTjAv3T+x5lYydMHb+nMWEo=",
+      "cve": "CVE-2026-112943",
+      "severity": "Medium",
+      "recommended": "8.1.6",
+      "references": [
+        "https://github.com/advisories/GHSA-698v-4r3x-3vcv",
+        "https://cwe.mitre.org/data/definitions/88.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/vite",
+          "name": "vite",
+          "version": "8.3.6"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "vite",
+      "scannedVersion": "8.0.13",
+      "id": "+KdHQcB5/EtW0lHaO6dMX9mW71k6aWLnaRuA9Iqcxnw=",
+      "cve": "CVE-2026-112944",
+      "severity": "Medium",
+      "recommended": "8.1.6",
+      "references": [
+        "https://github.com/advisories/GHSA-r825-w8mm-5pxw",
+        "https://cwe.mitre.org/data/definitions/73.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/vite",
+          "name": "vite",
+          "version": "8.3.6"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "vite",
+      "scannedVersion": "8.0.13",
+      "id": "xzba81b69nLygw8e6h/Ghgkp5IU9GV8gBKqSeis9btY=",
+      "cve": "CVE-2026-53632",
+      "severity": "Medium",
+      "recommended": "8.0.16",
+      "references": [],
+      "current": [
+        {
+          "path": "node_modules/vite",
+          "name": "vite",
+          "version": "8.3.6"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "uri-js",
+      "scannedVersion": "4.4.1",
+      "id": "elDU9g6BfhlG8rpG1x+6Iuq6cgMq110i8SXZQ0ctx8M=",
+      "cve": "CVE-2026-93690",
+      "severity": "High",
+      "recommended": "N/A",
+      "references": [
+        "https://github.com/advisories/GHSA-ffpj-9hx9-929p",
+        "https://cwe.mitre.org/data/definitions/176.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/@eslint/eslintrc/node_modules/uri-js",
+          "name": "fast-uri",
+          "version": "3.1.9"
+        },
+        {
+          "path": "node_modules/eslint/node_modules/uri-js",
+          "name": "fast-uri",
+          "version": "3.1.9"
+        }
+      ],
+      "disposition": "replaced",
+      "evidence": "Original uri-js implementation replaced with fast-uri alias; Unicode termination and actual AJV6 relative-reference compatibility tests pass."
+    },
+    {
+      "package": "uri-js",
+      "scannedVersion": "4.4.1",
+      "id": "QBePHq+lH1oaRJEd9BGr6CbkvfFQmdFvta76jQw0I8Q=",
+      "cve": "CVE-2026-93751",
+      "severity": "Medium",
+      "recommended": "N/A",
+      "references": [
+        "https://github.com/advisories/GHSA-7g43-p94j-qr58",
+        "https://github.com/garycourt/uri-js/issues/106",
+        "https://github.com/garycourt/uri-js/blob/a1acf730b4bba3f1097c9f52e7d9d3aba8cdcaae/src/uri.ts#L103-L141"
+      ],
+      "current": [
+        {
+          "path": "node_modules/@eslint/eslintrc/node_modules/uri-js",
+          "name": "fast-uri",
+          "version": "3.1.9"
+        },
+        {
+          "path": "node_modules/eslint/node_modules/uri-js",
+          "name": "fast-uri",
+          "version": "3.1.9"
+        }
+      ],
+      "disposition": "replaced",
+      "evidence": "Original uri-js implementation replaced with fast-uri alias; Unicode termination and actual AJV6 relative-reference compatibility tests pass."
+    },
+    {
+      "package": "picomatch",
+      "scannedVersion": "2.3.2",
+      "id": "sBE7isAYaRfPfmRLL+ZeGu2IGrX4x8uM4JwEOEUkshs=",
+      "cve": "CVE-2026-112366",
+      "severity": "High",
+      "recommended": "N/A",
+      "references": [
+        "https://github.com/advisories/GHSA-fc5q-39xc-vjpf",
+        "https://github.com/micromatch/picomatch/pull/194"
+      ],
+      "current": [
+        {
+          "path": "node_modules/picomatch",
+          "name": "picomatch",
+          "version": "4.0.7+mirra.security.1"
+        }
+      ],
+      "disposition": "locally-patched-requires-review",
+      "evidence": "Auditable single-branch repeated-extglob guard; reproduced exploit now terminates in a 2-second isolated-process regression, including disabled optional recursion guard. Not an upstream release. Installed parse.js SHA256 a849fc60b71ad29e64bc291572d25021c12d9332306c9dec4b3348c8ac9e1c7f"
+    },
+    {
+      "package": "picomatch",
+      "scannedVersion": "4.0.4",
+      "id": "Krrh0lpTIn0A2j8iyoS9IhFqKtPNinUrr8K8rGR5+/A=",
+      "cve": "CVE-2026-112366",
+      "severity": "High",
+      "recommended": "N/A",
+      "references": [
+        "https://github.com/advisories/GHSA-fc5q-39xc-vjpf",
+        "https://github.com/micromatch/picomatch/pull/194"
+      ],
+      "current": [
+        {
+          "path": "node_modules/picomatch",
+          "name": "picomatch",
+          "version": "4.0.7+mirra.security.1"
+        }
+      ],
+      "disposition": "locally-patched-requires-review",
+      "evidence": "Auditable single-branch repeated-extglob guard; reproduced exploit now terminates in a 2-second isolated-process regression, including disabled optional recursion guard. Not an upstream release. Installed parse.js SHA256 a849fc60b71ad29e64bc291572d25021c12d9332306c9dec4b3348c8ac9e1c7f"
+    },
+    {
+      "package": "baseline-browser-mapping",
+      "scannedVersion": "2.10.30",
+      "id": "vkMZljwJ79de+2e6xSrl7TbKhuEmtBOe76YxAB8WHLw=",
+      "cve": "CVE-2026-45819",
+      "severity": "Medium",
+      "recommended": "2.11.0",
+      "references": [],
+      "current": [
+        {
+          "path": "node_modules/baseline-browser-mapping",
+          "name": "baseline-browser-mapping",
+          "version": "2.11.35"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "fast-uri",
+      "scannedVersion": "3.1.7",
+      "id": "sQRGWKrmQcVLRmx0W+2aT1lTg8+Qm+HOg3I6PGK6F50=",
+      "cve": "CVE-2026-110180",
+      "severity": "Medium",
+      "recommended": "3.1.9",
+      "references": [
+        "https://github.com/advisories/GHSA-wjr9-j795-jxcr",
+        "https://github.com/fastify/fast-uri/security/advisories/GHSA-wjr9-j795-jxcr",
+        "https://cwe.mitre.org/data/definitions/172.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/fast-uri",
+          "name": "fast-uri",
+          "version": "3.1.9"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "fast-uri",
+      "scannedVersion": "3.1.7",
+      "id": "Pih3SEbw3Atb1Sh+eqLJQRnR2WFnj9XJVGz1pAv96Ck=",
+      "cve": "CVE-2026-110306",
+      "severity": "Medium",
+      "recommended": "3.1.9",
+      "references": [
+        "https://github.com/advisories/GHSA-w74x-v6f9-j3xg",
+        "https://github.com/fastify/fast-uri/security/advisories/GHSA-w74x-v6f9-j3xg",
+        "https://cwe.mitre.org/data/definitions/178.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/fast-uri",
+          "name": "fast-uri",
+          "version": "3.1.9"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "fast-uri",
+      "scannedVersion": "3.1.7",
+      "id": "3ZaGbSl7f9yRXhtYmyUaEMrcCs69UDNAwc+boGdSEfI=",
+      "cve": "CVE-2026-86472",
+      "severity": "Medium",
+      "recommended": "3.1.8",
+      "references": [
+        "https://github.com/advisories/GHSA-hrr3-gc8f-f4qj",
+        "https://github.com/fastify/fast-uri/security/advisories/GHSA-hrr3-gc8f-f4qj",
+        "https://github.com/fastify/fast-uri/releases/tag/v4.1.5",
+        "https://cwe.mitre.org/data/definitions/41.html"
+      ],
+      "current": [
+        {
+          "path": "node_modules/fast-uri",
+          "name": "fast-uri",
+          "version": "3.1.9"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "fast-uri",
+      "scannedVersion": "3.1.7",
+      "id": "QoVxdROJKHV/1wwhCVe4iSBwODwvrpXTvmh2pgo1xA8=",
+      "cve": "CVE-2026-110725",
+      "severity": "Low",
+      "recommended": "3.1.9",
+      "references": [
+        "https://github.com/advisories/GHSA-333x-w4r6-6crp",
+        "https://github.com/fastify/fast-uri/security/advisories/GHSA-333x-w4r6-6crp"
+      ],
+      "current": [
+        {
+          "path": "node_modules/fast-uri",
+          "name": "fast-uri",
+          "version": "3.1.9"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "fast-uri",
+      "scannedVersion": "3.1.7",
+      "id": "aojKF/QhuQcPOovj9qB9/Eozy/qXUev+1K9ChtheUsU=",
+      "cve": "CVE-2026-110095",
+      "severity": "Low",
+      "recommended": "3.1.9",
+      "references": [
+        "https://github.com/advisories/GHSA-xhq7-xmqj-769h",
+        "https://github.com/fastify/fast-uri/security/advisories/GHSA-xhq7-xmqj-769h"
+      ],
+      "current": [
+        {
+          "path": "node_modules/fast-uri",
+          "name": "fast-uri",
+          "version": "3.1.9"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "fflate",
+      "scannedVersion": "0.7.4",
+      "id": "t7sAU2my0phdWfUqwfdYF5loHqjtvcUr/UP03pH5eXU=",
+      "cve": "CVE-2026-122146",
+      "severity": "Medium",
+      "recommended": "N/A",
+      "references": [
+        "https://github.com/advisories/GHSA-3xf2-c6c2-98qc",
+        "https://cwe.mitre.org/data/definitions/400.html"
+      ],
+      "current": [],
+      "disposition": "removed",
+      "evidence": "External ZIP dependency/API removed using audited self-contained font/OG runtime packages. Compressed WOFF parsing and real PNG rendering tests pass; no unzipSync API remains in these bundles."
+    },
+    {
+      "package": "fflate",
+      "scannedVersion": "0.7.4",
+      "id": "s6OdfT5Q1Ds5dgN4PFq7Bwu1DhlLDPQIinLxksSS+Tw=",
+      "cve": "CVE-2026-45820",
+      "severity": "Medium",
+      "recommended": "0.7.5",
+      "references": [
+        "https://github.com/advisories/GHSA-px8p-9vwx-vf98"
+      ],
+      "current": [],
+      "disposition": "removed",
+      "evidence": "External ZIP dependency/API removed using audited self-contained font/OG runtime packages. Compressed WOFF parsing and real PNG rendering tests pass; no unzipSync API remains in these bundles."
+    },
+    {
+      "package": "minimatch",
+      "scannedVersion": "10.2.5",
+      "id": "G2Qm8hwayc5IVljdnV/Aa37khVDPYgF/R7JtEh5T0pY=",
+      "cve": "CVE-2026-118764",
+      "severity": "Medium",
+      "recommended": "11.0.1",
+      "references": [
+        "https://github.com/advisories/GHSA-g3hv-75wg-m249"
+      ],
+      "current": [
+        {
+          "path": "node_modules/@typescript-eslint/typescript-estree/node_modules/minimatch",
+          "name": "minimatch",
+          "version": "11.0.5"
+        },
+        {
+          "path": "node_modules/minimatch",
+          "name": "minimatch",
+          "version": "3.1.5"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "@babel/core",
+      "scannedVersion": "7.29.0",
+      "id": "juCagkSg90Jv5ZZ84Md7Npgce6SQBwM/8OtFJ30U44w=",
+      "cve": "CVE-2026-49356",
+      "severity": "Low",
+      "recommended": "7.29.6",
+      "references": [],
+      "current": [
+        {
+          "path": "node_modules/@babel/core",
+          "name": "@babel/core",
+          "version": "7.29.6"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    },
+    {
+      "package": "debug",
+      "scannedVersion": "3.2.7",
+      "id": "Bl732itsBrpdRvVSsbeNK+VXZXzr99pR0bU8A/gcVbQ=",
+      "cve": "Cx8bc4df28-fcf5",
+      "severity": "Low",
+      "recommended": "4.4.0",
+      "references": [
+        "https://github.com/debug-js/debug/issues/737",
+        "https://github.com/debug-js/debug/issues/656",
+        "https://github.com/Checkmarx/Vulnerabilities-Proofs-of-Concept/tree/main/2020/Cx8bc4df28-fcf5",
+        "https://github.com/debug-js/debug/commit/d2d6bf0bab3a0eeeb3a9ce7113cb0a31d8da678f",
+        "https://github.com/debug-js/debug/releases/tag/4.4.0"
+      ],
+      "current": [
+        {
+          "path": "node_modules/debug",
+          "name": "debug",
+          "version": "4.4.3"
+        }
+      ],
+      "disposition": "updated",
+      "evidence": "All resolved copies meet the selected patched version floor."
+    }
+  ],
+  "sast": [
+    {
+      "id": "-1336301462",
+      "type": "Python input controls loop",
+      "file": ".agents/skills/replica-entrepreneur/reviews.py",
+      "evidence": "Bounded bytes/themes/pattern count/pattern length/total count; fixed range loops; 3 Python negative and compatibility tests pass.",
+      "disposition": "source-remediated-pending-rescan"
+    },
+    {
+      "id": "1833334604",
+      "type": "JavaScript input controls loop",
+      "file": "src/model.mjs",
+      "evidence": "Explicit MAX_BOARD_ITEMS traversal bound and early 100000-item cap; cycle/oversize regressions and 10000-frame validation, 30000-frame containment/descendant scale checks pass.",
+      "disposition": "source-remediated-pending-rescan"
+    },
+    {
+      "id": "781281479",
+      "type": "Missing HSTS",
+      "file": "scripts/qa-artifact-preview.mjs",
+      "evidence": "Shared HSTS max-age=31536000; includeSubDomains on success/error preview responses, Worker API and static asset policy.",
+      "disposition": "source-remediated-pending-rescan"
+    },
+    {
+      "id": "1304887931",
+      "type": "Missing CSP",
+      "file": "scripts/qa-artifact-preview.mjs",
+      "evidence": "Shared CSP default/script self, object none, base none, frame-ancestors self; preview success/error tests and production asset/API responses verified.",
+      "disposition": "source-remediated-pending-rescan"
+    }
+  ]
+}

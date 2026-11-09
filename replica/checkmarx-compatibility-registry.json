@@ -1,0 +1,101 @@
+[
+  {
+    "name": "undici",
+    "version": "7.30.2"
+  },
+  {
+    "name": "ws",
+    "version": "8.22.2",
+    "peerDependencies": {
+      "bufferutil": "^4.0.1",
+      "utf-8-validate": ">=5.0.2"
+    }
+  },
+  {
+    "name": "js-yaml",
+    "version": "4.3.2",
+    "dependencies": {
+      "argparse": "^2.0.1"
+    }
+  },
+  {
+    "name": "fast-uri",
+    "version": "3.1.9"
+  },
+  {
+    "name": "@babel/core",
+    "version": "7.29.6",
+    "dependencies": {
+      "debug": "^4.1.0",
+      "json5": "^2.2.3",
+      "semver": "^6.3.1",
+      "gensync": "^1.0.0-beta.2",
+      "@babel/types": "^7.29.0",
+      "@babel/parser": "^7.29.3",
+      "@babel/helpers": "^7.29.2",
+      "@babel/template": "^7.28.6",
+      "@babel/traverse": "^7.29.0",
+      "@babel/generator": "^7.29.6",
+      "@babel/code-frame": "^7.29.0",
+      "convert-source-map": "^2.0.0",
+      "@jridgewell/remapping": "^2.3.5",
+      "@babel/helper-module-transforms": "^7.28.6",
+      "@babel/helper-compilation-targets": "^7.28.6"
+    }
+  },
+  {
+    "name": "@vitejs/plugin-rsc",
+    "version": "0.5.39",
+    "dependencies": {
+      "obug": "^3.0.0",
+      "srvx": "^1.0.8",
+      "vitefu": "^1.1.3",
+      "magic-string": "^1.4.5",
+      "turbo-stream": "^3.2.1",
+      "estree-walker": "^3.0.3",
+      "strip-literal": "^4.0.0",
+      "es-module-lexer": "^3.0.4",
+      "@rolldown/pluginutils": "^1.0.1"
+    },
+    "peerDependencies": {
+      "vite": "*",
+      "react": "*",
+      "react-dom": "*",
+      "react-server-dom-webpack": "*"
+    }
+  },
+  {
+    "name": "@vercel/og",
+    "version": "1.0.3",
+    "dependencies": {
+      "satori": "0.33.5",
+      "@resvg/resvg-wasm": "2.4.1"
+    }
+  },
+  {
+    "name": "@shuding/opentype.js",
+    "version": "1.3.5",
+    "dependencies": {
+      "fflate": "^0.7.3",
+      "string.prototype.codepointat": "^0.2.1"
+    }
+  },
+  {
+    "name": "satori",
+    "version": "0.63.2",
+    "dependencies": {
+      "fflate": "0.7.3",
+      "linebreak": "^1.1.0",
+      "harfbuzzjs": "0.10.0",
+      "escape-html": "^1.0.3",
+      "css-box-shadow": "1.0.0-3",
+      "emoji-regex-xs": "^2.0.1",
+      "parse-css-color": "^0.2.1",
+      "css-gradient-parser": "^0.0.17",
+      "css-to-react-native": "^3.0.0",
+      "@shuding/opentype.js": "1.4.0-beta.0",
+      "postcss-value-parser": "^4.2.0",
+      "css-background-parser": "^0.1.0"
+    }
+  }
+]

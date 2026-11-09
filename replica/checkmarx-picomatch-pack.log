@@ -1,0 +1,24 @@
+npm notice
+npm notice 📦  picomatch@4.0.7+mirra.security.1
+npm notice Tarball Contents
+npm notice 1.1kB LICENSE
+npm notice 28.3kB README.md
+npm notice 479B index.js
+npm notice 4.6kB lib/constants.js
+npm notice 35.8kB lib/parse.js
+npm notice 10.7kB lib/picomatch.js
+npm notice 9.5kB lib/scan.js
+npm notice 2.0kB lib/utils.js
+npm notice 1.6kB package.json
+npm notice 60B posix.js
+npm notice Tarball Details
+npm notice name: picomatch
+npm notice version: 4.0.7+mirra.security.1
+npm notice filename: picomatch-4.0.7+mirra.security.1.tgz
+npm notice package size: 24.4 kB
+npm notice unpacked size: 94.1 kB
+npm notice shasum: 7bd88fd120c92a822b2d7c4b240e207e90644825
+npm notice integrity: sha512-iGnPI9ywzbeZQ[...]zJSPRij/knqOA==
+npm notice total files: 10
+npm notice
+picomatch-4.0.7+mirra.security.1.tgz

@@ -1,9 +1,10 @@
+import {securityHeaders} from '../src/security-headers.mjs';
 import http from 'node:http';
 import { readFile } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
 const root = resolve(import.meta.dirname, '..');
 const types = { '.html': 'text/html', '.css': 'text/css', '.mjs': 'text/javascript', '.json': 'application/json' };
-const server = http.createServer(async (req,res) => {
+const server = http.createServer(async (req,res) => {for(const [key,value]of Object.entries(securityHeaders()))res.setHeader(key,value);
   try {
     const pathname = decodeURIComponent(new URL(req.url,'http://localhost').pathname);
     const file = resolve(root, '.' + (pathname === '/' ? '/public/index.html' : pathname));

@@ -40,6 +40,11 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_THEMES = os.path.join(HERE, "themes.json")
+MAX_THEME_BYTES = 262144
+MAX_THEMES = 100
+MAX_PATTERNS = 100
+MAX_PATTERN_LENGTH = 512
+MAX_TOTAL_PATTERNS = 1000
 SENTENCE = re.compile(r"(?<=[.!?])\s+|\n+")
 
 
@@ -48,16 +53,54 @@ class FeedbackError(Exception):
 
 
 def load_themes(path=DEFAULT_THEMES):
-    with open(path, encoding="utf-8") as fh:
-        data = json.load(fh)
+    with open(path, "rb") as fh:
+        raw = fh.read(MAX_THEME_BYTES + 1)
+    if len(raw) > MAX_THEME_BYTES:
+        raise FeedbackError("Theme file exceeds the size limit")
+    try:
+        data = json.loads(raw.decode("utf-8"))
+    except (ValueError, UnicodeError, RecursionError) as exc:
+        raise FeedbackError("Invalid theme JSON") from exc
+    if not isinstance(data, dict):
+        raise FeedbackError("Theme configuration must be an object")
+    definitions = data.get("themes", [])
+    request_patterns = data.get("request_patterns", [])
+    if not isinstance(definitions, list) or len(definitions) > MAX_THEMES:
+        raise FeedbackError("Too many themes or invalid theme list")
+    def compile_patterns(patterns):
+        if not isinstance(patterns, list) or len(patterns) > MAX_PATTERNS:
+            raise FeedbackError("Too many patterns or invalid pattern list")
+        compiled = []
+        for index in range(MAX_PATTERNS):
+            if index >= len(patterns):
+                break
+            pattern = patterns[index]
+            if not isinstance(pattern, str) or not pattern or len(pattern) > MAX_PATTERN_LENGTH:
+                raise FeedbackError("Invalid theme pattern length")
+            try:
+                compiled.append(re.compile(pattern, re.I))
+            except re.error as exc:
+                raise FeedbackError("Invalid theme regular expression") from exc
+        return compiled
+    requests = compile_patterns(request_patterns)
+    total_patterns = len(requests)
     themes = []
-    for t in data.get("themes", []):
+    for index in range(MAX_THEMES):
+        if index >= len(definitions):
+            break
+        t = definitions[index]
+        if not isinstance(t, dict) or not isinstance(t.get("id"), str) or not t["id"] or len(t["id"]) > 100:
+            raise FeedbackError("Invalid theme identifier")
+        label, kind = t.get("label", t["id"]), t.get("kind", "complaint")
+        if not isinstance(label, str) or len(label) > 200 or not isinstance(kind, str) or len(kind) > 32:
+            raise FeedbackError("Invalid theme label or kind")
+        patterns = compile_patterns(t.get("patterns", []))
+        total_patterns += len(patterns)
+        if total_patterns > MAX_TOTAL_PATTERNS:
+            raise FeedbackError("Total pattern count exceeds the limit")
         themes.append({
-            "id": t["id"], "label": t.get("label", t["id"]),
-            "kind": t.get("kind", "complaint"),
-            "patterns": [re.compile(p, re.I) for p in t.get("patterns", [])],
+            "id": t["id"], "label": label, "kind": kind, "patterns": patterns,
         })
-    requests = [re.compile(p, re.I) for p in data.get("request_patterns", [])]
     return themes, requests
 
 

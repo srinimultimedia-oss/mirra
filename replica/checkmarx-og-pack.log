@@ -1,0 +1,26 @@
+npm notice
+npm notice 📦  @vercel/og@1.0.3+mirra.runtime.2
+npm notice Tarball Contents
+npm notice 16.7kB LICENSE
+npm notice 4.3kB README.md
+npm notice 126.0kB dist/Geist-Regular.ttf
+npm notice 382.0kB dist/hb.wasm
+npm notice 358B dist/index.edge.d.ts
+npm notice 863.4kB dist/index.edge.js
+npm notice 1.2kB dist/index.node.d.ts
+npm notice 961.7kB dist/index.node.js
+npm notice 1.4MB dist/resvg.wasm
+npm notice 1.9kB dist/types.d.ts
+npm notice 71.7kB dist/yoga.wasm
+npm notice 1.9kB package.json
+npm notice Tarball Details
+npm notice name: @vercel/og
+npm notice version: 1.0.3+mirra.runtime.2
+npm notice filename: vercel-og-1.0.3+mirra.runtime.2.tgz
+npm notice package size: 1.2 MB
+npm notice unpacked size: 3.8 MB
+npm notice shasum: 6f6c3066fc60b37ec38251f670a7291742ad645b
+npm notice integrity: sha512-MoIL34r/Nt/18[...]80oOts5F9b3ww==
+npm notice total files: 12
+npm notice
+vercel-og-1.0.3+mirra.runtime.2.tgz

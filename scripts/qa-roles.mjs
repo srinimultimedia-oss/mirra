@@ -1,3 +1,4 @@
+import {securityHeaders} from '../src/security-headers.mjs';
 // Local-only synthetic QA identities. Never deploy this server or use it as authentication.
 import http from 'node:http';
 import {DatabaseSync} from 'node:sqlite';
@@ -27,7 +28,7 @@ const created=await fixtureRequest('boards',{doc:board.doc});if(!created.ok)thro
 for(const role of ['editor','commenter','viewer']){const result=await fixtureRequest(`boards/${snapshot.id}/members`,{email:identities[role].email,role});if(!result.ok)throw Error(await result.text());}
 const urls=Object.fromEntries(Object.keys(identities).map(role=>[role,`${origin}/public/index.html?qa-role=${role}#cloud/${snapshot.id}`]));
 const types={'.html':'text/html','.css':'text/css','.mjs':'text/javascript','.json':'application/json'};
-const server=http.createServer(async(req,res)=>{
+const server=http.createServer(async(req,res)=>{for(const [key,value]of Object.entries(securityHeaders({allowInlineScripts:true})))res.setHeader(key,value);
   try{
     const url=new URL(req.url,origin);
     if(url.pathname==='/qa/storage'){

@@ -1,0 +1,40 @@
+npm notice
+npm notice 📦  harfbuzzjs@0.10.0
+npm notice Tarball Contents
+npm notice 1.2kB LICENSE
+npm notice 1.5kB Makefile
+npm notice 4.7kB README.md
+npm notice 150B config-override-subset.h
+npm notice 360B config-override.h
+npm notice 117B em.runtime
+npm notice 2.6kB examples/hb-subset.example.node.js
+npm notice 542B examples/hbjs.example.html
+npm notice 1.1kB examples/hbjs.example.js
+npm notice 433B examples/hbjs.example.node.js
+npm notice 2.2kB examples/nohbjs.html
+npm notice 755B hb-subset.symbols
+npm notice 596.3kB hb-subset.wasm
+npm notice 24.5kB hb.js
+npm notice 2.5kB hb.symbols
+npm notice 382.0kB hb.wasm
+npm notice 54.2kB hbjs.js
+npm notice 196B index.js
+npm notice 304.9kB logo.png
+npm notice 740B package.json
+npm notice 311.9kB test/fonts/noto/NotoSans-Regular.otf
+npm notice 556.2kB test/fonts/noto/NotoSans-Regular.ttf
+npm notice 765.7kB test/fonts/noto/NotoSansArabic-Variable.ttf
+npm notice 147.1kB test/fonts/noto/NotoSansDevanagari-Regular.otf
+npm notice 4.4kB test/fonts/noto/OFL.txt
+npm notice 41.5kB test/index.js
+npm notice Tarball Details
+npm notice name: harfbuzzjs
+npm notice version: 0.10.0
+npm notice filename: harfbuzzjs-0.10.0.tgz
+npm notice package size: 1.6 MB
+npm notice unpacked size: 3.2 MB
+npm notice shasum: 7d447d8a122fdc58bcb8b5156799bb8a19e9a20d
+npm notice integrity: sha512-SN8LVwCOzvTq3[...]I9NDWkcXUutRw==
+npm notice total files: 26
+npm notice
+harfbuzzjs-0.10.0.tgz

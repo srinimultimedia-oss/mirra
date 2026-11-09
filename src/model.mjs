@@ -5,10 +5,11 @@ import {validateTimer,transitionTimer} from './timer.mjs';
 import {validateTags,applyTagAction,portableTags} from './tags.mjs';
 import {validateCellGrid} from './spreadsheet-paste.mjs';
 export const TYPES = new Set(['sticky', 'text', 'shape', 'frame', 'connector', 'pen', 'card', 'table']);
+export const MAX_BOARD_ITEMS = 100000;
 const clone = value => structuredClone(value);
 const finite = n => typeof n === 'number' && Number.isFinite(n) && Math.abs(n) <= 1e7;
 export function validateDocument(doc) {
-  if (!doc || doc.version !== 1 || typeof doc.name !== 'string' || doc.name.length > 500 || !Array.isArray(doc.items) || doc.items.length > 100000) throw Error('Invalid board document');
+  if (!doc || doc.version !== 1 || typeof doc.name !== 'string' || doc.name.length > 500 || !Array.isArray(doc.items) || doc.items.length > MAX_BOARD_ITEMS) throw Error('Invalid board document');
   const itemsById = new Map();
   validateTags(doc);
   if(Object.hasOwn(doc,'timer'))validateTimer(doc.timer);
@@ -47,10 +48,11 @@ export function validateDocument(doc) {
   for(const item of doc.items){
     if(complete.has(item.id))continue;
     const path=new Set();let node=item;
-    while(node&&!complete.has(node.id)){
+    for(let depth=0;depth<MAX_BOARD_ITEMS&&node&&!complete.has(node.id);depth++){
       if(path.has(node.id))throw Error('Cyclic frame nesting');
       path.add(node.id);node=itemsById.get(node.parentId);
     }
+    if(node&&!complete.has(node.id))throw Error('Cyclic frame nesting or hierarchy limit exceeded');
     for(const id of path)complete.add(id);
   }
   return clone(doc);
