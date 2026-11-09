@@ -6,5 +6,7 @@
   "status": "succeeded",
   "url": "https://mirra-visual-workspace-srini.rightzebu4.chatgpt.site",
   "audience": "owner-private",
-  "checkmarx_rescan_required": true
+  "checkmarx_rescan_required": true,
+  "github_source_commit": "a766c47727b2a6e18d9ee515a8924e55ab413e6c",
+  "cloud_tree": "65dd6097ffbaf1603a0ee5493f34e62dd8233f95"
 }

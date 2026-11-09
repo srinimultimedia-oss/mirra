@@ -1,0 +1,13 @@
+APPROVAL REQUIRED GATES:G156
+    CHECK: node --test tests/remaining-security.test.mjs
+    EXPECT: fail 0
+    CWD: C:\Srini\Mirra\mirra
+    SHELL: C:\Windows\system32\cmd.exe
+    PATH: C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell;C:\Users\srini\.codex\tmp\arg0-windows\codex-arg0OPVRan;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot\bin;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA...
+    APPROVED: C:\Users\srini\.unlazy\approved\f3dcb9541b4c2a91ba017b0a48861c098d6554f7d9e493ac1d8d6de4c3518ad8.json
+  RUN  GATES:G156 shell=C:\Windows\system32\cmd.exe cwd=C:\Srini\Mirra\mirra PATH=C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell;C:\Users\srini\.codex\tmp\arg0-windows\codex-arg0OPVRan;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin;C:\Users\srini\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot\bin;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA...
+  PASS GATES:G156: The latest scan's sidebar preference no longer uses a JavaScript cookie; preview JSON responses enforce CSP; braces recursive walkers reject excessive depth, cycles and oversized ASTs while ordinary patterns and development tooling remain functional.
+       exit=0; EXPECT=matched; output=sha256=9535132b770f0e91ea3d776880c75186025acc103f832602efd04899c86e8946; bytes=561
+GATES.md: 157 gates
+UNMET: 12 (met: 145)
+  GATES:G157, GATES:G154, GATES:G147, GATES:G146, GATES:G72, GATES:G1, GATES:G2, GATES:G4, GATES:G5, GATES:G6, GATES:G13, GATES:G16

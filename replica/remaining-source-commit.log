@@ -1,0 +1,19 @@
+[main a766c47] Fix sidebar preference and preview headers; bound braces recursion
+ 23 files changed, 1835 insertions(+), 9 deletions(-)
+ create mode 100644 cloud/lib/sidebar-preference.mjs
+ create mode 100644 cloud/vendor/braces-3.0.3+mirra.security.1.tgz
+ create mode 100644 cloud/vendor/braces/LICENSE
+ create mode 100644 cloud/vendor/braces/README.md
+ create mode 100644 cloud/vendor/braces/index.js
+ create mode 100644 cloud/vendor/braces/lib/compile.js
+ create mode 100644 cloud/vendor/braces/lib/constants.js
+ create mode 100644 cloud/vendor/braces/lib/expand.js
+ create mode 100644 cloud/vendor/braces/lib/parse.js
+ create mode 100644 cloud/vendor/braces/lib/security.js
+ create mode 100644 cloud/vendor/braces/lib/stringify.js
+ create mode 100644 cloud/vendor/braces/lib/utils.js
+ create mode 100644 cloud/vendor/braces/package.json
+ create mode 100644 replica/remaining-security-deployment.json
+ create mode 100644 replica/remaining-security-remediation.json
+ create mode 100644 scripts/check-remaining-security.mjs
+ create mode 100644 tests/remaining-security.test.mjs

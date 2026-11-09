@@ -9,8 +9,8 @@ Scope: Rebuild every identified Miro web-app feature, with a continuing inventor
   EXPECT: fail 0
   EVIDENCE: automatic-evidence=v1; definition-sha256=0e9c7acb0c0f64c145626d307e7283d83a874b8905a6cb6fd8eb9638b4567f55; exit=0; EXPECT=matched; output-sha256=9535132b770f0e91ea3d776880c75186025acc103f832602efd04899c86e8946; output-bytes=561; shell=C:\Windows\system32\cmd.exe; cwd=C:\Srini\Mirra\mirra; path=2835c4462a72/39 entries
 
-- [ ] G157: Remediated source passes application tests, TypeScript, clean dependency installation and production build, and the exact verified source reaches both GitHub main and private cloud hosting; fresh Checkmarx closure is distinguished from local patch evidence.
-  EVIDENCE: pending verification and publication of the three remaining findings.
+- [x] G157: Remediated source passes application tests, TypeScript, clean dependency installation and production build, and the exact verified source reaches both GitHub main and private cloud hosting; fresh Checkmarx closure is distinguished from local patch evidence.
+  EVIDENCE: 2026-11-09 clean npm install658 packages,540 application/security tests, TypeScript and production build pass; valid full dependency tree and zero npm audit vulnerabilities. Private deployment appgdep_6af18ffddd5481918c73550268043d4f succeeded from hosting source258b882307711b6086295e5230c67b22ab2b733a. GitHub main source a766c47727b2a6e18d9ee515a8924e55ab413e6c published with matching cloud tree65dd6097ffbaf1603a0ee5493f34e62dd8233f95. The two SAST fixes and local braces hardening have focused regression evidence. Fresh Checkmarx scan/triage remains required, especially because the withdrawn braces advisory has no upstream patched release; no automatic suppression or clean compliance claim.
 
 - [x] G153: The source Git index contains the corrected cloud source, audited vendor runtime packages and lockfile as regular files, excluding local secrets, databases, caches, dependencies and generated builds; the hosting Git checkout is preserved.
   CHECK: node scripts/check-scan-source.mjs

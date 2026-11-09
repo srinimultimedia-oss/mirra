@@ -1,0 +1,25 @@
+npm notice
+npm notice 📦  braces@3.0.3+mirra.security.1
+npm notice Tarball Contents
+npm notice 1.1kB LICENSE
+npm notice 21.5kB README.md
+npm notice 4.4kB index.js
+npm notice 1.6kB lib/compile.js
+npm notice 1.6kB lib/constants.js
+npm notice 2.9kB lib/expand.js
+npm notice 7.1kB lib/parse.js
+npm notice 1.1kB lib/security.js
+npm notice 780B lib/stringify.js
+npm notice 2.5kB lib/utils.js
+npm notice 1.7kB package.json
+npm notice Tarball Details
+npm notice name: braces
+npm notice version: 3.0.3+mirra.security.1
+npm notice filename: braces-3.0.3+mirra.security.1.tgz
+npm notice package size: 14.5 kB
+npm notice unpacked size: 46.2 kB
+npm notice shasum: de08c9d409e5033e45aa9a019e46cf9117e1ff30
+npm notice integrity: sha512-RUSnKh6uMDUcZ[...]ePMta7O03s5Bw==
+npm notice total files: 11
+npm notice
+braces-3.0.3+mirra.security.1.tgz
