@@ -1,0 +1,40 @@
+{
+  "version": "0.1.0",
+  "name": "site-creator-vinext-starter",
+  "problems": [
+    "invalid: next@16.5.0-canary.45 C:\\Srini\\Mirra\\mirra\\cloud\\node_modules\\next"
+  ],
+  "dependencies": {
+    "next": {
+      "version": "16.5.0-canary.45",
+      "resolved": "https://registry.npmjs.org/next/-/next-16.5.0-canary.45.tgz",
+      "overridden": false
+    },
+    "vinext": {
+      "version": "1.0.0-beta.5",
+      "resolved": "https://registry.npmjs.org/vinext/-/vinext-1.0.0-beta.5.tgz",
+      "overridden": false,
+      "dependencies": {
+        "@unpic/react": {
+          "version": "1.0.2",
+          "resolved": "https://registry.npmjs.org/@unpic/react/-/react-1.0.2.tgz",
+          "overridden": false,
+          "dependencies": {
+            "next": {
+              "version": "16.5.0-canary.45",
+              "invalid": "\"^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0\" from node_modules/vinext/node_modules/@unpic/react",
+              "problems": [
+                "invalid: next@16.5.0-canary.45 C:\\Srini\\Mirra\\mirra\\cloud\\node_modules\\next"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "error": {
+    "code": "ELSPROBLEMS",
+    "summary": "invalid: next@16.5.0-canary.45 C:\\Srini\\Mirra\\mirra\\cloud\\node_modules\\next",
+    "detail": ""
+  }
+}

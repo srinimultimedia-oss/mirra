@@ -1,0 +1,13 @@
+  UNMET GATES:G147 (unchecked): Native adding and removing a Unicode-named table field preserves existing records, rejects blank field names without committing, persists through peer reload, remains unavailable to viewers, and is recoverable through Undo back to the original schema.
+  UNMET GATES:G146 (unchecked): Native Tab and Shift+Tab from table metadata text controls commit valid edits and reach the intended next control, preserve invalid drafts and saved values, and do not automatically apply restored recovery drafts without a new edit.
+  UNMET GATES:G72 (unchecked): Browser JSON import rejects malformed input without replacing the current board, imports a valid Unicode document and restores the previous document through one Undo.
+  UNMET GATES:G1 (unchecked): Signed-in screen and feature discovery covers the user's available Miro web application, including individual settings and edge states.
+  UNMET GATES:G2 (unchecked): Every discovered feature is implemented and verified against its individual acceptance criteria.
+  UNMET GATES:G4 (unchecked): Browser flows work at desktop and mobile widths, including keyboard operation, persistence, recovery, sharing, and concurrent edits.
+  UNMET GATES:G5 (unchecked): Production identity, access isolation, collaboration, files, integrations, and AI capabilities pass integration and security verification.
+  UNMET GATES:G6 (unchecked): Full feature comparison identifies no missing or partially implemented feature and all required end-to-end checks pass.
+  UNMET GATES:G13 (unchecked): Hosted cloud publication succeeds and durable save plus live synchronization are verified on the deployed application.
+  UNMET GATES:G16 (unchecked): Current application functionality passes the full flow matrix in replica/test-plan.md, with fixed reproduced failures and no unresolved critical bugs.
+GATES.md: 149 gates
+UNMET: 10 (met: 139)
+  GATES:G147, GATES:G146, GATES:G72, GATES:G1, GATES:G2, GATES:G4, GATES:G5, GATES:G6, GATES:G13, GATES:G16

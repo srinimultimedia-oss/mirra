@@ -4,6 +4,13 @@ OWNS: src/**, public/**, tests/**, scripts/**, replica/**, cloud/**, package.jso
 
 Scope: Rebuild every identified Miro web-app feature, with a continuing inventory, independent implementation, and requirement-level verification. Full scope remains open until signed-in discovery and implementation evidence establish parity.
 
+- [x] G148: Installed cloud dependencies and lockfile resolve the five user-requested exact versions with compatible React/Next companions and no invalid dependency tree.
+  CHECK: node scripts/check-requested-dependencies.mjs
+  EXPECT: REQUESTED_DEPENDENCIES_PASS
+  EVIDENCE: automatic-evidence=v1; definition-sha256=9116bbe909adffc7576afe7e958e0a42a95e9b4d74de28f6fa90f5517f13091e; exit=0; EXPECT=matched; output-sha256=2bbd2678efcaa5f063d9a818af4b719a979a2e7e911cd6aab977b181c8ae142e; output-bytes=298; shell=C:\Windows\system32\cmd.exe; cwd=C:\Srini\Mirra\mirra; path=2835c4462a72/39 entries
+
+- [x] G149: Updated dependencies pass application tests, connector protocol validation regressions, TypeScript checking and a production build; private cloud publication records the exact tested source.
+  EVIDENCE: 2026-11-09 requested direct versions and all nested copies verified in installed tree and lockfile; compatible React/React DOM19.3.1, Next ESLint config, Cloudflare plugin/types, scoped canary peer override and patched Sharp included. Clean npm ci succeeded; full526 tests and TypeScript checking passed. Zod connector record schemas use explicit key/value API and four protocol tests retain JSON values, reject forged extra authority and enforce limits. Production build with Vite8.3.6 passed with non-blocking upstream sourcemap/future config warnings. Source11bb0c18875b7708c332057ccfb86ef176e5aadd pushed and owner-private deployment appgdep_6af15b541b9c81919a9f0ce162c08b28 succeeded. npm audit has23 other advisories:5high17moderate1low, none on the five requested package names. This is a dependency update, not a complete app parity/security clearance. Reports dependency-update-report.json and dependency-audit.json.
 - [ ] G147: Native adding and removing a Unicode-named table field preserves existing records, rejects blank field names without committing, persists through peer reload, remains unavailable to viewers, and is recoverable through Undo back to the original schema.
   EVIDENCE: pending native field lifecycle verification.
 - [ ] G146: Native Tab and Shift+Tab from table metadata text controls commit valid edits and reach the intended next control, preserve invalid drafts and saved values, and do not automatically apply restored recovery drafts without a new edit.
@@ -602,6 +609,8 @@ Scope: Rebuild every identified Miro web-app feature, with a continuing inventor
   CHECK: node --test tests/inspector-recovery.test.mjs tests/inspector.test.mjs
   EXPECT: fail 0
   EVIDENCE: automatic-evidence=v1; definition-sha256=7632a064a00c4bee6d2f6b6a89d94875c6c4aa246711ab4f673bd183c4145b4c; exit=0; EXPECT=matched; output-sha256=fda881639ac3306a5f3af65c8db9553e1ec56ab67df0bd73b3909eb7b8fd430e; output-bytes=1710; shell=C:\Windows\system32\cmd.exe; cwd=C:\Srini\Mirra; path=2835c4462a72/39 entries
+
+
 
 
 

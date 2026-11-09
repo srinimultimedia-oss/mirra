@@ -1,0 +1,148 @@
+{
+  "verifiedAt": "2026-11-09",
+  "requested": {
+    "next": "16.5.0-canary.45",
+    "vite": "8.3.6",
+    "react-server-dom-webpack": "19.3.1",
+    "zod": "4.6.7",
+    "wrangler": "4.158.0"
+  },
+  "companions": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "eslint-config-next": "16.5.0-canary.45",
+    "@cloudflare/vite-plugin": "1.67.0",
+    "@cloudflare/workers-types": "5.20261109.1"
+  },
+  "audit": {
+    "info": 0,
+    "low": 1,
+    "moderate": 17,
+    "high": 5,
+    "critical": 0,
+    "total": 23
+  },
+  "remaining": [
+    {
+      "name": "@babel/core",
+      "severity": "low",
+      "direct": false
+    },
+    {
+      "name": "@esbuild-kit/core-utils",
+      "severity": "moderate",
+      "direct": false
+    },
+    {
+      "name": "@esbuild-kit/esm-loader",
+      "severity": "moderate",
+      "direct": false
+    },
+    {
+      "name": "@typescript-eslint/eslint-plugin",
+      "severity": "moderate",
+      "direct": false
+    },
+    {
+      "name": "@typescript-eslint/parser",
+      "severity": "moderate",
+      "direct": false
+    },
+    {
+      "name": "@typescript-eslint/type-utils",
+      "severity": "moderate",
+      "direct": false
+    },
+    {
+      "name": "@typescript-eslint/typescript-estree",
+      "severity": "moderate",
+      "direct": false
+    },
+    {
+      "name": "@typescript-eslint/utils",
+      "severity": "moderate",
+      "direct": false
+    },
+    {
+      "name": "@vercel/og",
+      "severity": "moderate",
+      "direct": false
+    },
+    {
+      "name": "baseline-browser-mapping",
+      "severity": "moderate",
+      "direct": false
+    },
+    {
+      "name": "brace-expansion",
+      "severity": "high",
+      "direct": false
+    },
+    {
+      "name": "browserslist",
+      "severity": "high",
+      "direct": false
+    },
+    {
+      "name": "drizzle-kit",
+      "severity": "moderate",
+      "direct": true
+    },
+    {
+      "name": "esbuild",
+      "severity": "moderate",
+      "direct": false
+    },
+    {
+      "name": "eslint-config-next",
+      "severity": "moderate",
+      "direct": true
+    },
+    {
+      "name": "fast-uri",
+      "severity": "moderate",
+      "direct": false
+    },
+    {
+      "name": "fflate",
+      "severity": "moderate",
+      "direct": false
+    },
+    {
+      "name": "image-size",
+      "severity": "high",
+      "direct": false
+    },
+    {
+      "name": "js-yaml",
+      "severity": "high",
+      "direct": false
+    },
+    {
+      "name": "minimatch",
+      "severity": "moderate",
+      "direct": false
+    },
+    {
+      "name": "satori",
+      "severity": "moderate",
+      "direct": false
+    },
+    {
+      "name": "typescript-eslint",
+      "severity": "moderate",
+      "direct": false
+    },
+    {
+      "name": "vinext",
+      "severity": "high",
+      "direct": true
+    }
+  ],
+  "nextReleaseChannel": "canary (explicitly requested)",
+  "tests": 526,
+  "typescript": "passed",
+  "build": "passed",
+  "deployment": "appgdep_6af15b541b9c81919a9f0ce162c08b28",
+  "sourceCommit": "11bb0c18875b7708c332057ccfb86ef176e5aadd"
+}
