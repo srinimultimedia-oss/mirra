@@ -1,0 +1,7 @@
+{
+  "pid": 62196,
+  "started_on": "2026-11-09T10:43:19.745Z",
+  "status": "running",
+  "root_policy": "Parent project read-only; outputs restricted to export",
+  "mode": "filesystem notifications plus 10-second polling"
+}

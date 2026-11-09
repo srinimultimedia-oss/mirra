@@ -1,0 +1,112 @@
+{
+  "generated_on": "2026-11-09T10:37:02.183Z",
+  "fingerprint": "8394c12da7b0194de756e3d032d2296ba93a15261189f0d6aed317e278ec9dbf",
+  "node": "v24.14.0",
+  "steps": [
+    {
+      "name": "install",
+      "command": "C:\\Windows\\system32\\cmd.exe /d /s /c npm run install:ci",
+      "cwd": "source/cloud",
+      "exit": 0,
+      "signal": null,
+      "duration_ms": 81144,
+      "log": "verification/install.log"
+    },
+    {
+      "name": "tests",
+      "command": "C:\\Windows\\system32\\cmd.exe /d /s /c npm test",
+      "cwd": "source",
+      "exit": 0,
+      "signal": null,
+      "duration_ms": 2270,
+      "log": "verification/tests.log"
+    },
+    {
+      "name": "typescript",
+      "command": "C:\\Program Files\\nodejs\\node.exe node_modules/typescript/bin/tsc --noEmit",
+      "cwd": "source/cloud",
+      "exit": 0,
+      "signal": null,
+      "duration_ms": 4107,
+      "log": "verification/typescript.log"
+    },
+    {
+      "name": "migrations",
+      "command": "C:\\Program Files\\nodejs\\node.exe C:\\Srini\\Mirra\\mirra\\project-export\\tools\\migrate-local.mjs",
+      "cwd": "source/cloud",
+      "exit": 0,
+      "signal": null,
+      "duration_ms": 4879,
+      "log": "verification/migrations.log"
+    },
+    {
+      "name": "build",
+      "command": "C:\\Windows\\system32\\cmd.exe /d /s /c npm run build",
+      "cwd": "source/cloud",
+      "exit": 0,
+      "signal": null,
+      "duration_ms": 5864,
+      "log": "verification/build.log"
+    },
+    {
+      "name": "audit",
+      "command": "C:\\Windows\\system32\\cmd.exe /d /s /c npm audit --json",
+      "cwd": "source/cloud",
+      "exit": 0,
+      "signal": null,
+      "duration_ms": 1729,
+      "log": "verification/audit.log"
+    },
+    {
+      "name": "dependency-tree",
+      "command": "C:\\Windows\\system32\\cmd.exe /d /s /c npm ls --all --json",
+      "cwd": "source/cloud",
+      "exit": 0,
+      "signal": null,
+      "duration_ms": 1145,
+      "log": "verification/dependency-tree.log"
+    }
+  ],
+  "npm_audit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "build_output": {
+    "client": {
+      "files": 75,
+      "bytes": 982306
+    },
+    "server": {
+      "files": 140,
+      "bytes": 5134317
+    }
+  },
+  "skipped": [
+    {
+      "check": "Production deployment",
+      "reason": "Export task does not authorize deployment; requires hosting account, trusted identity and production DB configuration"
+    },
+    {
+      "check": "Lint",
+      "reason": "Documented as available; not represented as passing; install/build/type/test verification is the required scope"
+    },
+    {
+      "check": "Hosted collaboration and ballot PUT",
+      "reason": "Production identity/access unavailable; route mismatch explicitly retained"
+    },
+    {
+      "check": "Python theme tests",
+      "reason": "Optional Python tool; Node application verification is separate"
+    }
+  ],
+  "passed": true,
+  "tests": {
+    "count": 540,
+    "passed": 540,
+    "failed": 0
+  }
+}

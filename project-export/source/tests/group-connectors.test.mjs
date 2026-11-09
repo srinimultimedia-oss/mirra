@@ -1,0 +1,8 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {Board} from '../src/model.mjs';
+const line=(b,x=0)=>b.add('connector',0,0,{from:{x,y:0},to:{x:x+100,y:100}});
+test('a shape and portable connector group as a coherent movable selection',()=>{const b=new Board(),a=b.add('shape',0,0),c=line(b);assert.deepEqual(b.group([a,c]),[a,c]);assert.deepEqual(b.selection([c]),[c,a]);const before=b.serialize();b.move([a],20,30);assert.deepEqual(b.doc.items.find(i=>i.id===c).from,{x:20,y:30});b.undo();assert.equal(b.serialize(),before);});
+test('two connectors can group and ungroup with undo and serialization',()=>{const b=new Board(),a=line(b),c=line(b,200);b.group([a,c]);const grouped=b.serialize();assert.equal(Board.parse(grouped).selection([a]).length,2);b.ungroup([a]);assert.equal(b.selection([a]).length,1);b.undo();assert.equal(b.serialize(),grouped);});
+test('locked connector blocks grouping with two shapes atomically',()=>{const b=new Board(),a=b.add('shape',0,0),c=b.add('shape',200,0),d=line(b);b.update([d],{locked:true});const before=b.serialize(),history=b.past.length;assert.throws(()=>b.group([a,c,d]),/Unlock/);assert.equal(b.serialize(),before);assert.equal(b.past.length,history);});
+test('locked group member blocks ungrouping of the full expanded group',()=>{const b=new Board(),a=b.add('shape',0,0),c=b.add('shape',200,0),d=line(b);b.group([a,c,d]);b.update([d],{locked:true});const before=b.serialize(),history=b.past.length;assert.throws(()=>b.ungroup([a]),/Unlock/);assert.equal(b.serialize(),before);assert.equal(b.past.length,history);b.update([d],{locked:false});b.ungroup([a]);assert.equal(b.selection([d]).length,1);});

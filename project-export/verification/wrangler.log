@@ -1,0 +1,317 @@
+
+--- 2026-11-09T10:36:49.310Z debug
+🪵  Writing logs to "C:\Srini\Mirra\mirra\project-export\verification\wrangler.log"
+---
+
+--- 2026-11-09T10:36:49.310Z debug
+.env file not found at "C:\Srini\Mirra\mirra\project-export\source\cloud\.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-11-09T10:36:49.311Z debug
+.env file not found at "C:\Srini\Mirra\mirra\project-export\source\cloud\.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-11-09T10:36:49.423Z log
+
+ ⛅️ wrangler 4.158.0
+────────────────────
+---
+
+--- 2026-11-09T10:36:49.425Z log
+Resource location: local 
+
+---
+
+--- 2026-11-09T10:36:49.425Z log
+Use --remote if you want to access the remote instance.
+
+---
+
+--- 2026-11-09T10:36:49.441Z debug
+Metrics dispatcher: Dispatching disabled - would have sent {"deviceId":"4e14c467-9851-4c83-9a10-754fbdca712a","event":"wrangler command started","timestamp":1794220609441,"properties":{"amplitude_session_id":1794220609432,"amplitude_event_id":0,"wranglerVersion":"4.158.0","wranglerMajorVersion":4,"wranglerMinorVersion":158,"wranglerPatchVersion":0,"osPlatform":"Windows","osVersion":"Windows 11 Home","nodeVersion":24,"isFirstUsage":true,"configFileType":"json","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"agent":"codex","argsUsed":["config","local","persistTo"],"argsCombination":"config, local, persistTo","sanitizedCommand":"d1 migrations apply","sanitizedArgs":{"local":true},"currentAgentSkillsInstalled":null}}.
+---
+
+--- 2026-11-09T10:36:49.441Z log
+🌀 Executing on local database site-creator-d1 (00000000-0000-4000-8000-000000000000) from .wrangler\state\v3\d1:
+---
+
+--- 2026-11-09T10:36:49.441Z log
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+---
+
+--- 2026-11-09T10:36:50.508Z log
+🚣 1 command executed successfully.
+---
+
+--- 2026-11-09T10:36:50.508Z log
+🌀 Executing on local database site-creator-d1 (00000000-0000-4000-8000-000000000000) from .wrangler\state\v3\d1:
+---
+
+--- 2026-11-09T10:36:50.508Z log
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+---
+
+--- 2026-11-09T10:36:50.847Z log
+🚣 1 command executed successfully.
+---
+
+--- 2026-11-09T10:36:50.848Z log
+Migrations to be applied:
+---
+
+--- 2026-11-09T10:36:50.851Z log
+┌──────────────────────────────────┐
+│ name                             │
+├──────────────────────────────────┤
+│ 0000_quick_millenium_guard.sql   │
+├──────────────────────────────────┤
+│ 0001_youthful_black_tom.sql      │
+├──────────────────────────────────┤
+│ 0002_mysterious_molecule_man.sql │
+├──────────────────────────────────┤
+│ 0003_calm_vermin.sql             │
+├──────────────────────────────────┤
+│ 0004_dizzy_scalphunter.sql       │
+├──────────────────────────────────┤
+│ 0005_romantic_doctor_strange.sql │
+├──────────────────────────────────┤
+│ 0006_easy_jetstream.sql          │
+└──────────────────────────────────┘
+---
+
+--- 2026-11-09T10:36:50.851Z log
+? About to apply 7 migration(s)
+Your database may not be available to serve requests during the migration, continue?
+---
+
+--- 2026-11-09T10:36:50.851Z log
+🤖 Using fallback value in non-interactive context: yes
+---
+
+--- 2026-11-09T10:36:50.851Z log
+🌀 Executing on local database site-creator-d1 (00000000-0000-4000-8000-000000000000) from .wrangler\state\v3\d1:
+---
+
+--- 2026-11-09T10:36:50.851Z log
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+---
+
+--- 2026-11-09T10:36:51.202Z log
+🚣 8 commands executed successfully.
+---
+
+--- 2026-11-09T10:36:51.203Z log
+┌──────────────────────────────────┬────────┐
+│ name                             │ status │
+├──────────────────────────────────┼────────┤
+│ 0000_quick_millenium_guard.sql   │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0001_youthful_black_tom.sql      │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0002_mysterious_molecule_man.sql │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0003_calm_vermin.sql             │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0004_dizzy_scalphunter.sql       │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0005_romantic_doctor_strange.sql │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0006_easy_jetstream.sql          │ 🕒️    │
+└──────────────────────────────────┴────────┘
+---
+
+--- 2026-11-09T10:36:51.203Z log
+🌀 Executing on local database site-creator-d1 (00000000-0000-4000-8000-000000000000) from .wrangler\state\v3\d1:
+---
+
+--- 2026-11-09T10:36:51.203Z log
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+---
+
+--- 2026-11-09T10:36:51.556Z log
+🚣 3 commands executed successfully.
+---
+
+--- 2026-11-09T10:36:51.556Z log
+┌──────────────────────────────────┬────────┐
+│ name                             │ status │
+├──────────────────────────────────┼────────┤
+│ 0000_quick_millenium_guard.sql   │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0001_youthful_black_tom.sql      │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0002_mysterious_molecule_man.sql │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0003_calm_vermin.sql             │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0004_dizzy_scalphunter.sql       │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0005_romantic_doctor_strange.sql │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0006_easy_jetstream.sql          │ 🕒️    │
+└──────────────────────────────────┴────────┘
+---
+
+--- 2026-11-09T10:36:51.557Z log
+🌀 Executing on local database site-creator-d1 (00000000-0000-4000-8000-000000000000) from .wrangler\state\v3\d1:
+---
+
+--- 2026-11-09T10:36:51.557Z log
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+---
+
+--- 2026-11-09T10:36:51.911Z log
+🚣 4 commands executed successfully.
+---
+
+--- 2026-11-09T10:36:51.912Z log
+┌──────────────────────────────────┬────────┐
+│ name                             │ status │
+├──────────────────────────────────┼────────┤
+│ 0000_quick_millenium_guard.sql   │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0001_youthful_black_tom.sql      │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0002_mysterious_molecule_man.sql │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0003_calm_vermin.sql             │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0004_dizzy_scalphunter.sql       │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0005_romantic_doctor_strange.sql │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0006_easy_jetstream.sql          │ 🕒️    │
+└──────────────────────────────────┴────────┘
+---
+
+--- 2026-11-09T10:36:51.912Z log
+🌀 Executing on local database site-creator-d1 (00000000-0000-4000-8000-000000000000) from .wrangler\state\v3\d1:
+---
+
+--- 2026-11-09T10:36:51.912Z log
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+---
+
+--- 2026-11-09T10:36:52.257Z log
+🚣 3 commands executed successfully.
+---
+
+--- 2026-11-09T10:36:52.257Z log
+┌──────────────────────────────────┬────────┐
+│ name                             │ status │
+├──────────────────────────────────┼────────┤
+│ 0000_quick_millenium_guard.sql   │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0001_youthful_black_tom.sql      │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0002_mysterious_molecule_man.sql │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0003_calm_vermin.sql             │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0004_dizzy_scalphunter.sql       │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0005_romantic_doctor_strange.sql │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0006_easy_jetstream.sql          │ 🕒️    │
+└──────────────────────────────────┴────────┘
+---
+
+--- 2026-11-09T10:36:52.258Z log
+🌀 Executing on local database site-creator-d1 (00000000-0000-4000-8000-000000000000) from .wrangler\state\v3\d1:
+---
+
+--- 2026-11-09T10:36:52.258Z log
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+---
+
+--- 2026-11-09T10:36:52.692Z log
+🚣 6 commands executed successfully.
+---
+
+--- 2026-11-09T10:36:52.693Z log
+┌──────────────────────────────────┬────────┐
+│ name                             │ status │
+├──────────────────────────────────┼────────┤
+│ 0000_quick_millenium_guard.sql   │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0001_youthful_black_tom.sql      │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0002_mysterious_molecule_man.sql │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0003_calm_vermin.sql             │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0004_dizzy_scalphunter.sql       │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0005_romantic_doctor_strange.sql │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0006_easy_jetstream.sql          │ 🕒️    │
+└──────────────────────────────────┴────────┘
+---
+
+--- 2026-11-09T10:36:52.693Z log
+🌀 Executing on local database site-creator-d1 (00000000-0000-4000-8000-000000000000) from .wrangler\state\v3\d1:
+---
+
+--- 2026-11-09T10:36:52.693Z log
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+---
+
+--- 2026-11-09T10:36:53.048Z log
+🚣 3 commands executed successfully.
+---
+
+--- 2026-11-09T10:36:53.048Z log
+┌──────────────────────────────────┬────────┐
+│ name                             │ status │
+├──────────────────────────────────┼────────┤
+│ 0000_quick_millenium_guard.sql   │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0001_youthful_black_tom.sql      │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0002_mysterious_molecule_man.sql │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0003_calm_vermin.sql             │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0004_dizzy_scalphunter.sql       │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0005_romantic_doctor_strange.sql │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0006_easy_jetstream.sql          │ 🕒️    │
+└──────────────────────────────────┴────────┘
+---
+
+--- 2026-11-09T10:36:53.049Z log
+🌀 Executing on local database site-creator-d1 (00000000-0000-4000-8000-000000000000) from .wrangler\state\v3\d1:
+---
+
+--- 2026-11-09T10:36:53.049Z log
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+---
+
+--- 2026-11-09T10:36:53.400Z log
+🚣 4 commands executed successfully.
+---
+
+--- 2026-11-09T10:36:53.401Z log
+┌──────────────────────────────────┬────────┐
+│ name                             │ status │
+├──────────────────────────────────┼────────┤
+│ 0000_quick_millenium_guard.sql   │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0001_youthful_black_tom.sql      │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0002_mysterious_molecule_man.sql │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0003_calm_vermin.sql             │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0004_dizzy_scalphunter.sql       │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0005_romantic_doctor_strange.sql │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0006_easy_jetstream.sql          │ ✅     │
+└──────────────────────────────────┴────────┘
+---
+
+--- 2026-11-09T10:36:53.402Z debug
+Metrics dispatcher: Dispatching disabled - would have sent {"deviceId":"4e14c467-9851-4c83-9a10-754fbdca712a","event":"wrangler command completed","timestamp":1794220613402,"properties":{"amplitude_session_id":1794220609432,"amplitude_event_id":1,"wranglerVersion":"4.158.0","wranglerMajorVersion":4,"wranglerMinorVersion":158,"wranglerPatchVersion":0,"osPlatform":"Windows","osVersion":"Windows 11 Home","nodeVersion":24,"isFirstUsage":true,"configFileType":"json","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"agent":"codex","argsUsed":["config","local","persistTo"],"argsCombination":"config, local, persistTo","sanitizedCommand":"d1 migrations apply","sanitizedArgs":{"local":true},"durationMs":4089,"currentAgentSkillsInstalled":null}}.
+---

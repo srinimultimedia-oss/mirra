@@ -1,0 +1,168 @@
+
+ ⛅️ wrangler 4.158.0
+────────────────────
+Resource location: local 
+
+Use --remote if you want to access the remote instance.
+
+Migrations to be applied:
+┌──────────────────────────────────┐
+│ name                             │
+├──────────────────────────────────┤
+│ 0000_quick_millenium_guard.sql   │
+├──────────────────────────────────┤
+│ 0001_youthful_black_tom.sql      │
+├──────────────────────────────────┤
+│ 0002_mysterious_molecule_man.sql │
+├──────────────────────────────────┤
+│ 0003_calm_vermin.sql             │
+├──────────────────────────────────┤
+│ 0004_dizzy_scalphunter.sql       │
+├──────────────────────────────────┤
+│ 0005_romantic_doctor_strange.sql │
+├──────────────────────────────────┤
+│ 0006_easy_jetstream.sql          │
+└──────────────────────────────────┘
+? About to apply 7 migration(s)
+Your database may not be available to serve requests during the migration, continue?
+🤖 Using fallback value in non-interactive context: yes
+🌀 Executing on local database site-creator-d1 (00000000-0000-4000-8000-000000000000) from .wrangler\state\v3\d1:
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+🚣 8 commands executed successfully.
+┌──────────────────────────────────┬────────┐
+│ name                             │ status │
+├──────────────────────────────────┼────────┤
+│ 0000_quick_millenium_guard.sql   │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0001_youthful_black_tom.sql      │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0002_mysterious_molecule_man.sql │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0003_calm_vermin.sql             │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0004_dizzy_scalphunter.sql       │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0005_romantic_doctor_strange.sql │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0006_easy_jetstream.sql          │ 🕒️    │
+└──────────────────────────────────┴────────┘
+🌀 Executing on local database site-creator-d1 (00000000-0000-4000-8000-000000000000) from .wrangler\state\v3\d1:
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+🚣 3 commands executed successfully.
+┌──────────────────────────────────┬────────┐
+│ name                             │ status │
+├──────────────────────────────────┼────────┤
+│ 0000_quick_millenium_guard.sql   │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0001_youthful_black_tom.sql      │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0002_mysterious_molecule_man.sql │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0003_calm_vermin.sql             │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0004_dizzy_scalphunter.sql       │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0005_romantic_doctor_strange.sql │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0006_easy_jetstream.sql          │ 🕒️    │
+└──────────────────────────────────┴────────┘
+🌀 Executing on local database site-creator-d1 (00000000-0000-4000-8000-000000000000) from .wrangler\state\v3\d1:
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+🚣 4 commands executed successfully.
+┌──────────────────────────────────┬────────┐
+│ name                             │ status │
+├──────────────────────────────────┼────────┤
+│ 0000_quick_millenium_guard.sql   │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0001_youthful_black_tom.sql      │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0002_mysterious_molecule_man.sql │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0003_calm_vermin.sql             │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0004_dizzy_scalphunter.sql       │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0005_romantic_doctor_strange.sql │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0006_easy_jetstream.sql          │ 🕒️    │
+└──────────────────────────────────┴────────┘
+🌀 Executing on local database site-creator-d1 (00000000-0000-4000-8000-000000000000) from .wrangler\state\v3\d1:
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+🚣 3 commands executed successfully.
+┌──────────────────────────────────┬────────┐
+│ name                             │ status │
+├──────────────────────────────────┼────────┤
+│ 0000_quick_millenium_guard.sql   │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0001_youthful_black_tom.sql      │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0002_mysterious_molecule_man.sql │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0003_calm_vermin.sql             │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0004_dizzy_scalphunter.sql       │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0005_romantic_doctor_strange.sql │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0006_easy_jetstream.sql          │ 🕒️    │
+└──────────────────────────────────┴────────┘
+🌀 Executing on local database site-creator-d1 (00000000-0000-4000-8000-000000000000) from .wrangler\state\v3\d1:
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+🚣 6 commands executed successfully.
+┌──────────────────────────────────┬────────┐
+│ name                             │ status │
+├──────────────────────────────────┼────────┤
+│ 0000_quick_millenium_guard.sql   │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0001_youthful_black_tom.sql      │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0002_mysterious_molecule_man.sql │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0003_calm_vermin.sql             │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0004_dizzy_scalphunter.sql       │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0005_romantic_doctor_strange.sql │ 🕒️    │
+├──────────────────────────────────┼────────┤
+│ 0006_easy_jetstream.sql          │ 🕒️    │
+└──────────────────────────────────┴────────┘
+🌀 Executing on local database site-creator-d1 (00000000-0000-4000-8000-000000000000) from .wrangler\state\v3\d1:
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+🚣 3 commands executed successfully.
+┌──────────────────────────────────┬────────┐
+│ name                             │ status │
+├──────────────────────────────────┼────────┤
+│ 0000_quick_millenium_guard.sql   │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0001_youthful_black_tom.sql      │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0002_mysterious_molecule_man.sql │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0003_calm_vermin.sql             │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0004_dizzy_scalphunter.sql       │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0005_romantic_doctor_strange.sql │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0006_easy_jetstream.sql          │ 🕒️    │
+└──────────────────────────────────┴────────┘
+🌀 Executing on local database site-creator-d1 (00000000-0000-4000-8000-000000000000) from .wrangler\state\v3\d1:
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+🚣 4 commands executed successfully.
+┌──────────────────────────────────┬────────┐
+│ name                             │ status │
+├──────────────────────────────────┼────────┤
+│ 0000_quick_millenium_guard.sql   │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0001_youthful_black_tom.sql      │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0002_mysterious_molecule_man.sql │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0003_calm_vermin.sql             │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0004_dizzy_scalphunter.sql       │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0005_romantic_doctor_strange.sql │ ✅     │
+├──────────────────────────────────┼────────┤
+│ 0006_easy_jetstream.sql          │ ✅     │
+└──────────────────────────────────┴────────┘

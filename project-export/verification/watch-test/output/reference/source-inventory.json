@@ -1,0 +1,40 @@
+[
+  {
+    "path": "cloud/package-lock.json",
+    "export_path": "source/cloud/package-lock.json",
+    "bytes": 35,
+    "original_sha256": "e25b3e26894b0261fafd86d044f10b48e92e8cd8670493effd8207ff149019e5",
+    "sha256": "e25b3e26894b0261fafd86d044f10b48e92e8cd8670493effd8207ff149019e5",
+    "purpose": "Application/configuration/support source: cloud/package-lock.json",
+    "symbols": []
+  },
+  {
+    "path": "cloud/package.json",
+    "export_path": "source/cloud/package.json",
+    "bytes": 40,
+    "original_sha256": "13cfb4ea2288ea55ccb80e0ef870f72d89949734282ade1993de9c76ec85da9d",
+    "sha256": "13cfb4ea2288ea55ccb80e0ef870f72d89949734282ade1993de9c76ec85da9d",
+    "purpose": "Application/configuration/support source: cloud/package.json",
+    "symbols": []
+  },
+  {
+    "path": "public/index.html",
+    "export_path": "source/public/index.html",
+    "bytes": 25,
+    "original_sha256": "931077c9451de78302c7e218b41f541fe1bd12988ad8dd419f02e86ca4cba30f",
+    "sha256": "931077c9451de78302c7e218b41f541fe1bd12988ad8dd419f02e86ca4cba30f",
+    "purpose": "Browser UI/style module: index.html",
+    "symbols": []
+  },
+  {
+    "path": "src/new-feature.mjs",
+    "export_path": "source/src/new-feature.mjs",
+    "bytes": 57,
+    "original_sha256": "e66117db7073778e1ae98d7fc145485a00f27ddd7cf9dd4c3615fb9c10969348",
+    "sha256": "478779a7466ec22dde6e00406eb614f36e307b19625eb5646c52dac8bb865821",
+    "purpose": "Pure model/client/recovery module: new-feature.mjs",
+    "symbols": [
+      "fixtureFeature"
+    ]
+  }
+]

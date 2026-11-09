@@ -1,0 +1,63 @@
+import{validateVotingConfig,validateBallot,votingView,votingStatus,MAX_VOTING_MS}from'./core/voting.mjs';
+import{equal}from'./core/changes.mjs';
+const fault=(status:number,message:string)=>Object.assign(new Error(message),{status});
+const json=(value:unknown,status=200)=>Response.json(value,{status,headers:{'Cache-Control':'no-store'}});
+const validId=(value:unknown)=>typeof value==='string'&&/^[a-zA-Z0-9-]{10,100}$/.test(value);
+const sqlNow="CAST((julianday('now')-2440587.5)*86400000 AS INTEGER)";
+const digest=async(value:unknown)=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify(value))))).map(n=>n.toString(16).padStart(2,'0')).join('');
+function session(row:any){return{id:row.id,boardId:row.board_id,facilitatorId:row.facilitator_id,title:row.title,itemIds:JSON.parse(row.item_ids),votesPerPerson:row.votes_per_person,singlePerItem:!!row.single_per_item,durationMs:row.duration_ms,status:row.status,endsAt:row.ends_at,createdAt:row.created_at,revision:row.revision,requestDigest:row.request_digest};}
+export async function votingAPI(request:Request,db:D1Database,ctx:{user:{id:string,email:string,name:string},board:any,tail:string[],readBody:()=>Promise<any>,access:()=>Promise<any>}){
+  const{user,tail}=ctx,bid=ctx.board.id,method=request.method;
+  const permission=(edit=false)=>`EXISTS(SELECT 1 FROM boards b WHERE b.id=? AND (b.owner_id=? OR EXISTS(SELECT 1 FROM members m WHERE m.board_id=b.id AND m.email=?${edit?" AND m.role='editor'":''})))`;
+  const auth=()=>[bid,user.id,user.email];
+  const read=async(id:string)=>{const row=await db.prepare('SELECT * FROM voting_sessions WHERE id=? AND board_id=?').bind(id,bid).first<any>();return row?session(row):null;};
+  const view=async(value:any)=>{if(!value)throw fault(404,'Voting session not found');const board=await ctx.access(),rows=await db.prepare('SELECT * FROM voting_participants WHERE session_id=? ORDER BY user_id').bind(value.id).all<any>();return votingView(value,rows.results.map((row:any)=>({userId:row.user_id,name:row.name,votes:JSON.parse(row.votes),revision:row.revision,done:!!row.done})),{userId:user.id,role:board.role},Date.now());};
+  const requireEdit=async()=>{const board=await ctx.access();if(!['owner','editor'].includes(board.role))throw fault(403,'Editing permission is required to manage voting');return board;};
+  const requireManage=async(value:any)=>{const board=await requireEdit();if(board.role!=='owner'&&value.facilitatorId!==user.id)throw fault(403,'Only the facilitator or board owner can manage this session');return board;};
+  const conflict=async(value:any,message='Voting changed. Review the latest session before retrying.')=>json({error:message,snapshot:await view(value)},409);
+  if(!tail.length&&method==='GET'){const board=await ctx.access(),rows=await db.prepare('SELECT * FROM voting_sessions WHERE board_id=? ORDER BY created_at DESC,id DESC LIMIT 50').bind(bid).all<any>();return json({userId:user.id,serverTime:Date.now(),sessions:rows.results.map((row:any)=>votingView(session(row),[],{userId:user.id,role:board.role},Date.now()).session)});}
+  if(!tail.length&&method==='POST'){
+    const board=await requireEdit(),input=await ctx.readBody();if(!validId(input.id)||input.start!==undefined&&typeof input.start!=='boolean')throw fault(400,'Invalid voting session id or start option');
+    const previous=await read(input.id);let config;try{config=validateVotingConfig(input,previous?previous.itemIds.map((id:string)=>({id})):JSON.parse(board.document).items);}catch(error){throw fault(400,(error as Error).message);}
+    const start=input.start!==false,hash=await digest([config,start]);
+    if(previous){if(previous.facilitatorId!==user.id||previous.requestDigest!==hash)throw fault(409,'Voting session id is already in use');return json(await view(previous));}
+    const now=Date.now(),statements=[db.prepare(`UPDATE voting_sessions SET status='ended',revision=revision+1 WHERE board_id=? AND status='active' AND ends_at<=? AND ${permission(true)}`).bind(bid,now,...auth()),db.prepare(`INSERT INTO voting_sessions(id,board_id,facilitator_id,title,item_ids,votes_per_person,single_per_item,duration_ms,status,ends_at,created_at,request_digest) SELECT ?,?,?,?,?,?,?,?,?,?,?,? WHERE ${permission(true)} AND EXISTS(SELECT 1 FROM boards WHERE id=? AND revision=?)${start?" AND NOT EXISTS(SELECT 1 FROM voting_sessions WHERE board_id=? AND status='active')":''}`).bind(input.id,bid,user.id,config.title,JSON.stringify(config.itemIds),config.votesPerPerson,Number(config.singlePerItem),config.durationMs,start?'active':'draft',start?now+config.durationMs:null,now,hash,...auth(),bid,board.revision,...(start?[bid]:[])),db.prepare('UPDATE boards SET activity_revision=activity_revision+1 WHERE id=? AND changes()>0').bind(bid)];
+    let result;try{result=await db.batch(statements);}catch(error){if(/UNIQUE/i.test((error as Error).message)){const raced=await read(input.id);if(raced?.facilitatorId===user.id&&raced.requestDigest===hash)return json(await view(raced));throw fault(409,'Another voting session is already active');}throw error;}
+    const created=await read(input.id);if(!result[1].meta.changes){await requireEdit();if(created?.facilitatorId===user.id&&created.requestDigest===hash)return json(await view(created));throw fault(409,'The board changed or another voting session is active');}
+    return json(await view(created),201);
+  }
+  const current=await read(tail[0]);if(!current)throw fault(404,'Voting session not found');
+  if(tail.length===1&&method==='GET')return json(await view(current));
+  if(tail[1]==='join'&&tail.length===2&&method==='POST'){
+    if(votingStatus(current,Date.now())!=='active')throw fault(409,'This voting session is not active');
+    const now=Date.now();await db.batch([db.prepare(`INSERT OR IGNORE INTO voting_participants(session_id,user_id,name,votes,revision,done,updated_at) SELECT id,?,?,'{}',0,0,? FROM voting_sessions WHERE id=? AND board_id=? AND status='active' AND ends_at>${sqlNow} AND ${permission()}`).bind(user.id,user.name,now,current.id,bid,...auth()),db.prepare('UPDATE boards SET activity_revision=activity_revision+1 WHERE id=? AND changes()>0').bind(bid)]);
+    await ctx.access();const latest=await read(current.id);if(votingStatus(latest,Date.now())!=='active')throw fault(409,'This voting session has ended');return json(await view(latest));
+  }
+  if(tail[1]==='ballot'&&tail.length===2&&method==='PUT'){
+    const input=await ctx.readBody(),board=await ctx.access(),latest=await read(current.id);if(votingStatus(latest,Date.now())!=='active')throw fault(409,'This voting session is not active');
+    if(!Number.isSafeInteger(input.revision)||input.revision<0||typeof input.done!=='boolean')throw fault(400,'Invalid ballot revision or done flag');
+    const own=await db.prepare('SELECT votes,revision,done FROM voting_participants WHERE session_id=? AND user_id=?').bind(current.id,user.id).first<any>(),previous=own?JSON.parse(own.votes):{};let votes;
+    try{votes=validateBallot(input.votes,latest,{previous,currentItemIds:JSON.parse(board.document).items.map((item:any)=>item.id)});}catch(error){throw fault(400,(error as Error).message);}
+    if(own&&equal(votes,previous)&&input.done===!!own.done)return json(await view(latest));
+    if(input.revision!==(own?.revision||0))return conflict(latest,'Your ballot changed in another tab. Review it before retrying.');
+    const now=Date.now(),guard=`${permission()} AND EXISTS(SELECT 1 FROM boards WHERE id=? AND revision=?)`,args=[...auth(),bid,board.revision];
+    const result=await db.batch([db.prepare(`INSERT INTO voting_participants(session_id,user_id,name,votes,revision,done,updated_at) SELECT id,?,?,?,1,?,${sqlNow} FROM voting_sessions WHERE id=? AND board_id=? AND status='active' AND ends_at>${sqlNow} AND ${guard} AND (?=0 OR EXISTS(SELECT 1 FROM voting_participants p WHERE p.session_id=voting_sessions.id AND p.user_id=?)) ON CONFLICT(session_id,user_id) DO UPDATE SET votes=excluded.votes,done=excluded.done,revision=voting_participants.revision+1,updated_at=excluded.updated_at WHERE voting_participants.revision=?`).bind(user.id,user.name,JSON.stringify(votes),Number(input.done),current.id,bid,...args,input.revision,user.id,input.revision),db.prepare('UPDATE boards SET activity_revision=activity_revision+1 WHERE id=? AND changes()>0').bind(bid)]);
+    const after=await read(current.id);if(!result[0].meta.changes){await ctx.access();const saved=await db.prepare('SELECT votes,done FROM voting_participants WHERE session_id=? AND user_id=?').bind(current.id,user.id).first<any>();if(saved&&equal(JSON.parse(saved.votes),votes)&&!!saved.done===input.done)return json(await view(after));return conflict(after);}
+    return json(await view(after));
+  }
+  if(tail.length===2&&method==='POST'&&['start','end','extend','rename'].includes(tail[1])){
+    const board=await requireManage(current),action=tail[1],input=await ctx.readBody();if(!validId(input.operationId)||!Number.isSafeInteger(input.revision)||input.revision<0)throw fault(400,'Invalid voting operation');
+    const hash=await digest([user.id,action,input]),receipt=await db.prepare('SELECT actor_id,digest FROM voting_mutations WHERE session_id=? AND operation_id=?').bind(current.id,input.operationId).first<any>();
+    if(receipt){if(receipt.actor_id!==user.id||receipt.digest!==hash)throw fault(409,'Voting operation id was reused');return json(await view(await read(current.id)));}
+    if(input.revision!==current.revision)return conflict(current);const now=Date.now(),status=votingStatus(current,now);let set='',values:any[]=[];
+    if(action==='start'){if(current.status!=='draft')throw fault(409,'Only a draft session can start');try{validateVotingConfig(current,JSON.parse(board.document).items);}catch(error){throw fault(400,(error as Error).message);}set="status='active',ends_at=?";values=[now+current.durationMs];}
+    if(action==='end'){if(status==='ended')return json(await view(current));if(status!=='active')throw fault(409,'Start the session before ending it');set="status='ended'";}
+    if(action==='extend'){if(status!=='active')throw fault(409,'Only an active session can be extended');if(!Number.isSafeInteger(input.amountMs)||input.amountMs<1000||input.amountMs>MAX_VOTING_MS||current.endsAt+input.amountMs-now>MAX_VOTING_MS)throw fault(400,'Invalid voting extension');set='ends_at=?';values=[current.endsAt+input.amountMs];}
+    if(action==='rename'){if(typeof input.title!=='string'||!input.title.trim()||input.title.length>500)throw fault(400,'Enter a voting title');set='title=?';values=[input.title.trim()];}
+    const statements:D1PreparedStatement[]=[];if(action==='start')statements.push(db.prepare(`UPDATE voting_sessions SET status='ended',revision=revision+1 WHERE board_id=? AND status='active' AND ends_at<=? AND ${permission(true)}`).bind(bid,now,...auth()));
+    const updateIndex=statements.length;statements.push(db.prepare(`UPDATE voting_sessions SET ${set},revision=revision+1 WHERE id=? AND board_id=? AND revision=? AND ${permission(true)} AND (facilitator_id=? OR EXISTS(SELECT 1 FROM boards b WHERE b.id=voting_sessions.board_id AND b.owner_id=?))${['end','extend'].includes(action)?` AND status='active' AND ends_at>${sqlNow}`:action==='start'?" AND status='draft' AND EXISTS(SELECT 1 FROM boards WHERE id=? AND revision=?)":''}`).bind(...values,current.id,bid,input.revision,...auth(),user.id,user.id,...(action==='start'?[bid,board.revision]:[])),db.prepare('INSERT INTO voting_mutations(session_id,operation_id,actor_id,digest) SELECT ?,?,?,? WHERE changes()>0').bind(current.id,input.operationId,user.id,hash),db.prepare('UPDATE boards SET activity_revision=activity_revision+1 WHERE id=? AND changes()>0').bind(bid));
+    let result;try{result=await db.batch(statements);}catch(error){const raced=await db.prepare('SELECT actor_id,digest FROM voting_mutations WHERE session_id=? AND operation_id=?').bind(current.id,input.operationId).first<any>();if(raced){if(raced.actor_id===user.id&&raced.digest===hash)return json(await view(await read(current.id)));throw fault(409,'Voting operation id was reused');}if(/UNIQUE/i.test((error as Error).message))throw fault(409,'Another voting session is active');throw error;}
+    const after=await read(current.id);if(!result[updateIndex].meta.changes){await requireManage(after);const raced=await db.prepare('SELECT actor_id,digest FROM voting_mutations WHERE session_id=? AND operation_id=?').bind(current.id,input.operationId).first<any>();if(raced?.actor_id===user.id&&raced.digest===hash)return json(await view(after));return conflict(after);}return json(await view(after));
+  }
+  throw fault(405,'Unsupported voting action');
+}

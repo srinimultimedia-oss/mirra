@@ -1,0 +1,13 @@
+# Open questions and [UNVERIFIED] items
+
+> Provenance: see manifest.json and SOURCE-STATUS.md. Source paths below are relative to this export.
+
+1. **Hosted voting HTTP route:** VotingClient and votingAPI use PUT for ballots, but the framework catch-all exports no PUT. The exported development server returned HTTP405 for this PUT request (verification/http.json). Determine the production response and add the correct route export/test in a maintained working copy. The export does not fix it. Sources: source/src/voting-client.mjs; source/cloud/lib/voting-service.ts; source/cloud/app/api/[...path]/route.ts.
+2. **Production auth/provisioning:** Which supported Sites account/control plane should provision the sanitized snapshot? The production identity gateway and database are not exportable code state. Sources: source/cloud/.openai/hosting.json; source/cloud/app/chatgpt-auth.ts; source/cloud/README.md.
+3. **Latest security closure:** A new Checkmarx result after local dependency patches is not established by code or npm audit. Review local patch evidence and withdrawn advisory triage. Source: source/cloud/vendor/SECURITY-PATCHES.md; source/replica/checkmarx-remediation.md.
+4. **Feature acceptance:** Full Miro parity, native keyboard/table behavior and several hosted flows remain unchecked in GATES.md. Which product scope should be the release criterion? Source: source/GATES.md; source/replica/features.csv.
+5. **Accessibility/browser support:** No complete verified compatibility or WCAG conformance matrix is present. Define target browsers and audit scope. Sources: source/public/index.html; source/public/design.css; source/GATES.md.
+6. **Scale/operations:** Production concurrency limits, SSE/D1 cost, monitoring, backups and restore objectives are not established by model scale scripts. Sources: source/cloud/lib/board-service.ts events branch; source/scripts/check-frame-validation-scale.mjs; source/replica/backend.md.
+7. **Documentation conflicts:** Historical architecture describes a Postgres plan; implemented schema is D1. Maintain historical intent as such instead of documenting planned infrastructure as live. Sources: source/replica/architecture.md; source/cloud/db/schema.ts.
+8. **Installed package purpose:** Some dependencies have no direct lexical runtime import. Confirm their intended use before removing them; tooling and transitive relationships may still require them. Source: reference/dependencies.md; source/cloud/package.json.
+9. **Automatic narrative review:** The included watcher updates evidence and flags narrative drift. Truly semantic prose updates require a reviewing engineer/model; no unattended model service credential is configured. Source: tools/refresh.mjs; docs/documentation-maintenance.md.

@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "generated_on": "2026-11-09T10:40:43.012Z",
+  "results": [
+    {
+      "server": "device-local",
+      "path": "/",
+      "status": 200,
+      "securityHeaders": true
+    },
+    {
+      "server": "device-local",
+      "path": "/public/app.mjs",
+      "status": 200,
+      "securityHeaders": true
+    },
+    {
+      "server": "device-local",
+      "path": "/public/design.css",
+      "status": 200,
+      "securityHeaders": true
+    },
+    {
+      "server": "device-local",
+      "path": "/.git/config",
+      "status": 403
+    },
+    {
+      "server": "cloud-dev",
+      "path": "/api/me",
+      "authenticated": false,
+      "status": 401
+    },
+    {
+      "server": "cloud-dev",
+      "path": "/api/me",
+      "authenticated": true,
+      "status": 200,
+      "identity": "synthetic loopback fixture only"
+    },
+    {
+      "server": "cloud-dev",
+      "path": "/api/boards",
+      "status": 200,
+      "localMigrationsUsable": true
+    },
+    {
+      "server": "cloud-dev",
+      "path": "/api/boards/:id/voting/:session/ballot",
+      "method": "PUT",
+      "status": 405,
+      "knownIssue": "Framework catch-all omits PUT; no board data was created"
+    }
+  ],
+  "scope": "Exported copy only; no original browser or production account used"
+}

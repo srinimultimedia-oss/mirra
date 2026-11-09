@@ -1,0 +1,7 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {DatabaseSync} from 'node:sqlite';import {readFileSync,readdirSync} from 'node:fs';
+test('attention migration preserves document and presence viewport/follow state with nullable command metadata',()=>{
+ const db=new DatabaseSync(':memory:');db.exec('PRAGMA foreign_keys=ON');const files=readdirSync(new URL('../cloud/drizzle',import.meta.url)).filter(f=>f.endsWith('.sql')).sort();for(const file of files.filter(f=>Number(f.slice(0,4))<6))db.exec(readFileSync(new URL('../cloud/drizzle/'+file,import.meta.url),'utf8'));
+ db.prepare('INSERT INTO boards(id,owner_id,document,revision,updated_at) VALUES(?,?,?,?,?)').run('board','alice','{"items":[]}',9,100);db.prepare('INSERT INTO presence(board_id,client_id,user_id,name,viewport,following_client_id,seen_at) VALUES(?,?,?,?,?,?,?)').run('board','client','alice','Alice','{"x":1,"y":2,"w":300,"h":400}','leader',123);
+ const before={...db.prepare('SELECT * FROM presence').get()},board={...db.prepare('SELECT * FROM boards').get()};db.exec(readFileSync(new URL('../cloud/drizzle/'+files.find(f=>f.startsWith('0006_')),import.meta.url),'utf8'));
+ assert.deepEqual({...db.prepare('SELECT * FROM presence').get()},{...before,attention_id:null,attention_from:null,attention_at:null});assert.deepEqual({...db.prepare('SELECT * FROM boards').get()},board);db.prepare('DELETE FROM boards').run();assert.equal(db.prepare('SELECT count(*) AS n FROM presence').get().n,0);db.close();
+});

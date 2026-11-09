@@ -1,0 +1,14 @@
+import{Board}from'../src/model.mjs';
+export function prepareBulkNotes(text,context,{getContext,assertWritable,columns=4}){
+ assertWritable();const current=getContext();if(current.board!==context?.board||current.scope!==context?.scope)throw Error('The board or account changed. Reopen bulk notes on the intended board.');const point=context.point;if(!point||![point.x,point.y].every(Number.isFinite))throw Error('Choose a valid position for the notes');
+ const next=new Board(current.board.doc),ids=next.bulkStickies(text,point.x,point.y,{fill:context.fill,columns});if(context.cloud&&new TextEncoder().encode(JSON.stringify(next.doc)).length>1_800_000)throw Error('These notes exceed this cloud board’s document limit. Your input is kept; reduce the batch before creating notes.');return{doc:next.doc,ids};
+}
+export function mountBulkNotes({dialog,getContext,assertWritable,canEdit,onApply,onClose,onScopeChange}){
+ const form=dialog.querySelector('form'),raw=dialog.querySelector('textarea'),columns=dialog.querySelector('input'),error=dialog.querySelector('[role="alert"]'),submit=form.querySelector('.primary'),cancel=form.querySelector('[type="button"]'),summary=document.createElement('p'),notice=document.createElement('p');summary.setAttribute('role','status');notice.textContent='Closing keeps your input for this board in this tab. Reloading discards unsubmitted notes.';raw.after(summary,notice);let context=null,applied=false,actionError='';const drafts=new Map();
+ const remember=()=>{if(context)drafts.set(context.scope,{text:raw.value,columns:columns.value});};
+ function refresh(){if(!dialog.open||!context)return;const current=getContext();if(current.board!==context.board||current.scope!==context.scope){remember();dialog.close();onScopeChange?.();return;}submit.disabled=!canEdit();error.textContent=canEdit()?actionError:'This board is read-only. Your input is kept for review.';}
+ function inspect(){remember();actionError='';const count=raw.value.split(/\r?\n/).filter(line=>line.trim()).length;summary.textContent=`${count} note${count===1?'':'s'} · ${columns.value||'choose'} columns`;refresh();}
+ raw.addEventListener('input',inspect);columns.addEventListener('input',inspect);cancel.onclick=()=>dialog.close();form.onsubmit=event=>{event.preventDefault();try{const prepared=prepareBulkNotes(raw.value,context,{getContext,assertWritable,columns:Number(columns.value)});onApply(prepared);drafts.delete(context.scope);applied=true;dialog.close();}catch(problem){actionError=problem.message;refresh();}};
+ dialog.addEventListener('close',()=>{if(!applied)remember();context=null;raw.value='';summary.textContent='';error.textContent='';onClose?.();});
+ return{open(point,fill){context={...getContext(),point:{...point},fill};applied=false;const draft=drafts.get(context.scope);raw.value=draft?.text||'';columns.value=draft?.columns??'4';error.textContent='';dialog.showModal();inspect();raw.focus();},refresh};
+}

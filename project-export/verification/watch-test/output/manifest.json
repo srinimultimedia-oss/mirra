@@ -1,0 +1,461 @@
+{
+  "project": "mirra",
+  "version": "0.1.0",
+  "generated_on": "2026-11-09T10:43:20.623Z",
+  "source_commit": "8a4caead31ebf2e7a6017a54ff0ae35b65dda246",
+  "source_branch": "main",
+  "fingerprint": "4f66e02b6b82d32809f50911ff75f9ab9e366dddc7fb4ca40264afcd3ee4da03",
+  "reviewed_fingerprint": "1714f4509ce2839a1ff09cfe162b59ac1e1c38f8c8f4b2e695ab7828520f70ac",
+  "narrative_review_required": true,
+  "retired_files": [],
+  "source_worktree_status": "",
+  "snapshot_files": 4,
+  "summary": "Independent SVG visual workspace with device-local library and D1-backed hosted collaboration; full parity and several deployment flows unverified.",
+  "tech_stack": [
+    {
+      "layer": "Editor",
+      "technology": "HTML/CSS/ES modules/SVG",
+      "version": "Browser-native"
+    },
+    {
+      "layer": "Runtime",
+      "technology": "Node.js",
+      "version": ">=24 (root); >=22.13.0 (cloud)"
+    },
+    {
+      "layer": "Cloud framework",
+      "technology": "vinext",
+      "version": "[UNVERIFIED]"
+    },
+    {
+      "layer": "Framework compatibility",
+      "technology": "next",
+      "version": "[UNVERIFIED]"
+    },
+    {
+      "layer": "Build",
+      "technology": "vite",
+      "version": "[UNVERIFIED]"
+    },
+    {
+      "layer": "Cloud UI",
+      "technology": "react",
+      "version": "[UNVERIFIED]"
+    },
+    {
+      "layer": "Cloud UI",
+      "technology": "react-dom",
+      "version": "[UNVERIFIED]"
+    },
+    {
+      "layer": "Types",
+      "technology": "typescript",
+      "version": "[UNVERIFIED]"
+    },
+    {
+      "layer": "Cloud CSS",
+      "technology": "tailwindcss",
+      "version": "[UNVERIFIED]"
+    },
+    {
+      "layer": "Database",
+      "technology": "drizzle-orm",
+      "version": "[UNVERIFIED]"
+    },
+    {
+      "layer": "Migrations",
+      "technology": "drizzle-kit",
+      "version": "[UNVERIFIED]"
+    },
+    {
+      "layer": "Worker tooling",
+      "technology": "wrangler",
+      "version": "[UNVERIFIED]"
+    },
+    {
+      "layer": "Lint",
+      "technology": "eslint",
+      "version": "[UNVERIFIED]"
+    },
+    {
+      "layer": "Installed validation library",
+      "technology": "zod",
+      "version": "[UNVERIFIED]"
+    },
+    {
+      "layer": "Locally patched glob engine",
+      "technology": "picomatch",
+      "version": "[UNVERIFIED]"
+    },
+    {
+      "layer": "Locally hardened brace engine",
+      "technology": "braces",
+      "version": "[UNVERIFIED]"
+    }
+  ],
+  "entry_points": [
+    {
+      "name": "Static HTML",
+      "path": "source/public/index.html"
+    },
+    {
+      "name": "Browser application",
+      "path": "source/public/app.mjs"
+    },
+    {
+      "name": "Hosted root",
+      "path": "source/cloud/app/page.tsx"
+    },
+    {
+      "name": "Worker",
+      "path": "source/cloud/worker/index.ts"
+    }
+  ],
+  "routes": [
+    {
+      "path": "/",
+      "component": "source/cloud/app/page.tsx",
+      "purpose": "Authenticated hosted redirect",
+      "symbol": "Home"
+    },
+    {
+      "path": "/public/index.html",
+      "component": "source/public/index.html",
+      "purpose": "Static board editor",
+      "symbol": "HTML"
+    },
+    {
+      "path": "#home",
+      "component": "source/src/navigation.mjs",
+      "purpose": "Dashboard hash route",
+      "symbol": "parseRoute"
+    },
+    {
+      "path": "#board/<id>",
+      "component": "source/src/navigation.mjs",
+      "purpose": "Device board hash route",
+      "symbol": "parseRoute"
+    },
+    {
+      "path": "#cloud/<id>",
+      "component": "source/src/navigation.mjs",
+      "purpose": "Cloud board hash route",
+      "symbol": "parseRoute"
+    },
+    {
+      "path": "/api/[...path]",
+      "component": "source/cloud/app/api/[...path]/route.ts",
+      "purpose": "Framework GET/POST/PATCH/DELETE; PUT absent",
+      "symbol": "handle"
+    },
+    {
+      "path": "/api/me",
+      "component": "source/cloud/lib/board-service.ts",
+      "purpose": "Service branch; method/access checks apply",
+      "symbol": "boardAPI"
+    },
+    {
+      "path": "/api/boards",
+      "component": "source/cloud/lib/board-service.ts",
+      "purpose": "Service branch; method/access checks apply",
+      "symbol": "boardAPI"
+    },
+    {
+      "path": "/api/boards/:id",
+      "component": "source/cloud/lib/board-service.ts",
+      "purpose": "Service branch; method/access checks apply",
+      "symbol": "boardAPI"
+    },
+    {
+      "path": "/api/boards/:id/changes",
+      "component": "source/cloud/lib/board-service.ts",
+      "purpose": "Service branch; method/access checks apply",
+      "symbol": "boardAPI"
+    },
+    {
+      "path": "/api/boards/:id/members",
+      "component": "source/cloud/lib/board-service.ts",
+      "purpose": "Service branch; method/access checks apply",
+      "symbol": "boardAPI"
+    },
+    {
+      "path": "/api/boards/:id/comments",
+      "component": "source/cloud/lib/board-service.ts",
+      "purpose": "Service branch; method/access checks apply",
+      "symbol": "boardAPI"
+    },
+    {
+      "path": "/api/boards/:id/comments/:commentId",
+      "component": "source/cloud/lib/board-service.ts",
+      "purpose": "Service branch; method/access checks apply",
+      "symbol": "boardAPI"
+    },
+    {
+      "path": "/api/boards/:id/comments/:commentId/resolve",
+      "component": "source/cloud/lib/board-service.ts",
+      "purpose": "Service branch; method/access checks apply",
+      "symbol": "boardAPI"
+    },
+    {
+      "path": "/api/boards/:id/presence",
+      "component": "source/cloud/lib/board-service.ts",
+      "purpose": "Service branch; method/access checks apply",
+      "symbol": "boardAPI"
+    },
+    {
+      "path": "/api/boards/:id/attention",
+      "component": "source/cloud/lib/board-service.ts",
+      "purpose": "Service branch; method/access checks apply",
+      "symbol": "boardAPI"
+    },
+    {
+      "path": "/api/boards/:id/events",
+      "component": "source/cloud/lib/board-service.ts",
+      "purpose": "Service branch; method/access checks apply",
+      "symbol": "boardAPI"
+    },
+    {
+      "path": "/api/boards/:id/voting/*",
+      "component": "source/cloud/lib/voting-service.ts",
+      "purpose": "Voting service branches; PUT framework integration unresolved",
+      "symbol": "votingAPI"
+    }
+  ],
+  "components": [
+    {
+      "name": "Board",
+      "path": "source/src/model.mjs",
+      "depends_on": [
+        "geometry",
+        "frame-index",
+        "tables",
+        "timer",
+        "tags"
+      ]
+    },
+    {
+      "name": "LocalLibrary",
+      "path": "source/src/library.mjs",
+      "depends_on": [
+        "model"
+      ]
+    },
+    {
+      "name": "CloudSession",
+      "path": "source/src/cloud-client.mjs",
+      "depends_on": [
+        "changes",
+        "drafts"
+      ]
+    },
+    {
+      "name": "HistoryNavigation",
+      "path": "source/src/navigation.mjs",
+      "depends_on": []
+    },
+    {
+      "name": "TableEditor",
+      "path": "source/public/table-editor.mjs",
+      "depends_on": [
+        "tables",
+        "table-drafts"
+      ]
+    },
+    {
+      "name": "ObjectTextEditor",
+      "path": "source/public/object-editor.mjs",
+      "depends_on": []
+    },
+    {
+      "name": "BoardTitleEditor",
+      "path": "source/public/board-title.mjs",
+      "depends_on": []
+    },
+    {
+      "name": "boardAPI",
+      "path": "source/cloud/lib/board-service.ts",
+      "depends_on": [
+        "core/model",
+        "core/changes",
+        "voting-service",
+        "request-body"
+      ]
+    },
+    {
+      "name": "votingAPI",
+      "path": "source/cloud/lib/voting-service.ts",
+      "depends_on": [
+        "core/voting"
+      ]
+    },
+    {
+      "name": "RootLayout",
+      "path": "source/cloud/app/layout.tsx",
+      "depends_on": []
+    },
+    {
+      "name": "Home",
+      "path": "source/cloud/app/page.tsx",
+      "depends_on": [
+        "chatgpt-auth"
+      ]
+    },
+    {
+      "name": "SidebarProvider",
+      "path": "source/cloud/components/ui/sidebar.tsx",
+      "depends_on": [
+        "sidebar-preference"
+      ]
+    }
+  ],
+  "client_storage": [
+    {
+      "key": "mirra.library.v1",
+      "storage": "localStorage",
+      "purpose": "Versioned local board library"
+    },
+    {
+      "key": "mirra.board.v1",
+      "storage": "localStorage",
+      "purpose": "Legacy single board migration"
+    },
+    {
+      "key": "mirra.device-draft.v2.*",
+      "storage": "localStorage",
+      "purpose": "Scoped cloud/comment recovery"
+    },
+    {
+      "key": "mirra.cloud.draft.*",
+      "storage": "localStorage",
+      "purpose": "Legacy cloud draft export"
+    },
+    {
+      "key": "mirra.cloud-upload.v1.*",
+      "storage": "localStorage",
+      "purpose": "Idempotent upload intent"
+    },
+    {
+      "key": "mirra.comment.client",
+      "storage": "sessionStorage",
+      "purpose": "Tab recovery namespace"
+    },
+    {
+      "key": "mirra.table-input.v1.*",
+      "storage": "sessionStorage",
+      "purpose": "Unsent table editing values"
+    },
+    {
+      "key": "mirra.object-text.v1.*",
+      "storage": "sessionStorage",
+      "purpose": "Unsent object text"
+    },
+    {
+      "key": "mirra.board-name.v1.*",
+      "storage": "sessionStorage",
+      "purpose": "Unsent board name"
+    },
+    {
+      "key": "mirra.properties.v1.*",
+      "storage": "sessionStorage",
+      "purpose": "Unsent property values"
+    },
+    {
+      "key": "mirra.voting.intent.v1:*",
+      "storage": "sessionStorage",
+      "purpose": "Uncertain ballot intent"
+    },
+    {
+      "key": "mirra.sidebar.preference",
+      "storage": "localStorage",
+      "purpose": "Seven-day display preference"
+    }
+  ],
+  "external_services": [
+    {
+      "name": "Sites identity/hosting",
+      "url_placeholder": "<SITE_ORIGIN>",
+      "purpose": "Private hosting and trusted identity"
+    },
+    {
+      "name": "Cloudflare D1",
+      "url_placeholder": "<D1_BINDING>",
+      "purpose": "Server SQLite persistence"
+    },
+    {
+      "name": "Optional connectors",
+      "url_placeholder": "<CONNECTOR_BINDING>",
+      "purpose": "Request-scoped platform capability; concrete product integrations unverified"
+    }
+  ],
+  "scripts": {
+    "install": "cd source/cloud && npm run install:ci",
+    "dev": "cd source && npm run dev",
+    "cloud_dev": "cd source/cloud && npm run dev -- --port 5173 --host 127.0.0.1",
+    "build": "cd source/cloud && npm run build",
+    "test": "cd source && npm test",
+    "deploy": "Official Sites tooling and provisioned trusted identity/D1; no standalone npm deploy command"
+  },
+  "required_config": [
+    {
+      "name": "<SITE_PROJECT_ID>",
+      "used_by": "source/cloud/.openai/hosting.json",
+      "supplied_via": "Provisioned hosting project; replace placeholder only in working copy"
+    },
+    {
+      "name": "<SITE_ORIGIN>",
+      "used_by": "source/public/app.mjs and hosted copies",
+      "supplied_via": "Deployed private site origin; replace sanitized fallback link"
+    },
+    {
+      "name": "DB",
+      "used_by": "source/cloud/vite.config.ts, source/cloud/lib/board-service.ts",
+      "supplied_via": "Cloudflare D1 binding and migrated database"
+    },
+    {
+      "name": "Authenticated-user headers",
+      "used_by": "source/cloud/app/chatgpt-auth.ts, source/cloud/lib/board-service.ts",
+      "supplied_via": "Trusted hosting gateway; local development fixture only on loopback"
+    },
+    {
+      "name": "CONNECTORS (optional)",
+      "used_by": "source/cloud/worker/index.ts",
+      "supplied_via": "Request-scoped platform binding"
+    },
+    {
+      "name": "<PRIVATE_SOURCE_REPOSITORY>, <DEPLOYMENT_ID>, <SITE_VERSION_ID>, <CHECKMARX_RESULTS_URL>",
+      "used_by": "Sanitized historical documentation only",
+      "supplied_via": "Original operator records; not required for local application execution"
+    },
+    {
+      "name": "<ORIGINAL_USER_PATH>, <ORIGINAL_WORKSPACE>, <USER_EMAIL>",
+      "used_by": "Sanitized historical prose only",
+      "supplied_via": "Non-runtime references; do not recover personal values for local execution"
+    }
+  ],
+  "open_questions": [
+    "Hosted ballot PUT is not exported by framework route",
+    "Production control-plane/account and trusted identity configuration",
+    "Fresh Checkmarx closure of local patches",
+    "Full feature parity and unchecked native/hosted acceptance",
+    "Complete browser/accessibility and operational-scale verification",
+    "Narrative human/model review after new behavior"
+  ],
+  "source_files": [
+    {
+      "path": "source/cloud/package-lock.json",
+      "sha256": "e25b3e26894b0261fafd86d044f10b48e92e8cd8670493effd8207ff149019e5"
+    },
+    {
+      "path": "source/cloud/package.json",
+      "sha256": "13cfb4ea2288ea55ccb80e0ef870f72d89949734282ade1993de9c76ec85da9d"
+    },
+    {
+      "path": "source/public/index.html",
+      "sha256": "931077c9451de78302c7e218b41f541fe1bd12988ad8dd419f02e86ca4cba30f"
+    },
+    {
+      "path": "source/src/new-feature.mjs",
+      "sha256": "478779a7466ec22dde6e00406eb614f36e307b19625eb5646c52dac8bb865821"
+    }
+  ]
+}

@@ -1,0 +1,1320 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.9.0
+2 info using node@v24.14.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Srini\Mirra\mirra\project-export\source\cloud\.npmrc
+5 silly config load:file:C:\Users\srini\.npmrc
+6 silly config load:file:C:\Users\srini\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm ls
+8 verbose argv "ls" "--all" "--json"
+9 verbose logfile logs-max:10 dir:C:\Srini\Mirra\mirra\project-export\verification\npm-cache\_logs\2026-11-09T10_37_01_275Z-
+10 verbose logfile C:\Srini\Mirra\mirra\project-export\verification\npm-cache\_logs\2026-11-09T10_37_01_275Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+14 silly Conflicting override sets <ref *1> OverrideSet {
+14 silly Conflicting override sets   parent: OverrideSet {
+14 silly Conflicting override sets     parent: undefined,
+14 silly Conflicting override sets     children: Map(21) {
+14 silly Conflicting override sets       'wrangler' => [OverrideSet],
+14 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+14 silly Conflicting override sets       'miniflare' => [Circular *1],
+14 silly Conflicting override sets       'undici' => [OverrideSet],
+14 silly Conflicting override sets       'esbuild' => [OverrideSet],
+14 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+14 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+14 silly Conflicting override sets       'ws' => [OverrideSet],
+14 silly Conflicting override sets       'image-size' => [OverrideSet],
+14 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+14 silly Conflicting override sets       'browserslist' => [OverrideSet],
+14 silly Conflicting override sets       'picomatch' => [OverrideSet],
+14 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+14 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+14 silly Conflicting override sets       'uri-js' => [OverrideSet],
+14 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+14 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+14 silly Conflicting override sets       'debug' => [OverrideSet],
+14 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+14 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+14 silly Conflicting override sets       'braces' => [OverrideSet]
+14 silly Conflicting override sets     }
+14 silly Conflicting override sets   },
+14 silly Conflicting override sets   children: Map(1) {
+14 silly Conflicting override sets     'sharp' => OverrideSet {
+14 silly Conflicting override sets       parent: [Circular *1],
+14 silly Conflicting override sets       children: Map(0) {},
+14 silly Conflicting override sets       name: 'sharp',
+14 silly Conflicting override sets       key: 'sharp',
+14 silly Conflicting override sets       keySpec: '*',
+14 silly Conflicting override sets       value: '0.35.5'
+14 silly Conflicting override sets     }
+14 silly Conflicting override sets   },
+14 silly Conflicting override sets   name: 'miniflare',
+14 silly Conflicting override sets   key: 'miniflare',
+14 silly Conflicting override sets   keySpec: '*',
+14 silly Conflicting override sets   value: '*'
+14 silly Conflicting override sets } <ref *1> OverrideSet {
+14 silly Conflicting override sets   parent: OverrideSet {
+14 silly Conflicting override sets     parent: undefined,
+14 silly Conflicting override sets     children: Map(21) {
+14 silly Conflicting override sets       'wrangler' => [Circular *1],
+14 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+14 silly Conflicting override sets       'miniflare' => [OverrideSet],
+14 silly Conflicting override sets       'undici' => [OverrideSet],
+14 silly Conflicting override sets       'esbuild' => [OverrideSet],
+14 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+14 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+14 silly Conflicting override sets       'ws' => [OverrideSet],
+14 silly Conflicting override sets       'image-size' => [OverrideSet],
+14 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+14 silly Conflicting override sets       'browserslist' => [OverrideSet],
+14 silly Conflicting override sets       'picomatch' => [OverrideSet],
+14 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+14 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+14 silly Conflicting override sets       'uri-js' => [OverrideSet],
+14 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+14 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+14 silly Conflicting override sets       'debug' => [OverrideSet],
+14 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+14 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+14 silly Conflicting override sets       'braces' => [OverrideSet]
+14 silly Conflicting override sets     }
+14 silly Conflicting override sets   },
+14 silly Conflicting override sets   children: Map(0) {},
+14 silly Conflicting override sets   name: 'wrangler',
+14 silly Conflicting override sets   key: 'wrangler',
+14 silly Conflicting override sets   keySpec: '*',
+14 silly Conflicting override sets   value: '$wrangler'
+14 silly Conflicting override sets }
+15 silly Conflicting override sets workerd
+16 silly Conflicting override sets <ref *1> OverrideSet {
+16 silly Conflicting override sets   parent: OverrideSet {
+16 silly Conflicting override sets     parent: undefined,
+16 silly Conflicting override sets     children: Map(21) {
+16 silly Conflicting override sets       'wrangler' => [OverrideSet],
+16 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+16 silly Conflicting override sets       'miniflare' => [OverrideSet],
+16 silly Conflicting override sets       'undici' => [OverrideSet],
+16 silly Conflicting override sets       'esbuild' => [OverrideSet],
+16 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+16 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+16 silly Conflicting override sets       'ws' => [OverrideSet],
+16 silly Conflicting override sets       'image-size' => [OverrideSet],
+16 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+16 silly Conflicting override sets       'browserslist' => [Circular *1],
+16 silly Conflicting override sets       'picomatch' => [OverrideSet],
+16 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+16 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+16 silly Conflicting override sets       'uri-js' => [OverrideSet],
+16 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+16 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+16 silly Conflicting override sets       'debug' => [OverrideSet],
+16 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+16 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+16 silly Conflicting override sets       'braces' => [OverrideSet]
+16 silly Conflicting override sets     }
+16 silly Conflicting override sets   },
+16 silly Conflicting override sets   children: Map(0) {},
+16 silly Conflicting override sets   name: 'browserslist',
+16 silly Conflicting override sets   key: 'browserslist',
+16 silly Conflicting override sets   keySpec: '*',
+16 silly Conflicting override sets   value: '4.29.5'
+16 silly Conflicting override sets } <ref *1> OverrideSet {
+16 silly Conflicting override sets   parent: OverrideSet {
+16 silly Conflicting override sets     parent: undefined,
+16 silly Conflicting override sets     children: Map(21) {
+16 silly Conflicting override sets       'wrangler' => [OverrideSet],
+16 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+16 silly Conflicting override sets       'miniflare' => [OverrideSet],
+16 silly Conflicting override sets       'undici' => [OverrideSet],
+16 silly Conflicting override sets       'esbuild' => [OverrideSet],
+16 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+16 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+16 silly Conflicting override sets       'ws' => [OverrideSet],
+16 silly Conflicting override sets       'image-size' => [OverrideSet],
+16 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+16 silly Conflicting override sets       'browserslist' => [OverrideSet],
+16 silly Conflicting override sets       'picomatch' => [OverrideSet],
+16 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+16 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+16 silly Conflicting override sets       'uri-js' => [OverrideSet],
+16 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+16 silly Conflicting override sets       '@babel/core' => [Circular *1],
+16 silly Conflicting override sets       'debug' => [OverrideSet],
+16 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+16 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+16 silly Conflicting override sets       'braces' => [OverrideSet]
+16 silly Conflicting override sets     }
+16 silly Conflicting override sets   },
+16 silly Conflicting override sets   children: Map(0) {},
+16 silly Conflicting override sets   name: '@babel/core',
+16 silly Conflicting override sets   key: '@babel/core',
+16 silly Conflicting override sets   keySpec: '*',
+16 silly Conflicting override sets   value: '7.29.6'
+16 silly Conflicting override sets }
+17 silly Conflicting override sets picocolors
+18 silly Conflicting override sets <ref *1> OverrideSet {
+18 silly Conflicting override sets   parent: OverrideSet {
+18 silly Conflicting override sets     parent: OverrideSet { parent: undefined, children: [Map] },
+18 silly Conflicting override sets     children: Map(1) { 'sharp' => [Circular *1] },
+18 silly Conflicting override sets     name: 'miniflare',
+18 silly Conflicting override sets     key: 'miniflare',
+18 silly Conflicting override sets     keySpec: '*',
+18 silly Conflicting override sets     value: '*'
+18 silly Conflicting override sets   },
+18 silly Conflicting override sets   children: Map(0) {},
+18 silly Conflicting override sets   name: 'sharp',
+18 silly Conflicting override sets   key: 'sharp',
+18 silly Conflicting override sets   keySpec: '*',
+18 silly Conflicting override sets   value: '0.35.5'
+18 silly Conflicting override sets } <ref *1> OverrideSet {
+18 silly Conflicting override sets   parent: OverrideSet {
+18 silly Conflicting override sets     parent: undefined,
+18 silly Conflicting override sets     children: Map(21) {
+18 silly Conflicting override sets       'wrangler' => [OverrideSet],
+18 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+18 silly Conflicting override sets       'miniflare' => [OverrideSet],
+18 silly Conflicting override sets       'undici' => [OverrideSet],
+18 silly Conflicting override sets       'esbuild' => [OverrideSet],
+18 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+18 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+18 silly Conflicting override sets       'ws' => [OverrideSet],
+18 silly Conflicting override sets       'image-size' => [OverrideSet],
+18 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+18 silly Conflicting override sets       'browserslist' => [OverrideSet],
+18 silly Conflicting override sets       'picomatch' => [OverrideSet],
+18 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+18 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+18 silly Conflicting override sets       'uri-js' => [OverrideSet],
+18 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+18 silly Conflicting override sets       '@babel/core' => [Circular *1],
+18 silly Conflicting override sets       'debug' => [OverrideSet],
+18 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+18 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+18 silly Conflicting override sets       'braces' => [OverrideSet]
+18 silly Conflicting override sets     }
+18 silly Conflicting override sets   },
+18 silly Conflicting override sets   children: Map(0) {},
+18 silly Conflicting override sets   name: '@babel/core',
+18 silly Conflicting override sets   key: '@babel/core',
+18 silly Conflicting override sets   keySpec: '*',
+18 silly Conflicting override sets   value: '7.29.6'
+18 silly Conflicting override sets }
+19 silly Conflicting override sets semver
+20 silly Conflicting override sets <ref *1> OverrideSet {
+20 silly Conflicting override sets   parent: OverrideSet {
+20 silly Conflicting override sets     parent: OverrideSet { parent: undefined, children: [Map] },
+20 silly Conflicting override sets     children: Map(1) { 'sharp' => [Circular *1] },
+20 silly Conflicting override sets     name: 'miniflare',
+20 silly Conflicting override sets     key: 'miniflare',
+20 silly Conflicting override sets     keySpec: '*',
+20 silly Conflicting override sets     value: '*'
+20 silly Conflicting override sets   },
+20 silly Conflicting override sets   children: Map(0) {},
+20 silly Conflicting override sets   name: 'sharp',
+20 silly Conflicting override sets   key: 'sharp',
+20 silly Conflicting override sets   keySpec: '*',
+20 silly Conflicting override sets   value: '0.35.5'
+20 silly Conflicting override sets } <ref *1> OverrideSet {
+20 silly Conflicting override sets   parent: OverrideSet {
+20 silly Conflicting override sets     parent: undefined,
+20 silly Conflicting override sets     children: Map(21) {
+20 silly Conflicting override sets       'wrangler' => [OverrideSet],
+20 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+20 silly Conflicting override sets       'miniflare' => [OverrideSet],
+20 silly Conflicting override sets       'undici' => [OverrideSet],
+20 silly Conflicting override sets       'esbuild' => [OverrideSet],
+20 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+20 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+20 silly Conflicting override sets       'ws' => [OverrideSet],
+20 silly Conflicting override sets       'image-size' => [OverrideSet],
+20 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+20 silly Conflicting override sets       'browserslist' => [OverrideSet],
+20 silly Conflicting override sets       'picomatch' => [OverrideSet],
+20 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+20 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+20 silly Conflicting override sets       'uri-js' => [OverrideSet],
+20 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+20 silly Conflicting override sets       '@babel/core' => [Circular *1],
+20 silly Conflicting override sets       'debug' => [OverrideSet],
+20 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+20 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+20 silly Conflicting override sets       'braces' => [OverrideSet]
+20 silly Conflicting override sets     }
+20 silly Conflicting override sets   },
+20 silly Conflicting override sets   children: Map(0) {},
+20 silly Conflicting override sets   name: '@babel/core',
+20 silly Conflicting override sets   key: '@babel/core',
+20 silly Conflicting override sets   keySpec: '*',
+20 silly Conflicting override sets   value: '7.29.6'
+20 silly Conflicting override sets }
+21 silly Conflicting override sets semver
+22 silly Conflicting override sets <ref *1> OverrideSet {
+22 silly Conflicting override sets   parent: OverrideSet {
+22 silly Conflicting override sets     parent: undefined,
+22 silly Conflicting override sets     children: Map(21) {
+22 silly Conflicting override sets       'wrangler' => [OverrideSet],
+22 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+22 silly Conflicting override sets       'miniflare' => [Circular *1],
+22 silly Conflicting override sets       'undici' => [OverrideSet],
+22 silly Conflicting override sets       'esbuild' => [OverrideSet],
+22 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+22 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+22 silly Conflicting override sets       'ws' => [OverrideSet],
+22 silly Conflicting override sets       'image-size' => [OverrideSet],
+22 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+22 silly Conflicting override sets       'browserslist' => [OverrideSet],
+22 silly Conflicting override sets       'picomatch' => [OverrideSet],
+22 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+22 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+22 silly Conflicting override sets       'uri-js' => [OverrideSet],
+22 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+22 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+22 silly Conflicting override sets       'debug' => [OverrideSet],
+22 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+22 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+22 silly Conflicting override sets       'braces' => [OverrideSet]
+22 silly Conflicting override sets     }
+22 silly Conflicting override sets   },
+22 silly Conflicting override sets   children: Map(1) {
+22 silly Conflicting override sets     'sharp' => OverrideSet {
+22 silly Conflicting override sets       parent: [Circular *1],
+22 silly Conflicting override sets       children: Map(0) {},
+22 silly Conflicting override sets       name: 'sharp',
+22 silly Conflicting override sets       key: 'sharp',
+22 silly Conflicting override sets       keySpec: '*',
+22 silly Conflicting override sets       value: '0.35.5'
+22 silly Conflicting override sets     }
+22 silly Conflicting override sets   },
+22 silly Conflicting override sets   name: 'miniflare',
+22 silly Conflicting override sets   key: 'miniflare',
+22 silly Conflicting override sets   keySpec: '*',
+22 silly Conflicting override sets   value: '*'
+22 silly Conflicting override sets } <ref *1> OverrideSet {
+22 silly Conflicting override sets   parent: OverrideSet {
+22 silly Conflicting override sets     parent: undefined,
+22 silly Conflicting override sets     children: Map(21) {
+22 silly Conflicting override sets       'wrangler' => [Circular *1],
+22 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+22 silly Conflicting override sets       'miniflare' => [OverrideSet],
+22 silly Conflicting override sets       'undici' => [OverrideSet],
+22 silly Conflicting override sets       'esbuild' => [OverrideSet],
+22 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+22 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+22 silly Conflicting override sets       'ws' => [OverrideSet],
+22 silly Conflicting override sets       'image-size' => [OverrideSet],
+22 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+22 silly Conflicting override sets       'browserslist' => [OverrideSet],
+22 silly Conflicting override sets       'picomatch' => [OverrideSet],
+22 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+22 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+22 silly Conflicting override sets       'uri-js' => [OverrideSet],
+22 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+22 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+22 silly Conflicting override sets       'debug' => [OverrideSet],
+22 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+22 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+22 silly Conflicting override sets       'braces' => [OverrideSet]
+22 silly Conflicting override sets     }
+22 silly Conflicting override sets   },
+22 silly Conflicting override sets   children: Map(0) {},
+22 silly Conflicting override sets   name: 'wrangler',
+22 silly Conflicting override sets   key: 'wrangler',
+22 silly Conflicting override sets   keySpec: '*',
+22 silly Conflicting override sets   value: '$wrangler'
+22 silly Conflicting override sets }
+23 silly Conflicting override sets @cspotcode/source-map-support
+24 silly Conflicting override sets <ref *1> OverrideSet {
+24 silly Conflicting override sets   parent: OverrideSet {
+24 silly Conflicting override sets     parent: undefined,
+24 silly Conflicting override sets     children: Map(21) {
+24 silly Conflicting override sets       'wrangler' => [OverrideSet],
+24 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+24 silly Conflicting override sets       'miniflare' => [Circular *1],
+24 silly Conflicting override sets       'undici' => [OverrideSet],
+24 silly Conflicting override sets       'esbuild' => [OverrideSet],
+24 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+24 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+24 silly Conflicting override sets       'ws' => [OverrideSet],
+24 silly Conflicting override sets       'image-size' => [OverrideSet],
+24 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+24 silly Conflicting override sets       'browserslist' => [OverrideSet],
+24 silly Conflicting override sets       'picomatch' => [OverrideSet],
+24 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+24 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+24 silly Conflicting override sets       'uri-js' => [OverrideSet],
+24 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+24 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+24 silly Conflicting override sets       'debug' => [OverrideSet],
+24 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+24 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+24 silly Conflicting override sets       'braces' => [OverrideSet]
+24 silly Conflicting override sets     }
+24 silly Conflicting override sets   },
+24 silly Conflicting override sets   children: Map(1) {
+24 silly Conflicting override sets     'sharp' => OverrideSet {
+24 silly Conflicting override sets       parent: [Circular *1],
+24 silly Conflicting override sets       children: Map(0) {},
+24 silly Conflicting override sets       name: 'sharp',
+24 silly Conflicting override sets       key: 'sharp',
+24 silly Conflicting override sets       keySpec: '*',
+24 silly Conflicting override sets       value: '0.35.5'
+24 silly Conflicting override sets     }
+24 silly Conflicting override sets   },
+24 silly Conflicting override sets   name: 'miniflare',
+24 silly Conflicting override sets   key: 'miniflare',
+24 silly Conflicting override sets   keySpec: '*',
+24 silly Conflicting override sets   value: '*'
+24 silly Conflicting override sets } <ref *1> OverrideSet {
+24 silly Conflicting override sets   parent: OverrideSet {
+24 silly Conflicting override sets     parent: undefined,
+24 silly Conflicting override sets     children: Map(21) {
+24 silly Conflicting override sets       'wrangler' => [Circular *1],
+24 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+24 silly Conflicting override sets       'miniflare' => [OverrideSet],
+24 silly Conflicting override sets       'undici' => [OverrideSet],
+24 silly Conflicting override sets       'esbuild' => [OverrideSet],
+24 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+24 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+24 silly Conflicting override sets       'ws' => [OverrideSet],
+24 silly Conflicting override sets       'image-size' => [OverrideSet],
+24 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+24 silly Conflicting override sets       'browserslist' => [OverrideSet],
+24 silly Conflicting override sets       'picomatch' => [OverrideSet],
+24 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+24 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+24 silly Conflicting override sets       'uri-js' => [OverrideSet],
+24 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+24 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+24 silly Conflicting override sets       'debug' => [OverrideSet],
+24 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+24 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+24 silly Conflicting override sets       'braces' => [OverrideSet]
+24 silly Conflicting override sets     }
+24 silly Conflicting override sets   },
+24 silly Conflicting override sets   children: Map(0) {},
+24 silly Conflicting override sets   name: 'wrangler',
+24 silly Conflicting override sets   key: 'wrangler',
+24 silly Conflicting override sets   keySpec: '*',
+24 silly Conflicting override sets   value: '$wrangler'
+24 silly Conflicting override sets }
+25 silly Conflicting override sets workerd
+26 silly Conflicting override sets <ref *1> OverrideSet {
+26 silly Conflicting override sets   parent: OverrideSet {
+26 silly Conflicting override sets     parent: undefined,
+26 silly Conflicting override sets     children: Map(21) {
+26 silly Conflicting override sets       'wrangler' => [OverrideSet],
+26 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+26 silly Conflicting override sets       'miniflare' => [OverrideSet],
+26 silly Conflicting override sets       'undici' => [OverrideSet],
+26 silly Conflicting override sets       'esbuild' => [OverrideSet],
+26 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+26 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+26 silly Conflicting override sets       'ws' => [OverrideSet],
+26 silly Conflicting override sets       'image-size' => [OverrideSet],
+26 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+26 silly Conflicting override sets       'browserslist' => [OverrideSet],
+26 silly Conflicting override sets       'picomatch' => [OverrideSet],
+26 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+26 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+26 silly Conflicting override sets       'uri-js' => [OverrideSet],
+26 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+26 silly Conflicting override sets       '@babel/core' => [Circular *1],
+26 silly Conflicting override sets       'debug' => [OverrideSet],
+26 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+26 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+26 silly Conflicting override sets       'braces' => [OverrideSet]
+26 silly Conflicting override sets     }
+26 silly Conflicting override sets   },
+26 silly Conflicting override sets   children: Map(0) {},
+26 silly Conflicting override sets   name: '@babel/core',
+26 silly Conflicting override sets   key: '@babel/core',
+26 silly Conflicting override sets   keySpec: '*',
+26 silly Conflicting override sets   value: '7.29.6'
+26 silly Conflicting override sets } <ref *1> OverrideSet {
+26 silly Conflicting override sets   parent: OverrideSet {
+26 silly Conflicting override sets     parent: undefined,
+26 silly Conflicting override sets     children: Map(21) {
+26 silly Conflicting override sets       'wrangler' => [OverrideSet],
+26 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+26 silly Conflicting override sets       'miniflare' => [Circular *1],
+26 silly Conflicting override sets       'undici' => [OverrideSet],
+26 silly Conflicting override sets       'esbuild' => [OverrideSet],
+26 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+26 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+26 silly Conflicting override sets       'ws' => [OverrideSet],
+26 silly Conflicting override sets       'image-size' => [OverrideSet],
+26 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+26 silly Conflicting override sets       'browserslist' => [OverrideSet],
+26 silly Conflicting override sets       'picomatch' => [OverrideSet],
+26 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+26 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+26 silly Conflicting override sets       'uri-js' => [OverrideSet],
+26 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+26 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+26 silly Conflicting override sets       'debug' => [OverrideSet],
+26 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+26 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+26 silly Conflicting override sets       'braces' => [OverrideSet]
+26 silly Conflicting override sets     }
+26 silly Conflicting override sets   },
+26 silly Conflicting override sets   children: Map(1) {
+26 silly Conflicting override sets     'sharp' => OverrideSet {
+26 silly Conflicting override sets       parent: [Circular *1],
+26 silly Conflicting override sets       children: Map(0) {},
+26 silly Conflicting override sets       name: 'sharp',
+26 silly Conflicting override sets       key: 'sharp',
+26 silly Conflicting override sets       keySpec: '*',
+26 silly Conflicting override sets       value: '0.35.5'
+26 silly Conflicting override sets     }
+26 silly Conflicting override sets   },
+26 silly Conflicting override sets   name: 'miniflare',
+26 silly Conflicting override sets   key: 'miniflare',
+26 silly Conflicting override sets   keySpec: '*',
+26 silly Conflicting override sets   value: '*'
+26 silly Conflicting override sets }
+27 silly Conflicting override sets @jridgewell/trace-mapping
+28 silly Conflicting override sets <ref *1> OverrideSet {
+28 silly Conflicting override sets   parent: OverrideSet {
+28 silly Conflicting override sets     parent: OverrideSet { parent: undefined, children: [Map] },
+28 silly Conflicting override sets     children: Map(1) { 'sharp' => [Circular *1] },
+28 silly Conflicting override sets     name: 'miniflare',
+28 silly Conflicting override sets     key: 'miniflare',
+28 silly Conflicting override sets     keySpec: '*',
+28 silly Conflicting override sets     value: '*'
+28 silly Conflicting override sets   },
+28 silly Conflicting override sets   children: Map(0) {},
+28 silly Conflicting override sets   name: 'sharp',
+28 silly Conflicting override sets   key: 'sharp',
+28 silly Conflicting override sets   keySpec: '*',
+28 silly Conflicting override sets   value: '0.35.5'
+28 silly Conflicting override sets } <ref *1> OverrideSet {
+28 silly Conflicting override sets   parent: OverrideSet {
+28 silly Conflicting override sets     parent: undefined,
+28 silly Conflicting override sets     children: Map(21) {
+28 silly Conflicting override sets       'wrangler' => [OverrideSet],
+28 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+28 silly Conflicting override sets       'miniflare' => [OverrideSet],
+28 silly Conflicting override sets       'undici' => [OverrideSet],
+28 silly Conflicting override sets       'esbuild' => [OverrideSet],
+28 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+28 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+28 silly Conflicting override sets       'ws' => [OverrideSet],
+28 silly Conflicting override sets       'image-size' => [OverrideSet],
+28 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+28 silly Conflicting override sets       'browserslist' => [OverrideSet],
+28 silly Conflicting override sets       'picomatch' => [OverrideSet],
+28 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+28 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+28 silly Conflicting override sets       'uri-js' => [OverrideSet],
+28 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+28 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+28 silly Conflicting override sets       'debug' => [OverrideSet],
+28 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+28 silly Conflicting override sets       '@vercel/og' => [Circular *1],
+28 silly Conflicting override sets       'braces' => [OverrideSet]
+28 silly Conflicting override sets     }
+28 silly Conflicting override sets   },
+28 silly Conflicting override sets   children: Map(0) {},
+28 silly Conflicting override sets   name: '@vercel/og',
+28 silly Conflicting override sets   key: '@vercel/og',
+28 silly Conflicting override sets   keySpec: '*',
+28 silly Conflicting override sets   value: '$@vercel/og'
+28 silly Conflicting override sets }
+29 silly Conflicting override sets sharp
+30 silly Conflicting override sets <ref *1> OverrideSet {
+30 silly Conflicting override sets   parent: OverrideSet {
+30 silly Conflicting override sets     parent: undefined,
+30 silly Conflicting override sets     children: Map(21) {
+30 silly Conflicting override sets       'wrangler' => [OverrideSet],
+30 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+30 silly Conflicting override sets       'miniflare' => [OverrideSet],
+30 silly Conflicting override sets       'undici' => [OverrideSet],
+30 silly Conflicting override sets       'esbuild' => [OverrideSet],
+30 silly Conflicting override sets       'brace-expansion@1' => [Circular *1],
+30 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+30 silly Conflicting override sets       'ws' => [OverrideSet],
+30 silly Conflicting override sets       'image-size' => [OverrideSet],
+30 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+30 silly Conflicting override sets       'browserslist' => [OverrideSet],
+30 silly Conflicting override sets       'picomatch' => [OverrideSet],
+30 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+30 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+30 silly Conflicting override sets       'uri-js' => [OverrideSet],
+30 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+30 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+30 silly Conflicting override sets       'debug' => [OverrideSet],
+30 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+30 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+30 silly Conflicting override sets       'braces' => [OverrideSet]
+30 silly Conflicting override sets     }
+30 silly Conflicting override sets   },
+30 silly Conflicting override sets   children: Map(0) {},
+30 silly Conflicting override sets   name: 'brace-expansion',
+30 silly Conflicting override sets   key: 'brace-expansion@1',
+30 silly Conflicting override sets   keySpec: '1',
+30 silly Conflicting override sets   value: '1.1.21'
+30 silly Conflicting override sets } <ref *1> OverrideSet {
+30 silly Conflicting override sets   parent: OverrideSet {
+30 silly Conflicting override sets     parent: undefined,
+30 silly Conflicting override sets     children: Map(21) {
+30 silly Conflicting override sets       'wrangler' => [OverrideSet],
+30 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+30 silly Conflicting override sets       'miniflare' => [OverrideSet],
+30 silly Conflicting override sets       'undici' => [OverrideSet],
+30 silly Conflicting override sets       'esbuild' => [OverrideSet],
+30 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+30 silly Conflicting override sets       'brace-expansion@5' => [Circular *1],
+30 silly Conflicting override sets       'ws' => [OverrideSet],
+30 silly Conflicting override sets       'image-size' => [OverrideSet],
+30 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+30 silly Conflicting override sets       'browserslist' => [OverrideSet],
+30 silly Conflicting override sets       'picomatch' => [OverrideSet],
+30 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+30 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+30 silly Conflicting override sets       'uri-js' => [OverrideSet],
+30 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+30 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+30 silly Conflicting override sets       'debug' => [OverrideSet],
+30 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+30 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+30 silly Conflicting override sets       'braces' => [OverrideSet]
+30 silly Conflicting override sets     }
+30 silly Conflicting override sets   },
+30 silly Conflicting override sets   children: Map(0) {},
+30 silly Conflicting override sets   name: 'brace-expansion',
+30 silly Conflicting override sets   key: 'brace-expansion@5',
+30 silly Conflicting override sets   keySpec: '5',
+30 silly Conflicting override sets   value: '5.0.12'
+30 silly Conflicting override sets }
+31 silly Conflicting override sets balanced-match
+32 silly Conflicting override sets <ref *1> OverrideSet {
+32 silly Conflicting override sets   parent: OverrideSet {
+32 silly Conflicting override sets     parent: undefined,
+32 silly Conflicting override sets     children: Map(21) {
+32 silly Conflicting override sets       'wrangler' => [Circular *1],
+32 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+32 silly Conflicting override sets       'miniflare' => [OverrideSet],
+32 silly Conflicting override sets       'undici' => [OverrideSet],
+32 silly Conflicting override sets       'esbuild' => [OverrideSet],
+32 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+32 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+32 silly Conflicting override sets       'ws' => [OverrideSet],
+32 silly Conflicting override sets       'image-size' => [OverrideSet],
+32 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+32 silly Conflicting override sets       'browserslist' => [OverrideSet],
+32 silly Conflicting override sets       'picomatch' => [OverrideSet],
+32 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+32 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+32 silly Conflicting override sets       'uri-js' => [OverrideSet],
+32 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+32 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+32 silly Conflicting override sets       'debug' => [OverrideSet],
+32 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+32 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+32 silly Conflicting override sets       'braces' => [OverrideSet]
+32 silly Conflicting override sets     }
+32 silly Conflicting override sets   },
+32 silly Conflicting override sets   children: Map(0) {},
+32 silly Conflicting override sets   name: 'wrangler',
+32 silly Conflicting override sets   key: 'wrangler',
+32 silly Conflicting override sets   keySpec: '*',
+32 silly Conflicting override sets   value: '$wrangler'
+32 silly Conflicting override sets } <ref *1> OverrideSet {
+32 silly Conflicting override sets   parent: OverrideSet {
+32 silly Conflicting override sets     parent: undefined,
+32 silly Conflicting override sets     children: Map(21) {
+32 silly Conflicting override sets       'wrangler' => [OverrideSet],
+32 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+32 silly Conflicting override sets       'miniflare' => [Circular *1],
+32 silly Conflicting override sets       'undici' => [OverrideSet],
+32 silly Conflicting override sets       'esbuild' => [OverrideSet],
+32 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+32 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+32 silly Conflicting override sets       'ws' => [OverrideSet],
+32 silly Conflicting override sets       'image-size' => [OverrideSet],
+32 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+32 silly Conflicting override sets       'browserslist' => [OverrideSet],
+32 silly Conflicting override sets       'picomatch' => [OverrideSet],
+32 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+32 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+32 silly Conflicting override sets       'uri-js' => [OverrideSet],
+32 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+32 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+32 silly Conflicting override sets       'debug' => [OverrideSet],
+32 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+32 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+32 silly Conflicting override sets       'braces' => [OverrideSet]
+32 silly Conflicting override sets     }
+32 silly Conflicting override sets   },
+32 silly Conflicting override sets   children: Map(1) {
+32 silly Conflicting override sets     'sharp' => OverrideSet {
+32 silly Conflicting override sets       parent: [Circular *1],
+32 silly Conflicting override sets       children: Map(0) {},
+32 silly Conflicting override sets       name: 'sharp',
+32 silly Conflicting override sets       key: 'sharp',
+32 silly Conflicting override sets       keySpec: '*',
+32 silly Conflicting override sets       value: '0.35.5'
+32 silly Conflicting override sets     }
+32 silly Conflicting override sets   },
+32 silly Conflicting override sets   name: 'miniflare',
+32 silly Conflicting override sets   key: 'miniflare',
+32 silly Conflicting override sets   keySpec: '*',
+32 silly Conflicting override sets   value: '*'
+32 silly Conflicting override sets }
+33 silly Conflicting override sets <ref *1> OverrideSet {
+33 silly Conflicting override sets   parent: OverrideSet {
+33 silly Conflicting override sets     parent: undefined,
+33 silly Conflicting override sets     children: Map(21) {
+33 silly Conflicting override sets       'wrangler' => [Circular *1],
+33 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+33 silly Conflicting override sets       'miniflare' => [OverrideSet],
+33 silly Conflicting override sets       'undici' => [OverrideSet],
+33 silly Conflicting override sets       'esbuild' => [OverrideSet],
+33 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+33 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+33 silly Conflicting override sets       'ws' => [OverrideSet],
+33 silly Conflicting override sets       'image-size' => [OverrideSet],
+33 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+33 silly Conflicting override sets       'browserslist' => [OverrideSet],
+33 silly Conflicting override sets       'picomatch' => [OverrideSet],
+33 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+33 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+33 silly Conflicting override sets       'uri-js' => [OverrideSet],
+33 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+33 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+33 silly Conflicting override sets       'debug' => [OverrideSet],
+33 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+33 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+33 silly Conflicting override sets       'braces' => [OverrideSet]
+33 silly Conflicting override sets     }
+33 silly Conflicting override sets   },
+33 silly Conflicting override sets   children: Map(0) {},
+33 silly Conflicting override sets   name: 'wrangler',
+33 silly Conflicting override sets   key: 'wrangler',
+33 silly Conflicting override sets   keySpec: '*',
+33 silly Conflicting override sets   value: '$wrangler'
+33 silly Conflicting override sets } <ref *1> OverrideSet {
+33 silly Conflicting override sets   parent: OverrideSet {
+33 silly Conflicting override sets     parent: undefined,
+33 silly Conflicting override sets     children: Map(21) {
+33 silly Conflicting override sets       'wrangler' => [OverrideSet],
+33 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+33 silly Conflicting override sets       'miniflare' => [Circular *1],
+33 silly Conflicting override sets       'undici' => [OverrideSet],
+33 silly Conflicting override sets       'esbuild' => [OverrideSet],
+33 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+33 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+33 silly Conflicting override sets       'ws' => [OverrideSet],
+33 silly Conflicting override sets       'image-size' => [OverrideSet],
+33 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+33 silly Conflicting override sets       'browserslist' => [OverrideSet],
+33 silly Conflicting override sets       'picomatch' => [OverrideSet],
+33 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+33 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+33 silly Conflicting override sets       'uri-js' => [OverrideSet],
+33 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+33 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+33 silly Conflicting override sets       'debug' => [OverrideSet],
+33 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+33 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+33 silly Conflicting override sets       'braces' => [OverrideSet]
+33 silly Conflicting override sets     }
+33 silly Conflicting override sets   },
+33 silly Conflicting override sets   children: Map(1) {
+33 silly Conflicting override sets     'sharp' => OverrideSet {
+33 silly Conflicting override sets       parent: [Circular *1],
+33 silly Conflicting override sets       children: Map(0) {},
+33 silly Conflicting override sets       name: 'sharp',
+33 silly Conflicting override sets       key: 'sharp',
+33 silly Conflicting override sets       keySpec: '*',
+33 silly Conflicting override sets       value: '0.35.5'
+33 silly Conflicting override sets     }
+33 silly Conflicting override sets   },
+33 silly Conflicting override sets   name: 'miniflare',
+33 silly Conflicting override sets   key: 'miniflare',
+33 silly Conflicting override sets   keySpec: '*',
+33 silly Conflicting override sets   value: '*'
+33 silly Conflicting override sets }
+34 silly Conflicting override sets workerd
+35 silly Conflicting override sets <ref *1> OverrideSet {
+35 silly Conflicting override sets   parent: OverrideSet {
+35 silly Conflicting override sets     parent: undefined,
+35 silly Conflicting override sets     children: Map(21) {
+35 silly Conflicting override sets       'wrangler' => [OverrideSet],
+35 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+35 silly Conflicting override sets       'miniflare' => [Circular *1],
+35 silly Conflicting override sets       'undici' => [OverrideSet],
+35 silly Conflicting override sets       'esbuild' => [OverrideSet],
+35 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+35 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+35 silly Conflicting override sets       'ws' => [OverrideSet],
+35 silly Conflicting override sets       'image-size' => [OverrideSet],
+35 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+35 silly Conflicting override sets       'browserslist' => [OverrideSet],
+35 silly Conflicting override sets       'picomatch' => [OverrideSet],
+35 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+35 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+35 silly Conflicting override sets       'uri-js' => [OverrideSet],
+35 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+35 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+35 silly Conflicting override sets       'debug' => [OverrideSet],
+35 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+35 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+35 silly Conflicting override sets       'braces' => [OverrideSet]
+35 silly Conflicting override sets     }
+35 silly Conflicting override sets   },
+35 silly Conflicting override sets   children: Map(1) {
+35 silly Conflicting override sets     'sharp' => OverrideSet {
+35 silly Conflicting override sets       parent: [Circular *1],
+35 silly Conflicting override sets       children: Map(0) {},
+35 silly Conflicting override sets       name: 'sharp',
+35 silly Conflicting override sets       key: 'sharp',
+35 silly Conflicting override sets       keySpec: '*',
+35 silly Conflicting override sets       value: '0.35.5'
+35 silly Conflicting override sets     }
+35 silly Conflicting override sets   },
+35 silly Conflicting override sets   name: 'miniflare',
+35 silly Conflicting override sets   key: 'miniflare',
+35 silly Conflicting override sets   keySpec: '*',
+35 silly Conflicting override sets   value: '*'
+35 silly Conflicting override sets } <ref *1> OverrideSet {
+35 silly Conflicting override sets   parent: OverrideSet {
+35 silly Conflicting override sets     parent: undefined,
+35 silly Conflicting override sets     children: Map(21) {
+35 silly Conflicting override sets       'wrangler' => [Circular *1],
+35 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+35 silly Conflicting override sets       'miniflare' => [OverrideSet],
+35 silly Conflicting override sets       'undici' => [OverrideSet],
+35 silly Conflicting override sets       'esbuild' => [OverrideSet],
+35 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+35 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+35 silly Conflicting override sets       'ws' => [OverrideSet],
+35 silly Conflicting override sets       'image-size' => [OverrideSet],
+35 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+35 silly Conflicting override sets       'browserslist' => [OverrideSet],
+35 silly Conflicting override sets       'picomatch' => [OverrideSet],
+35 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+35 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+35 silly Conflicting override sets       'uri-js' => [OverrideSet],
+35 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+35 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+35 silly Conflicting override sets       'debug' => [OverrideSet],
+35 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+35 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+35 silly Conflicting override sets       'braces' => [OverrideSet]
+35 silly Conflicting override sets     }
+35 silly Conflicting override sets   },
+35 silly Conflicting override sets   children: Map(0) {},
+35 silly Conflicting override sets   name: 'wrangler',
+35 silly Conflicting override sets   key: 'wrangler',
+35 silly Conflicting override sets   keySpec: '*',
+35 silly Conflicting override sets   value: '$wrangler'
+35 silly Conflicting override sets }
+36 silly Conflicting override sets @cloudflare/workerd-windows-64
+37 silly Conflicting override sets <ref *1> OverrideSet {
+37 silly Conflicting override sets   parent: OverrideSet {
+37 silly Conflicting override sets     parent: undefined,
+37 silly Conflicting override sets     children: Map(21) {
+37 silly Conflicting override sets       'wrangler' => [OverrideSet],
+37 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+37 silly Conflicting override sets       'miniflare' => [OverrideSet],
+37 silly Conflicting override sets       'undici' => [OverrideSet],
+37 silly Conflicting override sets       'esbuild' => [OverrideSet],
+37 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+37 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+37 silly Conflicting override sets       'ws' => [OverrideSet],
+37 silly Conflicting override sets       'image-size' => [OverrideSet],
+37 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+37 silly Conflicting override sets       'browserslist' => [OverrideSet],
+37 silly Conflicting override sets       'picomatch' => [OverrideSet],
+37 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+37 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+37 silly Conflicting override sets       'uri-js' => [OverrideSet],
+37 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+37 silly Conflicting override sets       '@babel/core' => [Circular *1],
+37 silly Conflicting override sets       'debug' => [OverrideSet],
+37 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+37 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+37 silly Conflicting override sets       'braces' => [OverrideSet]
+37 silly Conflicting override sets     }
+37 silly Conflicting override sets   },
+37 silly Conflicting override sets   children: Map(0) {},
+37 silly Conflicting override sets   name: '@babel/core',
+37 silly Conflicting override sets   key: '@babel/core',
+37 silly Conflicting override sets   keySpec: '*',
+37 silly Conflicting override sets   value: '7.29.6'
+37 silly Conflicting override sets } <ref *1> OverrideSet {
+37 silly Conflicting override sets   parent: OverrideSet {
+37 silly Conflicting override sets     parent: undefined,
+37 silly Conflicting override sets     children: Map(21) {
+37 silly Conflicting override sets       'wrangler' => [OverrideSet],
+37 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+37 silly Conflicting override sets       'miniflare' => [Circular *1],
+37 silly Conflicting override sets       'undici' => [OverrideSet],
+37 silly Conflicting override sets       'esbuild' => [OverrideSet],
+37 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+37 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+37 silly Conflicting override sets       'ws' => [OverrideSet],
+37 silly Conflicting override sets       'image-size' => [OverrideSet],
+37 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+37 silly Conflicting override sets       'browserslist' => [OverrideSet],
+37 silly Conflicting override sets       'picomatch' => [OverrideSet],
+37 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+37 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+37 silly Conflicting override sets       'uri-js' => [OverrideSet],
+37 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+37 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+37 silly Conflicting override sets       'debug' => [OverrideSet],
+37 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+37 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+37 silly Conflicting override sets       'braces' => [OverrideSet]
+37 silly Conflicting override sets     }
+37 silly Conflicting override sets   },
+37 silly Conflicting override sets   children: Map(1) {
+37 silly Conflicting override sets     'sharp' => OverrideSet {
+37 silly Conflicting override sets       parent: [Circular *1],
+37 silly Conflicting override sets       children: Map(0) {},
+37 silly Conflicting override sets       name: 'sharp',
+37 silly Conflicting override sets       key: 'sharp',
+37 silly Conflicting override sets       keySpec: '*',
+37 silly Conflicting override sets       value: '0.35.5'
+37 silly Conflicting override sets     }
+37 silly Conflicting override sets   },
+37 silly Conflicting override sets   name: 'miniflare',
+37 silly Conflicting override sets   key: 'miniflare',
+37 silly Conflicting override sets   keySpec: '*',
+37 silly Conflicting override sets   value: '*'
+37 silly Conflicting override sets }
+38 silly Conflicting override sets @jridgewell/resolve-uri
+39 silly Conflicting override sets <ref *1> OverrideSet {
+39 silly Conflicting override sets   parent: OverrideSet {
+39 silly Conflicting override sets     parent: undefined,
+39 silly Conflicting override sets     children: Map(21) {
+39 silly Conflicting override sets       'wrangler' => [OverrideSet],
+39 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+39 silly Conflicting override sets       'miniflare' => [OverrideSet],
+39 silly Conflicting override sets       'undici' => [OverrideSet],
+39 silly Conflicting override sets       'esbuild' => [OverrideSet],
+39 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+39 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+39 silly Conflicting override sets       'ws' => [OverrideSet],
+39 silly Conflicting override sets       'image-size' => [OverrideSet],
+39 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+39 silly Conflicting override sets       'browserslist' => [OverrideSet],
+39 silly Conflicting override sets       'picomatch' => [OverrideSet],
+39 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+39 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+39 silly Conflicting override sets       'uri-js' => [OverrideSet],
+39 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+39 silly Conflicting override sets       '@babel/core' => [Circular *1],
+39 silly Conflicting override sets       'debug' => [OverrideSet],
+39 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+39 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+39 silly Conflicting override sets       'braces' => [OverrideSet]
+39 silly Conflicting override sets     }
+39 silly Conflicting override sets   },
+39 silly Conflicting override sets   children: Map(0) {},
+39 silly Conflicting override sets   name: '@babel/core',
+39 silly Conflicting override sets   key: '@babel/core',
+39 silly Conflicting override sets   keySpec: '*',
+39 silly Conflicting override sets   value: '7.29.6'
+39 silly Conflicting override sets } <ref *1> OverrideSet {
+39 silly Conflicting override sets   parent: OverrideSet {
+39 silly Conflicting override sets     parent: undefined,
+39 silly Conflicting override sets     children: Map(21) {
+39 silly Conflicting override sets       'wrangler' => [OverrideSet],
+39 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+39 silly Conflicting override sets       'miniflare' => [Circular *1],
+39 silly Conflicting override sets       'undici' => [OverrideSet],
+39 silly Conflicting override sets       'esbuild' => [OverrideSet],
+39 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+39 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+39 silly Conflicting override sets       'ws' => [OverrideSet],
+39 silly Conflicting override sets       'image-size' => [OverrideSet],
+39 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+39 silly Conflicting override sets       'browserslist' => [OverrideSet],
+39 silly Conflicting override sets       'picomatch' => [OverrideSet],
+39 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+39 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+39 silly Conflicting override sets       'uri-js' => [OverrideSet],
+39 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+39 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+39 silly Conflicting override sets       'debug' => [OverrideSet],
+39 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+39 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+39 silly Conflicting override sets       'braces' => [OverrideSet]
+39 silly Conflicting override sets     }
+39 silly Conflicting override sets   },
+39 silly Conflicting override sets   children: Map(1) {
+39 silly Conflicting override sets     'sharp' => OverrideSet {
+39 silly Conflicting override sets       parent: [Circular *1],
+39 silly Conflicting override sets       children: Map(0) {},
+39 silly Conflicting override sets       name: 'sharp',
+39 silly Conflicting override sets       key: 'sharp',
+39 silly Conflicting override sets       keySpec: '*',
+39 silly Conflicting override sets       value: '0.35.5'
+39 silly Conflicting override sets     }
+39 silly Conflicting override sets   },
+39 silly Conflicting override sets   name: 'miniflare',
+39 silly Conflicting override sets   key: 'miniflare',
+39 silly Conflicting override sets   keySpec: '*',
+39 silly Conflicting override sets   value: '*'
+39 silly Conflicting override sets }
+40 silly Conflicting override sets @jridgewell/sourcemap-codec
+41 silly Conflicting override sets <ref *1> OverrideSet {
+41 silly Conflicting override sets   parent: OverrideSet {
+41 silly Conflicting override sets     parent: undefined,
+41 silly Conflicting override sets     children: Map(21) {
+41 silly Conflicting override sets       'wrangler' => [OverrideSet],
+41 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+41 silly Conflicting override sets       'miniflare' => [OverrideSet],
+41 silly Conflicting override sets       'undici' => [OverrideSet],
+41 silly Conflicting override sets       'esbuild' => [OverrideSet],
+41 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+41 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+41 silly Conflicting override sets       'ws' => [OverrideSet],
+41 silly Conflicting override sets       'image-size' => [OverrideSet],
+41 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+41 silly Conflicting override sets       'browserslist' => [Circular *1],
+41 silly Conflicting override sets       'picomatch' => [OverrideSet],
+41 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+41 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+41 silly Conflicting override sets       'uri-js' => [OverrideSet],
+41 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+41 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+41 silly Conflicting override sets       'debug' => [OverrideSet],
+41 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+41 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+41 silly Conflicting override sets       'braces' => [OverrideSet]
+41 silly Conflicting override sets     }
+41 silly Conflicting override sets   },
+41 silly Conflicting override sets   children: Map(0) {},
+41 silly Conflicting override sets   name: 'browserslist',
+41 silly Conflicting override sets   key: 'browserslist',
+41 silly Conflicting override sets   keySpec: '*',
+41 silly Conflicting override sets   value: '4.29.5'
+41 silly Conflicting override sets } <ref *1> OverrideSet {
+41 silly Conflicting override sets   parent: OverrideSet {
+41 silly Conflicting override sets     parent: OverrideSet { parent: undefined, children: [Map] },
+41 silly Conflicting override sets     children: Map(1) { 'next' => [Circular *1] },
+41 silly Conflicting override sets     name: '@unpic/react',
+41 silly Conflicting override sets     key: '@unpic/react',
+41 silly Conflicting override sets     keySpec: '*',
+41 silly Conflicting override sets     value: '*'
+41 silly Conflicting override sets   },
+41 silly Conflicting override sets   children: Map(0) {},
+41 silly Conflicting override sets   name: 'next',
+41 silly Conflicting override sets   key: 'next',
+41 silly Conflicting override sets   keySpec: '*',
+41 silly Conflicting override sets   value: '$next'
+41 silly Conflicting override sets }
+42 silly Conflicting override sets caniuse-lite
+43 silly Conflicting override sets <ref *1> OverrideSet {
+43 silly Conflicting override sets   parent: OverrideSet {
+43 silly Conflicting override sets     parent: undefined,
+43 silly Conflicting override sets     children: Map(21) {
+43 silly Conflicting override sets       'wrangler' => [OverrideSet],
+43 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+43 silly Conflicting override sets       'miniflare' => [OverrideSet],
+43 silly Conflicting override sets       'undici' => [OverrideSet],
+43 silly Conflicting override sets       'esbuild' => [OverrideSet],
+43 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+43 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+43 silly Conflicting override sets       'ws' => [OverrideSet],
+43 silly Conflicting override sets       'image-size' => [OverrideSet],
+43 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+43 silly Conflicting override sets       'browserslist' => [Circular *1],
+43 silly Conflicting override sets       'picomatch' => [OverrideSet],
+43 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+43 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+43 silly Conflicting override sets       'uri-js' => [OverrideSet],
+43 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+43 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+43 silly Conflicting override sets       'debug' => [OverrideSet],
+43 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+43 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+43 silly Conflicting override sets       'braces' => [OverrideSet]
+43 silly Conflicting override sets     }
+43 silly Conflicting override sets   },
+43 silly Conflicting override sets   children: Map(0) {},
+43 silly Conflicting override sets   name: 'browserslist',
+43 silly Conflicting override sets   key: 'browserslist',
+43 silly Conflicting override sets   keySpec: '*',
+43 silly Conflicting override sets   value: '4.29.5'
+43 silly Conflicting override sets } <ref *1> OverrideSet {
+43 silly Conflicting override sets   parent: OverrideSet {
+43 silly Conflicting override sets     parent: OverrideSet { parent: undefined, children: [Map] },
+43 silly Conflicting override sets     children: Map(1) { 'next' => [Circular *1] },
+43 silly Conflicting override sets     name: '@unpic/react',
+43 silly Conflicting override sets     key: '@unpic/react',
+43 silly Conflicting override sets     keySpec: '*',
+43 silly Conflicting override sets     value: '*'
+43 silly Conflicting override sets   },
+43 silly Conflicting override sets   children: Map(0) {},
+43 silly Conflicting override sets   name: 'next',
+43 silly Conflicting override sets   key: 'next',
+43 silly Conflicting override sets   keySpec: '*',
+43 silly Conflicting override sets   value: '$next'
+43 silly Conflicting override sets }
+44 silly Conflicting override sets picocolors
+45 silly Conflicting override sets <ref *1> OverrideSet {
+45 silly Conflicting override sets   parent: OverrideSet {
+45 silly Conflicting override sets     parent: OverrideSet { parent: undefined, children: [Map] },
+45 silly Conflicting override sets     children: Map(1) { 'sharp' => [Circular *1] },
+45 silly Conflicting override sets     name: 'miniflare',
+45 silly Conflicting override sets     key: 'miniflare',
+45 silly Conflicting override sets     keySpec: '*',
+45 silly Conflicting override sets     value: '*'
+45 silly Conflicting override sets   },
+45 silly Conflicting override sets   children: Map(0) {},
+45 silly Conflicting override sets   name: 'sharp',
+45 silly Conflicting override sets   key: 'sharp',
+45 silly Conflicting override sets   keySpec: '*',
+45 silly Conflicting override sets   value: '0.35.5'
+45 silly Conflicting override sets } <ref *1> OverrideSet {
+45 silly Conflicting override sets   parent: OverrideSet {
+45 silly Conflicting override sets     parent: OverrideSet { parent: undefined, children: [Map] },
+45 silly Conflicting override sets     children: Map(1) { 'next' => [Circular *1] },
+45 silly Conflicting override sets     name: '@unpic/react',
+45 silly Conflicting override sets     key: '@unpic/react',
+45 silly Conflicting override sets     keySpec: '*',
+45 silly Conflicting override sets     value: '*'
+45 silly Conflicting override sets   },
+45 silly Conflicting override sets   children: Map(0) {},
+45 silly Conflicting override sets   name: 'next',
+45 silly Conflicting override sets   key: 'next',
+45 silly Conflicting override sets   keySpec: '*',
+45 silly Conflicting override sets   value: '$next'
+45 silly Conflicting override sets }
+46 silly Conflicting override sets sharp
+47 silly Conflicting override sets <ref *1> OverrideSet {
+47 silly Conflicting override sets   parent: OverrideSet {
+47 silly Conflicting override sets     parent: OverrideSet { parent: undefined, children: [Map] },
+47 silly Conflicting override sets     children: Map(1) { 'next' => [Circular *1] },
+47 silly Conflicting override sets     name: '@unpic/react',
+47 silly Conflicting override sets     key: '@unpic/react',
+47 silly Conflicting override sets     keySpec: '*',
+47 silly Conflicting override sets     value: '*'
+47 silly Conflicting override sets   },
+47 silly Conflicting override sets   children: Map(0) {},
+47 silly Conflicting override sets   name: 'next',
+47 silly Conflicting override sets   key: 'next',
+47 silly Conflicting override sets   keySpec: '*',
+47 silly Conflicting override sets   value: '$next'
+47 silly Conflicting override sets } <ref *1> OverrideSet {
+47 silly Conflicting override sets   parent: OverrideSet {
+47 silly Conflicting override sets     parent: OverrideSet { parent: undefined, children: [Map] },
+47 silly Conflicting override sets     children: Map(1) { 'sharp' => [Circular *1] },
+47 silly Conflicting override sets     name: 'miniflare',
+47 silly Conflicting override sets     key: 'miniflare',
+47 silly Conflicting override sets     keySpec: '*',
+47 silly Conflicting override sets     value: '*'
+47 silly Conflicting override sets   },
+47 silly Conflicting override sets   children: Map(0) {},
+47 silly Conflicting override sets   name: 'sharp',
+47 silly Conflicting override sets   key: 'sharp',
+47 silly Conflicting override sets   keySpec: '*',
+47 silly Conflicting override sets   value: '0.35.5'
+47 silly Conflicting override sets }
+48 silly Conflicting override sets <ref *1> OverrideSet {
+48 silly Conflicting override sets   parent: OverrideSet {
+48 silly Conflicting override sets     parent: undefined,
+48 silly Conflicting override sets     children: Map(21) {
+48 silly Conflicting override sets       'wrangler' => [Circular *1],
+48 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+48 silly Conflicting override sets       'miniflare' => [OverrideSet],
+48 silly Conflicting override sets       'undici' => [OverrideSet],
+48 silly Conflicting override sets       'esbuild' => [OverrideSet],
+48 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+48 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+48 silly Conflicting override sets       'ws' => [OverrideSet],
+48 silly Conflicting override sets       'image-size' => [OverrideSet],
+48 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+48 silly Conflicting override sets       'browserslist' => [OverrideSet],
+48 silly Conflicting override sets       'picomatch' => [OverrideSet],
+48 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+48 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+48 silly Conflicting override sets       'uri-js' => [OverrideSet],
+48 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+48 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+48 silly Conflicting override sets       'debug' => [OverrideSet],
+48 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+48 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+48 silly Conflicting override sets       'braces' => [OverrideSet]
+48 silly Conflicting override sets     }
+48 silly Conflicting override sets   },
+48 silly Conflicting override sets   children: Map(0) {},
+48 silly Conflicting override sets   name: 'wrangler',
+48 silly Conflicting override sets   key: 'wrangler',
+48 silly Conflicting override sets   keySpec: '*',
+48 silly Conflicting override sets   value: '$wrangler'
+48 silly Conflicting override sets } <ref *1> OverrideSet {
+48 silly Conflicting override sets   parent: OverrideSet {
+48 silly Conflicting override sets     parent: undefined,
+48 silly Conflicting override sets     children: Map(21) {
+48 silly Conflicting override sets       'wrangler' => [OverrideSet],
+48 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+48 silly Conflicting override sets       'miniflare' => [Circular *1],
+48 silly Conflicting override sets       'undici' => [OverrideSet],
+48 silly Conflicting override sets       'esbuild' => [OverrideSet],
+48 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+48 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+48 silly Conflicting override sets       'ws' => [OverrideSet],
+48 silly Conflicting override sets       'image-size' => [OverrideSet],
+48 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+48 silly Conflicting override sets       'browserslist' => [OverrideSet],
+48 silly Conflicting override sets       'picomatch' => [OverrideSet],
+48 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+48 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+48 silly Conflicting override sets       'uri-js' => [OverrideSet],
+48 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+48 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+48 silly Conflicting override sets       'debug' => [OverrideSet],
+48 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+48 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+48 silly Conflicting override sets       'braces' => [OverrideSet]
+48 silly Conflicting override sets     }
+48 silly Conflicting override sets   },
+48 silly Conflicting override sets   children: Map(1) {
+48 silly Conflicting override sets     'sharp' => OverrideSet {
+48 silly Conflicting override sets       parent: [Circular *1],
+48 silly Conflicting override sets       children: Map(0) {},
+48 silly Conflicting override sets       name: 'sharp',
+48 silly Conflicting override sets       key: 'sharp',
+48 silly Conflicting override sets       keySpec: '*',
+48 silly Conflicting override sets       value: '0.35.5'
+48 silly Conflicting override sets     }
+48 silly Conflicting override sets   },
+48 silly Conflicting override sets   name: 'miniflare',
+48 silly Conflicting override sets   key: 'miniflare',
+48 silly Conflicting override sets   keySpec: '*',
+48 silly Conflicting override sets   value: '*'
+48 silly Conflicting override sets }
+49 silly Conflicting override sets <ref *1> OverrideSet {
+49 silly Conflicting override sets   parent: OverrideSet {
+49 silly Conflicting override sets     parent: undefined,
+49 silly Conflicting override sets     children: Map(21) {
+49 silly Conflicting override sets       'wrangler' => [OverrideSet],
+49 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+49 silly Conflicting override sets       'miniflare' => [OverrideSet],
+49 silly Conflicting override sets       'undici' => [OverrideSet],
+49 silly Conflicting override sets       'esbuild' => [OverrideSet],
+49 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+49 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+49 silly Conflicting override sets       'ws' => [OverrideSet],
+49 silly Conflicting override sets       'image-size' => [OverrideSet],
+49 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+49 silly Conflicting override sets       'browserslist' => [OverrideSet],
+49 silly Conflicting override sets       'picomatch' => [OverrideSet],
+49 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+49 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+49 silly Conflicting override sets       'uri-js' => [OverrideSet],
+49 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+49 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+49 silly Conflicting override sets       'debug' => [OverrideSet],
+49 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+49 silly Conflicting override sets       '@vercel/og' => [Circular *1],
+49 silly Conflicting override sets       'braces' => [OverrideSet]
+49 silly Conflicting override sets     }
+49 silly Conflicting override sets   },
+49 silly Conflicting override sets   children: Map(0) {},
+49 silly Conflicting override sets   name: '@vercel/og',
+49 silly Conflicting override sets   key: '@vercel/og',
+49 silly Conflicting override sets   keySpec: '*',
+49 silly Conflicting override sets   value: '$@vercel/og'
+49 silly Conflicting override sets } <ref *1> OverrideSet {
+49 silly Conflicting override sets   parent: OverrideSet {
+49 silly Conflicting override sets     parent: OverrideSet { parent: undefined, children: [Map] },
+49 silly Conflicting override sets     children: Map(1) { 'sharp' => [Circular *1] },
+49 silly Conflicting override sets     name: 'miniflare',
+49 silly Conflicting override sets     key: 'miniflare',
+49 silly Conflicting override sets     keySpec: '*',
+49 silly Conflicting override sets     value: '*'
+49 silly Conflicting override sets   },
+49 silly Conflicting override sets   children: Map(0) {},
+49 silly Conflicting override sets   name: 'sharp',
+49 silly Conflicting override sets   key: 'sharp',
+49 silly Conflicting override sets   keySpec: '*',
+49 silly Conflicting override sets   value: '0.35.5'
+49 silly Conflicting override sets }
+50 silly Conflicting override sets <ref *1> OverrideSet {
+50 silly Conflicting override sets   parent: OverrideSet {
+50 silly Conflicting override sets     parent: undefined,
+50 silly Conflicting override sets     children: Map(21) {
+50 silly Conflicting override sets       'wrangler' => [OverrideSet],
+50 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+50 silly Conflicting override sets       'miniflare' => [Circular *1],
+50 silly Conflicting override sets       'undici' => [OverrideSet],
+50 silly Conflicting override sets       'esbuild' => [OverrideSet],
+50 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+50 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+50 silly Conflicting override sets       'ws' => [OverrideSet],
+50 silly Conflicting override sets       'image-size' => [OverrideSet],
+50 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+50 silly Conflicting override sets       'browserslist' => [OverrideSet],
+50 silly Conflicting override sets       'picomatch' => [OverrideSet],
+50 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+50 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+50 silly Conflicting override sets       'uri-js' => [OverrideSet],
+50 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+50 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+50 silly Conflicting override sets       'debug' => [OverrideSet],
+50 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+50 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+50 silly Conflicting override sets       'braces' => [OverrideSet]
+50 silly Conflicting override sets     }
+50 silly Conflicting override sets   },
+50 silly Conflicting override sets   children: Map(1) {
+50 silly Conflicting override sets     'sharp' => OverrideSet {
+50 silly Conflicting override sets       parent: [Circular *1],
+50 silly Conflicting override sets       children: Map(0) {},
+50 silly Conflicting override sets       name: 'sharp',
+50 silly Conflicting override sets       key: 'sharp',
+50 silly Conflicting override sets       keySpec: '*',
+50 silly Conflicting override sets       value: '0.35.5'
+50 silly Conflicting override sets     }
+50 silly Conflicting override sets   },
+50 silly Conflicting override sets   name: 'miniflare',
+50 silly Conflicting override sets   key: 'miniflare',
+50 silly Conflicting override sets   keySpec: '*',
+50 silly Conflicting override sets   value: '*'
+50 silly Conflicting override sets } <ref *1> OverrideSet {
+50 silly Conflicting override sets   parent: OverrideSet {
+50 silly Conflicting override sets     parent: undefined,
+50 silly Conflicting override sets     children: Map(21) {
+50 silly Conflicting override sets       'wrangler' => [Circular *1],
+50 silly Conflicting override sets       '@unpic/react' => [OverrideSet],
+50 silly Conflicting override sets       'miniflare' => [OverrideSet],
+50 silly Conflicting override sets       'undici' => [OverrideSet],
+50 silly Conflicting override sets       'esbuild' => [OverrideSet],
+50 silly Conflicting override sets       'brace-expansion@1' => [OverrideSet],
+50 silly Conflicting override sets       'brace-expansion@5' => [OverrideSet],
+50 silly Conflicting override sets       'ws' => [OverrideSet],
+50 silly Conflicting override sets       'image-size' => [OverrideSet],
+50 silly Conflicting override sets       'js-yaml' => [OverrideSet],
+50 silly Conflicting override sets       'browserslist' => [OverrideSet],
+50 silly Conflicting override sets       'picomatch' => [OverrideSet],
+50 silly Conflicting override sets       'baseline-browser-mapping' => [OverrideSet],
+50 silly Conflicting override sets       'fast-uri' => [OverrideSet],
+50 silly Conflicting override sets       'uri-js' => [OverrideSet],
+50 silly Conflicting override sets       'minimatch@>=7' => [OverrideSet],
+50 silly Conflicting override sets       '@babel/core' => [OverrideSet],
+50 silly Conflicting override sets       'debug' => [OverrideSet],
+50 silly Conflicting override sets       '@shuding/opentype.js' => [OverrideSet],
+50 silly Conflicting override sets       '@vercel/og' => [OverrideSet],
+50 silly Conflicting override sets       'braces' => [OverrideSet]
+50 silly Conflicting override sets     }
+50 silly Conflicting override sets   },
+50 silly Conflicting override sets   children: Map(0) {},
+50 silly Conflicting override sets   name: 'wrangler',
+50 silly Conflicting override sets   key: 'wrangler',
+50 silly Conflicting override sets   keySpec: '*',
+50 silly Conflicting override sets   value: '$wrangler'
+50 silly Conflicting override sets }
+51 verbose cwd C:\Srini\Mirra\mirra\project-export\source\cloud
+52 verbose os Windows_NT 10.0.26300
+53 verbose node v24.14.0
+54 verbose npm  v11.9.0
+55 verbose exit 0
+56 info ok

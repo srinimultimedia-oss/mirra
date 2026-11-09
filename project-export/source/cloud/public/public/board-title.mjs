@@ -1,0 +1,14 @@
+import {titleDraft} from '../src/title-drafts.mjs';
+export class BoardTitleEditor{
+ constructor({getContext,writable,commit,storage=null,download=()=>{}}){Object.assign(this,{getContext,writable,commit,storage,download});this.state=null;this.cache=new Map();}
+ draftFor(scope){if(!this.cache.has(scope))this.cache.set(scope,titleDraft(this.storage,scope));return this.cache.get(scope);}
+ matches(){const current=this.getContext();return this.state&&this.state.board===current.board&&this.state.scope===current.scope;}
+ pending(){const {board,scope}=this.getContext();if(!this.matches())this.state=null;if(!this.state){const draft=this.draftFor(scope);if(draft.entry||draft.blocked)this.state={board,scope,before:draft.entry?.before??board.doc.name,raw:draft.entry?.raw??board.doc.name,dirty:true,error:draft.error||'Recovered unsent board name. Review it before saving.',latest:board.doc.name};}return this.state?.dirty?this.state:null;}
+ begin(){if(this.pending())return;const {board,scope}=this.getContext();this.state={board,scope,before:board.doc.name,raw:board.doc.name,dirty:false,error:'',latest:null};}
+ remember(){if(!this.state)return;const draft=this.draftFor(this.state.scope);draft.set({type:'text',before:this.state.before,raw:this.state.raw});if(draft.error)this.state.error=draft.error;}
+ input(raw){if(!this.matches())this.begin();this.state.raw=raw;this.state.dirty=true;this.remember();}
+ save(expected=this.state){if(expected!==this.state)return false;if(!this.state?.dirty)return true;try{this.remember();if(!this.matches())throw Error('The board or account changed. Export your name before leaving.');if(!this.writable())throw Error('Editing permission changed. Export your name before leaving.');const state=this.state,name=state.raw.trim()||'Untitled board',latest=state.board.doc.name;if(name.length>500)throw Error('Use a board name of 500 characters or fewer');if(latest!==state.before&&latest!==name){state.latest=latest;throw Error('The board name changed in another client. Your name is preserved.');}if(name!==latest)this.commit(name);this.draftFor(state.scope).remove();state.before=name;state.dirty=false;state.error='';state.latest=null;return true;}catch(error){this.state.error=error.message;return false;}}
+ retryReviewed(){if(!this.state||this.state.latest===null)return false;this.state.before=this.state.latest;return this.save();}
+ discard(){if(!this.state)return true;const draft=this.draftFor(this.state.scope),entry=draft.entry;draft.remove();if(draft.error&&draft.stored()!==null){draft.entry=entry;this.state.error=draft.error;return false;}this.state=null;return true;}
+ export(){if(!this.state)return;const draft=this.draftFor(this.state.scope),body=JSON.stringify({version:1,kind:'board-name',scope:this.state.scope,draft:draft.entry,storedBytes:draft.stored()});this.download('mirra-board-name-recovery.json',body,'application/json');}
+}

@@ -1,0 +1,139 @@
+feature,area,priority,original,clone,notes
+Create sticky note,Canvas,must,yes,partial,D6; implemented; browser verification pending
+Edit sticky text,Canvas,must,yes,partial,D6; local two-client conflict and scoped tab reload/orphan recovery verified; full signed-in parity pending
+Sticky shape variants,Canvas,must,yes,partial,D6; QA-083 square/wide conversion preserves height center metadata with group-aware atomic undo frame/link geometry and owner/viewer/mobile checks; insertion presets and numeric sizing retained; exact signed-in proportions/semantics pending
+Sticky palette,Canvas,must,yes,partial,D6; sixteen independent colors; account customization parity pending
+Sticky automatic font sizing,Canvas,must,yes,partial,D6; measured wrapping and automatic font size; dense-content engine parity pending
+Bulk sticky input,Canvas,must,yes,partial,D6; QA-084 native Enter-separated ideas cancel/board-scoped input role changes peer grid and atomic undo verified; cloud UTF-8 size preflight retains rejected input; unsubmitted reload recovery and exact signed-in parity remain open
+Sticky author labels,Canvas,must,yes,no,D6
+Sticky tags,Canvas,must,yes,partial,D6; QA-075 reusable catalog bulk assignment eight-tag cap rename/delete tag search badges clipboard undo and owner/editor/viewer local cloud flows verified; concurrent catalog edits conflict explicitly; exact signed-in parity and rename-draft reload recovery remain open
+Sticky stack,Canvas,must,yes,no,D6
+Text objects,Canvas,must,yes,partial,D2; plain text and optional fill backgrounds implemented; transparency toggle reload peer update Undo and SVG verified; full signed-in parity pending
+Rich text and fonts,Canvas,must,yes,partial,D2; whole-object bold italic underline size alignment color and generic typefaces; mixed text runs and links missing
+Shapes,Canvas,must,yes,partial,D2; seven basic shapes and appearance inspector; specialized diagram libraries missing
+Connection lines,Canvas,must,yes,partial,D2; boundary-linked arrows follow shape geometry and rotation
+Connector labels and routing,Canvas,must,yes,partial,D19; one label and straight elbow curved routes; label alignment and automatic sizing verified across reload live endpoint movement and standalone SVG; movable multiple labels and custom anchors missing
+Freehand pen,Canvas,must,yes,partial,D2; basic stroke implemented
+Smart drawing,Canvas,must,yes,no,D2
+Eraser and lasso,Canvas,must,yes,no,D1
+Images and icons,Canvas,must,yes,no,D2
+Stickers and emoji,Canvas,must,yes,no,D2
+GIF library,Canvas,must,yes,no,D1
+Cards,Canvas,must,yes,partial,D2; text-only card; structured fields missing
+Charts,Canvas,must,yes,no,D2
+Code blocks,Canvas,must,yes,no,D2
+Visual notes,Canvas,must,yes,no,D2
+Video upload and playback,Canvas,must,yes,no,D2
+Embedded content,Canvas,must,yes,no,D3
+Link previews,Canvas,must,yes,no,D3
+Mind maps,Canvas,must,yes,no,D3
+Frames,Structure,must,yes,partial,D5; create resize containment and descendant move/copy; title font emphasis color alignment and automatic sizing verified after reload and standalone SVG export; remaining frame settings pending
+Create frame around selection,Structure,must,yes,partial,D5; QA-090 three nested frame-around-selection actions descendant movement one-step Undo peer reload and viewer restrictions verified; exact signed-in parity pending
+Frame presets,Structure,must,yes,partial,D5; six named aspect presets and validated custom width height with orientation swap; toolbar and F placement plus Undo peer persistence and viewer guard verified; exact signed-in catalog parity pending
+Hide and reveal frames,Structure,must,yes,no,D7
+Frame reordering,Structure,must,yes,partial,D5; root-frame sequence panel with earlier later controls navigation and chosen presentation start; Undo peer persistence and viewer restrictions verified; drag and bulk ordering parity pending
+Frame presentation,Structure,must,yes,partial,D5; root-only navigation arrows Home End Escape and live deletion rename reorder verified in two clients; presentation suppresses editing chrome and restores selection on exit; full signed-in parity pending
+Layers,Structure,must,yes,no,D2; object list is not layers
+Precise resizing,Editing,must,yes,partial,D17; numeric geometry and rotated drag sizing; format-specific pixel rulers missing
+Selection,Editing,must,yes,partial,D1; shift and marquee implemented
+Move objects,Editing,must,yes,partial,D1; QA-090 keyboard outer-frame movement advances each nested descendant exactly once with peer reload and Undo; broader pointer and edge matrix pending
+Duplicate objects,Editing,must,yes,partial,D1; model tested
+Delete objects,Editing,must,yes,partial,D5; model tested
+Undo redo,Editing,must,yes,partial,D2; model tested
+Alignment,Editing,must,yes,partial,D6; six alignments; model tested
+Group ungroup,Editing,must,yes,partial,D16; selection expansion move copy deletion and ungroup; group movement verified in browser; nested groups and individual-in-group editing pending
+Lock and protected lock,Editing,must,yes,partial,D7; local lock only
+Stacking order,Editing,must,yes,partial,D16; QA-079 front/back and one-step forward/backward via Arrange and right-click; stable selection/group order frame exclusion local lock guards atomic undo peer reload viewer and mobile checks pass; exact signed-in semantics and production browser checks pending
+Infinite canvas navigation,Navigation,must,yes,partial,D1; pan and zoom implemented
+Minimap,Navigation,must,yes,partial,D1; QA-076 live content/viewport overview with M toggle pointer click/drag and keyboard pan/Home/Escape verified across owner/viewer and mobile; negative geometry and100000-node projection tests pass; large rendered-board performance and exact signed-in parity remain open
+Grid and snapping,Navigation,must,yes,partial,D1; dot grid toggle; snapping missing
+Fit content,Navigation,must,yes,partial,D1; QA-090 nested-frame fit verified in browser; full viewport and large-board edge matrix pending
+Full screen,Navigation,must,yes,no,D1
+Board search,Navigation,must,yes,partial,D1; plain object text search
+Command palette,Navigation,must,yes,no,D1
+Mouse and trackpad preferences,Navigation,must,yes,no,D1
+Object dimensions,Navigation,must,yes,partial,D1; numeric inspector; on-canvas dimension display toggle missing
+Accessibility checker,Accessibility,must,yes,no,D1
+Precise selection mode,Accessibility,must,yes,no,D1
+Reduced motion,Accessibility,must,yes,partial,D1; existing design.css honors prefers-reduced-motion for transitions animation hover transforms and scroll; OS-preference browser verification and original preference parity remain open
+Board rename,Lifecycle,must,yes,partial,D1; local implementation
+Board dashboard,Lifecycle,must,yes,partial,D15; local library with search sort recent and starred; shared and team scopes missing
+Board copy,Lifecycle,must,yes,partial,D1 D15; local independent copy verified; access restrictions pending
+Board star,Lifecycle,must,yes,partial,D1 D15; local starred view verified; account sync missing
+Board delete and restore,Lifecycle,must,yes,partial,D1 D15; recoverable local trash verified; retention administration pending
+Spaces and board moves,Lifecycle,must,yes,partial,D1 D15; device-local spaces and assignment; team semantics missing
+Board background,Lifecycle,must,yes,no,D1
+Board start view,Lifecycle,must,yes,no,D1
+Board history,Lifecycle,must,yes,no,D1
+Board details and thumbnail,Lifecycle,must,yes,no,D1
+Templates,Lifecycle,must,yes,partial,D1; three independent local layouts only
+Save and publish custom templates,Lifecycle,must,yes,no,D1
+Import and export files,Files,must,yes,partial,D1; independent JSON and SVG formats only
+PDF export,Files,must,yes,no,D5
+High resolution export,Files,must,yes,no,D14
+Manual backups,Files,must,yes,partial,D14; JSON download; no compatible target backup format
+Cloud persistence,Files,must,yes,partial,Private D1-backed deployment; QA-081 quota recovery and QA-082 independent tab backup slots with readonly review preserve unsent edits across late acknowledgements reload and closed tabs; peer conflict and account isolation verified locally; hosted browser session verification pending
+Email invites,Access,must,yes,no,D7
+Viewer commenter editor roles,Access,must,yes,partial,D7; server-enforced board roles tested; full team and invitation workflows pending
+Owner and co-owner powers,Access,must,yes,no,D7
+Team space public sharing scopes,Access,must,yes,no,D7
+Board passwords,Access,must,yes,no,D7
+Content copy restrictions,Access,must,yes,no,D7
+Embed board,Access,must,yes,no,D1
+Live multiplayer edits,Collaboration,must,yes,partial,D1; SSE field merges and conflict retention; QA-080 identity-bound planned renewal and terminal503 backoff; native owner editor viewer outage draft recovery and11 renewals verified; scale and hosted browser checks pending
+Collaborator cursors,Collaboration,must,yes,partial,D1; live cursors and presence with QA-085 follow chains and leader notices; advanced identity and exact signed-in parity pending
+Follow collaborator,Collaboration,must,yes,partial,QA-085 viewport metadata and role-independent People follow with chains leader notices and navigation stop; API identity board isolation expiry cycle tests and desktop/mobile direct/chained browser checks; G111 role and desktop/mobile native flows verified; exact signed-in parity and hosted save tests remain open
+Bring collaborators to view,Collaboration,must,yes,partial,D1; QA-087 owner/editor individual and everyone commands start auto-follow with receiver notice and local escape; scoped ephemeral delivery expiry renewal dedup permission and board isolation tests plus desktop/mobile native checks; exact signed-in parity and hosted verification remain open
+Comments and threads,Collaboration,must,yes,partial,D20; cloud threads replies own edits remove resolve reopen pins and drafts; mentions reactions read state colors and notifications missing
+Board and team activity,Collaboration,must,yes,no,D1
+Reactions,Facilitation,must,yes,no,D1
+Timer,Facilitation,must,yes,partial,D1; shared countdown lifecycle calibrated clock and role checks; opt-in completion chime two original synth music choices per-tab mute and viewer audio-engine controls verified; physical listening and full signed-in parity pending
+Voting setup and sessions,Facilitation,must,yes,partial,D9; QA-072 API and owner/editor/viewer core setup draft start join skip rename extend end verified; selected/all/type target filters; advanced configuration and complete parity discovery remain open
+Anonymous voting and vote limits,Facilitation,must,yes,partial,D9; QA-074 private durable ballots budget CAS and scoped same-tab ballot reload recovery verified; uncertain writes retain original revisions and never auto-replay; broad original parity and non-ballot recovery remain open
+Voting progress and results,Facilitation,must,yes,partial,D9; QA-072 live progress and anonymous ended results including automatic expiry and reload verified; history currently latest50 sessions; pagination deletion and advanced result controls remain open
+Private sticky contributions,Facilitation,must,yes,no,D8
+Permanent anonymous authorship,Facilitation,must,yes,no,D8
+Private mode reveal controls,Facilitation,must,yes,no,D8
+Talktrack recordings,Facilitation,must,yes,no,D1
+Breakout frames,Facilitation,must,yes,no,D1
+Video calls and chat,Facilitation,must,yes,no,D1
+Estimations and dependencies,Facilitation,must,yes,no,D1
+Table fields and records,Tables,must,yes,partial,D4; typed records plus scoped cell/title/schema recovery and two-client conflict checks; full UI and signed-in parity remain open
+Table cards and sticky conversion,Tables,must,yes,partial,D4; QA097 actual card callback atomic data/Undo/patch and invalid-batch tests plus native owner conversion saved peer reload viewer selected-record restrictions and Undo verified; QA098 notes-to-record native source preservation saved peer reload viewer guards and Undo verified; current-schema rendered-action regression fixed; native remote-schema and signed-in parity remain open
+Synced Jira records,Tables,must,yes,no,D4
+Record dates and assignees,Tables,must,yes,partial,D4; typed table implementation and behavioral tests; full UI and signed-in parity verification pending
+Table filter sort group,Tables,must,yes,partial,D4; typed validation and filter/sort/group engine tests plus local UI invalid-date/option and changed-schema checks; QA101 native numeric sort grouped counts all/any numeric-checkbox filters invalid-date retention empty results and clear recovery verified; remaining operators mobile concurrency and signed-in parity remain open
+Synced cross-board tables,Tables,must,yes,no,D4
+Timeline view,Tables,must,yes,partial,D4; QA101 native inclusive widths undated omission inverted-date saved peer error and Undo restoration verified; mobile richer controls and signed-in parity remain open
+Column calculations,Tables,must,yes,partial,D4; typed table implementation and behavioral tests; full UI and signed-in parity verification pending
+Visual number formatting,Tables,must,yes,partial,D4; QA102 native percent and normalized EUR display retain numeric5; invalid currency/type recovery explicit metadata apply saved peer reload viewer guards and Undo verified; blur-only timing mobile and signed-in parity remain open
+Record dependencies,Tables,must,yes,partial,D4; QA099 internal copied blocker remap external blocker preservation and deletion cleanup tested; native linked pair duplication removal peer reload and Undo verified; native cycle and timeline cases plus signed-in parity remain open
+Bulk record actions,Tables,must,yes,partial,D4; QA099 actual duplicate/remove dependency and permission tests plus native linked-pair duplicate delete-originals saved peer reload viewer and Undo verified; QA100 typed bulk fields and invalid-input retention verified in rendered-action tests and native two-row saved peer reload viewer guard and Undo; native schema concurrency and signed-in parity remain open
+Sidekick contextual conversation,AI,must,yes,no,D11
+Generate formats from context,AI,must,yes,no,D11
+Custom Sidekicks and knowledge,AI,must,yes,no,D11
+Visual AI Flows,AI,must,yes,no,D10
+AI run management and credits,AI,must,yes,no,D10
+Generate multi-screen prototypes,AI,must,yes,no,D12
+Refine prototype screens and variants,AI,must,yes,no,D12
+Official provider integrations,Integrations,must,yes,no,D3 D14; provider-by-provider discovery pending
+Team membership and administration,Administration,must,yes,no,Account discovery pending
+Profile settings,Administration,must,yes,no,D1
+Enterprise controls,Administration,must,yes,no,D13; detailed comparison pending
+Dashboard board title search,Lifecycle,must,yes,partial,D15; local search implemented; shared and cross-team search missing
+Dashboard sort and recent activity,Lifecycle,must,yes,partial,D15; local opened updated and name sorting
+Object rotation,Editing,must,yes,partial,D16; numeric rotation and geometry handling; rotation drag handle missing
+Clear selected object content,Editing,must,yes,partial,D16; QA-078 visible toolbar and right-click selection actions plus shortcut; supported unlocked text and sticky tags clear atomically with style/catalog preservation; grouped selection undo peer reload viewer native-input and mobile guards verified; unsupported metadata and structured card fields pending
+Frame nesting and move descendants,Structure,must,yes,partial,D5; QA095 indexed descendant selection passes reverse-stored30000-frame model benchmark and exhaustive membership oracle; native locked movement nested duplication saved peer reload and Undo verified; large rendered-board performance remains open; root-only presentation; explicit no-nest modifier pending
+Selection clipboard and cut paste,Editing,must,yes,partial,D18; selection format remaps ids groups frames and connectors; connector-only clipboard and duplicate preserve external boundary positions as portable endpoints; QA094 mixed connector/object stacking preserved through duplicate saved peer reload and Undo; native cut/paste reload movement and peer sync verified; external rich formats pending
+Spreadsheet clipboard notes,Import,must,yes,partial,D6; quoted TSV and blank cells; native notes/text preview; single-cell menu and HTML-table hint; atomic undo peer sync viewer guards and320/390px verified; exact signed-in rich-format parity pending
+
+
+
+
+
+
+
+
+
+

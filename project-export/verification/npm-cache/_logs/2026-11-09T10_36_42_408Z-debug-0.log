@@ -1,0 +1,24 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.9.0
+2 info using node@v24.14.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Srini\Mirra\mirra\project-export\source\.npmrc
+5 silly config load:file:C:\Users\srini\.npmrc
+6 silly config load:file:C:\Users\srini\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm test
+8 verbose argv "test"
+9 verbose logfile logs-max:10 dir:C:\Srini\Mirra\mirra\project-export\verification\npm-cache\_logs\2026-11-09T10_36_42_408Z-
+10 verbose logfile C:\Srini\Mirra\mirra\project-export\verification\npm-cache\_logs\2026-11-09T10_36_42_408Z-debug-0.log
+11 silly logfile done cleaning log files
+12 http fetch GET 200 https://registry.npmjs.org/npm 1323ms
+13 verbose cwd C:\Srini\Mirra\mirra\project-export\source
+14 verbose os Windows_NT 10.0.26300
+15 verbose node v24.14.0
+16 verbose npm  v11.9.0
+17 notice
+17 notice New minor version of npm available! 11.9.0 -> 11.21.2
+17 notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+17 notice To update run: npm install -g npm@11.21.2
+17 notice  { force: true, Symbol(proc-log.meta): true }
+18 verbose exit 0
+19 info ok

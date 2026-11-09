@@ -1,0 +1,8 @@
+{
+  "pid": 36996,
+  "started_on": "2026-11-09T10:43:28.438Z",
+  "status": "running",
+  "root_policy": "Parent project read-only; outputs restricted to export",
+  "mode": "hidden background process; filesystem notifications plus10-second polling",
+  "host_verified_on": "2026-11-09T10:46:47.587Z"
+}

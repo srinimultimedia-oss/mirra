@@ -1,0 +1,41 @@
+{
+  "generated_on": "2026-11-09T10:46:50.587Z",
+  "fingerprint": "8394c12da7b0194de756e3d032d2296ba93a15261189f0d6aed317e278ec9dbf",
+  "requiredDocuments": 15,
+  "sourceFiles": 439,
+  "aiContextWords": 1688,
+  "technicalDesignSections": 16,
+  "componentReferences": 12,
+  "routeReferences": 18,
+  "brokenCitations": [],
+  "secretScan": {
+    "unredactedValues": [],
+    "identifierOccurrences": 2015,
+    "packageArchiveEntries": 30,
+    "note": "Names such as token/secret/Bearer are required in code and security explanations. They are not credentials. No current environment, Git config, database or browser state is exported."
+  },
+  "mermaid": [
+    {
+      "file": "TECHNICAL_DESIGN.md",
+      "valid": true
+    },
+    {
+      "file": "TECHNICAL_DESIGN.md",
+      "valid": true
+    },
+    {
+      "file": "TECHNICAL_DESIGN.md",
+      "valid": true
+    },
+    {
+      "file": "docs/architecture.md",
+      "valid": true
+    },
+    {
+      "file": "docs/state-and-data.md",
+      "valid": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

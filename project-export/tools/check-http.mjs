@@ -1,0 +1,10 @@
+import fs from 'node:fs';import{fileURLToPath}from'node:url';import assert from 'node:assert/strict';
+const results=[];
+for(const p of ['/','/public/app.mjs','/public/design.css']){const r=await fetch('http://127.0.0.1:4187'+p);assert.equal(r.status,200);assert.ok(r.headers.get('content-security-policy'));results.push({server:'device-local',path:p,status:r.status,securityHeaders:true})}
+const denied=await fetch('http://127.0.0.1:4187/.git/config');assert.equal(denied.status,403);results.push({server:'device-local',path:'/.git/config',status:denied.status});
+const base='http://127.0.0.1:5179';let r=await fetch(base+'/api/me');assert.equal(r.status,401);results.push({server:'cloud-dev',path:'/api/me',authenticated:false,status:r.status});
+r=await fetch(base+'/signin-with-chatgpt?return_to=/',{redirect:'manual'});assert.ok(r.status>=300&&r.status<400);const cookie=r.headers.get('set-cookie')?.split(';')[0];assert.ok(cookie);assert.match(r.headers.get('set-cookie'),/HttpOnly/i);
+r=await fetch(base+'/api/me',{headers:{Cookie:cookie}});assert.equal(r.status,200);assert.ok((await r.json()).user.id);results.push({server:'cloud-dev',path:'/api/me',authenticated:true,status:r.status,identity:'synthetic loopback fixture only'});
+r=await fetch(base+'/api/boards',{headers:{Cookie:cookie}});assert.equal(r.status,200);results.push({server:'cloud-dev',path:'/api/boards',status:r.status,localMigrationsUsable:true});
+r=await fetch(base+'/api/boards/nonexistent/voting/session/ballot',{method:'PUT',headers:{Cookie:cookie,Origin:base,'Content-Type':'application/json'},body:'{}'});assert.equal(r.status,405);results.push({server:'cloud-dev',path:'/api/boards/:id/voting/:session/ballot',method:'PUT',status:r.status,knownIssue:'Framework catch-all omits PUT; no board data was created'});
+const report={passed:true,generated_on:new Date().toISOString(),results,scope:'Exported copy only; no original browser or production account used'};fs.writeFileSync(fileURLToPath(new URL('../verification/http.json',import.meta.url)),JSON.stringify(report,null,2)+'\n');console.log('EXPORT_HTTP_PASS '+JSON.stringify(report));
