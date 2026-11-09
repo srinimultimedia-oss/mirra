@@ -4,6 +4,17 @@ OWNS: src/**, public/**, tests/**, scripts/**, replica/**, cloud/**, package.jso
 
 Scope: Rebuild every identified Miro web-app feature, with a continuing inventory, independent implementation, and requirement-level verification. Full scope remains open until signed-in discovery and implementation evidence establish parity.
 
+- [x] G153: The source Git index contains the corrected cloud source, audited vendor runtime packages and lockfile as regular files, excluding local secrets, databases, caches, dependencies and generated builds; the hosting Git checkout is preserved.
+  CHECK: node scripts/check-scan-source.mjs
+  EXPECT: SCAN_SOURCE_PASS
+  EVIDENCE: automatic-evidence=v1; definition-sha256=cfa4f5bb71843713da4e4148015ef88094b4e631d1d28faef360a2d0a8ccd5c3; exit=0; EXPECT=matched; output-sha256=dd7a99b996e02c2a371da9f4834640a8a4f03e9927df86ca554cc82f46e0855c; output-bytes=108; shell=C:\Windows\system32\cmd.exe; cwd=C:\Srini\Mirra\mirra; path=2835c4462a72/39 entries
+
+- [ ] G155: GitHub main contains the verified regular cloud files and corrected lockfile at the published commit, with obsolete local archives absent from the current remote tree.
+  EVIDENCE: 2026-11-09 staged 251 regular cloud source files matching tested private-hosting commit fe8cc94a52fc6ca513c848e3a36a8cb1de46ac67; stopped tracking 89 obsolete archives while retaining all local copies. Automatic approval review blocked commit/push to PUBLIC github.com/srinimultimedia-oss/mirra because previous explicit upload authorization named the private hosting repository. Explicit approval for this public destination is pending. No source push performed.
+
+- [ ] G154: A fresh Checkmarx scan runs against the published corrected commit and its result is inspected; if scan initiation is unavailable, record the precise access blocker and the required user action without claiming compliance.
+  EVIDENCE: 2026-11-09 Checkmarx report project URL redirects to ind-2.ast.checkmarx.net/login-organization and displays Enter Tenant Name. No cx CLI or Checkmarx credentials configured. Requested user sign-in in retained in-app tab241; fresh scan cannot start until source publication and authenticated project access. No new scan or compliance claim made.
+
 - [x] G150: Every Checkmarx SCA finding is mapped by result ID/CVE to current resolved dependencies; fixable vulnerable ranges are eliminated and any upstream-unpatched finding has explicit verified remediation evidence rather than a blanket clean claim.
   EVIDENCE: 2026-11-09 scripts/checkmarx-security-check.mjs passes against installed packages and lockfile: 99 SCA findings mapped, 90 updated, 4 removed, 2 uri-js findings replaced by fast-uri, 2 picomatch findings locally patched with timed exploit regressions, 1 braces advisory withdrawn upstream requiring Checkmarx triage. All paths and result IDs retained in replica/checkmarx-remediation.json; npm audit reports zero vulnerabilities. Local patch and font/OG runtime packaging documented with licenses; no fresh Checkmarx certification claimed.
 

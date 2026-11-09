@@ -1,0 +1,19 @@
+# Local dependencies, builds, databases and credentials are never scan inputs.
+node_modules/
+.env*
+.dev.vars*
+*.pem
+*.tsbuildinfo
+.wrangler/
+.sites-runtime/
+.unlazy/
+.unlazy-hook-state.json
+__pycache__/
+
+# Historical release/source archives contain obsolete dependency snapshots.
+# Keep local copies; publish authored cloud sources and its current lockfile.
+/replica/*.tar.gz
+/replica/*.tgz
+/replica/*.zip
+
+# Retain required audited npm file dependencies under cloud/vendor/.

@@ -1,0 +1,55 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1793785032865,
+      "tag": "0000_quick_millenium_guard",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1793785442244,
+      "tag": "0001_youthful_black_tom",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1793786112295,
+      "tag": "0002_mysterious_molecule_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1793792873038,
+      "tag": "0003_calm_vermin",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1793896066439,
+      "tag": "0004_dizzy_scalphunter",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1793907329720,
+      "tag": "0005_romantic_doctor_strange",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1793908801531,
+      "tag": "0006_easy_jetstream",
+      "breakpoints": true
+    }
+  ]
+}
