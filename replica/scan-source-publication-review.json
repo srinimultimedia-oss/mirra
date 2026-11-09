@@ -1355,6 +1355,10 @@
   ],
   "localArchiveCopiesRetained": true,
   "literalCredentialPatternMatches": [],
-  "publicationStatus": "awaiting-explicit-public-destination-approval",
-  "checkmarxStatus": "sign-in-required"
+  "publicationStatus": "published",
+  "checkmarxStatus": "tenant-sign-in-required; no GitHub commit statuses reported",
+  "publishedCommit": "696601ce88c9a3a302d4af662c01adf0572dba61",
+  "remoteCloudTree": "7e4add161d273d3a84f043cd91949c0bfdb3a84b",
+  "hostingCloudTree": "7e4add161d273d3a84f043cd91949c0bfdb3a84b",
+  "publicPublicationExplicitlyApproved": true
 }
