@@ -4,6 +4,14 @@ OWNS: src/**, public/**, tests/**, scripts/**, replica/**, cloud/**, package.jso
 
 Scope: Rebuild every identified Miro web-app feature, with a continuing inventory, independent implementation, and requirement-level verification. Full scope remains open until signed-in discovery and implementation evidence establish parity.
 
+- [x] G156: The latest scan's sidebar preference no longer uses a JavaScript cookie; preview JSON responses enforce CSP; braces recursive walkers reject excessive depth, cycles and oversized ASTs while ordinary patterns and development tooling remain functional.
+  CHECK: node --test tests/remaining-security.test.mjs
+  EXPECT: fail 0
+  EVIDENCE: automatic-evidence=v1; definition-sha256=0e9c7acb0c0f64c145626d307e7283d83a874b8905a6cb6fd8eb9638b4567f55; exit=0; EXPECT=matched; output-sha256=9535132b770f0e91ea3d776880c75186025acc103f832602efd04899c86e8946; output-bytes=561; shell=C:\Windows\system32\cmd.exe; cwd=C:\Srini\Mirra\mirra; path=2835c4462a72/39 entries
+
+- [ ] G157: Remediated source passes application tests, TypeScript, clean dependency installation and production build, and the exact verified source reaches both GitHub main and private cloud hosting; fresh Checkmarx closure is distinguished from local patch evidence.
+  EVIDENCE: pending verification and publication of the three remaining findings.
+
 - [x] G153: The source Git index contains the corrected cloud source, audited vendor runtime packages and lockfile as regular files, excluding local secrets, databases, caches, dependencies and generated builds; the hosting Git checkout is preserved.
   CHECK: node scripts/check-scan-source.mjs
   EXPECT: SCAN_SOURCE_PASS

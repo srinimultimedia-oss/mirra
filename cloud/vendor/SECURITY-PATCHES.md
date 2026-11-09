@@ -1,5 +1,30 @@
 # Auditable dependency remediation
 
+## braces 3.0.3 + local depth-limit patch
+
+`braces/` preserves the MIT-licensed upstream 3.0.3 runtime and public API.
+Version `3.0.3+mirra.security.1` identifies a local patch, not an upstream release.
+The parser rejects nesting beyond a fixed 128-level limit before recursive
+cleanup. Compile, expand and stringify independently validate their AST with an
+iterative traversal before walking it: maximum depth 128, at most 65536 nodes,
+no child cycles/shared nodes, and consistent parent metadata. Caller options
+cannot disable these guards. The installed tarball is overridden across all
+parents and the original source and licenses are included for review.
+
+`tests/remaining-security.test.mjs` exercises strings below the existing length
+limit, deep/cyclic/oversized ASTs and ordinary nested alternatives, numeric
+ranges, escaped literals, micromatch and actual fast-glob discovery. Guard
+failures are explicit RangeErrors rather than call-stack exhaustion.
+
+The reported CVE-2026-93687 / GHSA-vfj7-8cjw-p6xm was withdrawn upstream on
+2026-10-23 as not practically exploitable. No patched upstream version exists.
+This patch adds defensive limits; a version-based Checkmarx result may still
+need security triage using the patch evidence and withdrawal notice. Do not
+rename the package, claim an upstream fix, or automatically suppress it.
+
+Upstream: https://github.com/micromatch/braces/tree/3.0.3
+Advisory: https://github.com/advisories/GHSA-vfj7-8cjw-p6xm
+
 ## picomatch 4.0.7 + local patch
 
 `picomatch/` is the MIT-licensed upstream npm 4.0.7 runtime with a documented

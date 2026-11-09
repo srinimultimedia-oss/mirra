@@ -101,6 +101,9 @@ export function connectorPreview() {
     configureServer(vite) {
       server = vite;
       vite.middlewares.use(contextEndpoint, async (req, res) => {
+        res.setHeader("Content-Security-Policy", "default-src 'none'; frame-ancestors 'none'; base-uri 'none'");
+        res.setHeader("X-Content-Type-Options", "nosniff");
+        res.setHeader("Strict-Transport-Security", "max-age=31536000; includeSubDomains");
         res.setHeader("Cache-Control", "no-store");
         res.setHeader("Content-Type", "application/json");
         if (
@@ -134,6 +137,9 @@ export function connectorPreview() {
         }
       });
       vite.middlewares.use(endpoint, async (req, res) => {
+        res.setHeader("Content-Security-Policy", "default-src 'none'; frame-ancestors 'none'; base-uri 'none'");
+        res.setHeader("X-Content-Type-Options", "nosniff");
+        res.setHeader("Strict-Transport-Security", "max-age=31536000; includeSubDomains");
         res.setHeader("Cache-Control", "no-store");
         res.setHeader("Content-Type", "application/json");
         if (

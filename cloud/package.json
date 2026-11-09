@@ -62,7 +62,8 @@
     "wrangler": "4.158.0",
     "picomatch": "file:vendor/picomatch-4.0.7+mirra.security.1.tgz",
     "@shuding/opentype.js": "file:vendor/shuding-opentype.js-1.4.0-beta.0.tgz",
-    "@vercel/og": "file:vendor/vercel-og-1.0.3+mirra.runtime.2.tgz"
+    "@vercel/og": "file:vendor/vercel-og-1.0.3+mirra.runtime.2.tgz",
+    "braces": "file:vendor/braces-3.0.3+mirra.security.1.tgz"
   },
   "type": "module",
   "overrides": {
@@ -89,6 +90,7 @@
     "@babel/core": "7.29.6",
     "debug": "4.4.3",
     "@shuding/opentype.js": "$@shuding/opentype.js",
-    "@vercel/og": "$@vercel/og"
+    "@vercel/og": "$@vercel/og",
+    "braces": "$braces"
   }
 }

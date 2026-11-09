@@ -1,0 +1,48 @@
+{
+  "scanId": "a57247ed-4c02-4f91-839b-8c34539c861f",
+  "generatedAt": "2026-11-09T09:19:28.138Z",
+  "nodeTests": 540,
+  "typescript": "passed",
+  "productionBuild": "passed",
+  "cleanInstall": "passed",
+  "npmAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "checkmarxRescanRequired": true,
+  "certifiedCompliant": false,
+  "findings": [
+    {
+      "id": "314311644",
+      "severity": "Medium",
+      "type": "HttpOnly_Cookie_Flag_Not_Set",
+      "disposition": "source-remediated-pending-rescan",
+      "file": "cloud/components/ui/sidebar.tsx",
+      "evidence": "Removed JavaScript cookie assignment. Seven-day display preference uses guarded localStorage; false/true, expiration, malformed values and blocked storage tested. No session token stored here."
+    },
+    {
+      "id": "-1903805349",
+      "severity": "Low",
+      "type": "Missing_CSP_Header",
+      "disposition": "source-remediated-pending-rescan",
+      "file": "cloud/scripts/vite/connector-preview-plugin.mjs",
+      "evidence": "Explicit deny-all CSP, nosniff and HSTS headers set before all context/invoke responses. Real middleware tests verify unauthorized, unavailable-session, successful context and malformed invoke responses."
+    },
+    {
+      "id": "/YkcAkkfhqsuIVdPbkH50TMdKRAnKW2QF1pMxTXiZ1Q=",
+      "severity": "High",
+      "type": "CVE-2026-93687",
+      "package": "braces",
+      "version": "3.0.3+mirra.security.1",
+      "disposition": "locally-hardened-withdrawn-advisory-security-triage-required",
+      "evidence": "Upstream advisory withdrawn; no patched upstream version exists. Local parser and all three AST walkers enforce depth128/node65536/cycle guards, including direct AST entrypoints and options that previously disabled other limits. Timed hostile-input tests and micromatch/fast-glob compatibility pass. Local patch is not an upstream release or automatic Checkmarx suppression.",
+      "advisory": "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm",
+      "patchSha256": "39055db2aaa8ae4848a5de51da4b587796a647c1d4b9b69d5c9f38c5f6c2b74f",
+      "tarballSha256": "4aff2ab1d6ec12fd72e0990b3626e09e7369302da36cf35af1d9073526e4016f"
+    }
+  ]
+}
